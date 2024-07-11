@@ -15,45 +15,10 @@ const Home: React.FC = () => {
         <link rel="shortcut icon" type="image/x-icon" href="https://buildinghealthieramerica.org/wp-content/themes/buildinghealthieramerica/favicon.ico" />
       </Head>
 
-      <body id="top" className="home page-template page-template-page-templates page-template-template-full-width page-template-page-templatestemplate-full-width-php page page-id-219 logged-in admin-bar no-customize-support">
+      <main id="top" className="home page-template page-template-page-templates page-template-template-full-width page-template-page-templatestemplate-full-width-php page page-id-219 logged-in admin-bar no-customize-support">
         <a href="#main" className="sr-only sr-only-focusable color--alternate" aria-label="Navigation Skip Link">
           <span className="screen-reader-text">Skip Navigation or Skip to Content</span>
         </a>
-        
-        <header>
-          <nav id="top-menu-container" className="navbar block lg:hidden color--alternate">
-            <div className="container navigation-container">
-              <ul id="top-menu-mobile" className="nav navbar-nav">
-                <li>Hudson:</li>
-                <li><a href="mailto:dhofstedt@bha4families.org"><i className="fa fa-envelope"></i> Email Us</a></li>
-                <li><a href="https://goo.gl/maps/HkWvyi32DcnMDnPD9" target="_blank" rel="noreferrer"><i className="fa fa-map-marker-alt"></i> Find Us</a></li>
-              </ul>
-            </div>
-          </nav>
-
-          <nav id="main-menu-container" className="navbar navbar-expand-lg bg-overlay bg-cover text-white" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/brick-header-mix-1600x1071.jpg)' }}>
-            <div className="container navigation-container">
-              <a href="/" className="navbar-brand" title="Building Healthier America">
-                <img src="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/Building-Healthier-America-Logo-300x300.png" className="logo img-fluid" alt="Building Healthier America - A Network for Families with Children Managing Chronic Illness and Disabilities" title="Building Healthier America" />
-              </a>
-              <button className="navicon-button x" data-toggle="collapse" data-target="#main-menu-collapse" aria-controls="main-menu-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                <div className="navicon"></div>
-              </button>
-
-              <div className="collapse navbar-collapse" id="main-menu-collapse">
-                <ul id="main-menu" className="nav navbar-nav">
-                  <li className="nav-item active"><a href="/" className="nav-link">Home</a></li>
-                  <li className="nav-item"><a href="/about-us/" className="nav-link">About Us</a></li>
-                  <li className="nav-item"><a href="/contact/" className="nav-link">Contact</a></li>
-                  <li className="nav-item cta-border"><a href="https://app.handzin.com/login" target="_blank" className="nav-link">BHA4families Member Entry</a></li>
-                  <li className="nav-item cta-border"><a href="https://forms.gle/sYvuKeTbYKPv4URc6" target="_blank" className="nav-link">BHA Survey</a></li>
-                  <li className="nav-item cta-border"><a href="mailto:dhofstedt@bha4families.org" className="nav-link">Email the Navigator</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </header>
-
 
         <div className="w-screen h-[45rem] relative">
           <div id="hero-slider" className="h-full">
@@ -74,17 +39,16 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-
         <div className="w-full py-16 bg-white text-center">
           <div className="max-w-7xl mx-auto px-4">
             <div className="mb-8">
               <h3 className="text-[#df4c7f] text-2xl font-medium">We Listened</h3>
               <h1 className="text-[#286fb4] text-5xl font-semibold mt-2">Our Partners & Our Why</h1>
             </div>
-            <div className="relative mb-8" style={{width: '1000px', height: '500px', margin: '0 auto'}}>
-              <iframe 
-                src="//www.youtube.com/embed/LfwsGYyQtwE?modestbranding=1&rel=0" 
-                className="absolute top-0 left-0 w-full h-full" 
+            <div className="relative mb-8" style={{ width: '1000px', height: '500px', margin: '0 auto' }}>
+              <iframe
+                src="//www.youtube.com/embed/LfwsGYyQtwE?modestbranding=1&rel=0"
+                className="absolute top-0 left-0 w-full h-full"
                 allowFullScreen
               ></iframe>
             </div>
@@ -93,7 +57,6 @@ const Home: React.FC = () => {
             </p>
           </div>
         </div>
-        
 
         <div className="w-full feature-grid-container">
           <div className="flex flex-wrap">
@@ -133,7 +96,6 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-
         <div id="donate" className="w-full py-16 bg-white text-center">
           <div className="max-w-7xl mx-auto px-4">
             <div className="mb-8">
@@ -157,7 +119,6 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-
         <div className="w-full relative h-[45rem]">
           <div id="hero-slider" className="h-full">
             <div className="h-full bg-cover bg-center relative" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/hero-slider-2-1600x1067.jpg)' }}>
@@ -177,7 +138,6 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-
         <div className="w-full feature-grid-container">
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/2 text-center lg:text-left bg-white p-8">
@@ -188,7 +148,7 @@ const Home: React.FC = () => {
                   <p className="mb-4 text-black">
                     The needs of our families are not just medical, educational, or human services related. Stress management, mental health services, employment considerations for parent, clothing needs, claims processing, changes to the physical structure of the home are all services families need.
                   </p>
-                  <p className='text-black'>
+                  <p className="text-black">
                     Our programs are being built from the ground up by families living with chronic illness and disability, we want parents to have the opportunity to customize virtual communities with the resources they need.
                   </p>
                 </div>
@@ -200,7 +160,6 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-
 
         <div className="w-full h-[45rem] relative bg-cover bg-center bg-fixed" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/newsletter-1600x1076.jpg)' }}>
           <div className="absolute inset-0 bg-[#286fb4] bg-opacity-70"></div>
@@ -220,7 +179,6 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-
         <div id="donate" className="w-full bg-[#286fb4] text-white py-8">
           <div className="container mx-auto flex justify-between items-center">
             <h2 className="text-2xl">Like What We're Doing? Please Consider a Financial Contribution.</h2>
@@ -229,15 +187,6 @@ const Home: React.FC = () => {
             </a>
           </div>
         </div>
-
-
-
-
-
-
-
-
-    
 
         <footer>
           <div className="container-fluid footer-container bg-cover bg-overlay text-white py-8" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/footer-rev4-1600x800.jpg)' }}>
@@ -317,7 +266,7 @@ const Home: React.FC = () => {
             Edit This
           </a>
         </div> */}
-      </body>
+      </main>
     </>
   );
 };
