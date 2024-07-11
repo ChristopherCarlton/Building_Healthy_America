@@ -20,6 +20,8 @@ const Home: React.FC = () => {
           <span className="screen-reader-text">Skip Navigation or Skip to Content</span>
         </a>
 
+        <div className='py-20'></div>
+
         <div className="w-screen h-[45rem] relative">
           <div id="hero-slider" className="h-full">
             <div className="h-full bg-cover bg-center relative" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/bha-hero-slider1-1600x1067.jpg)' }}>
@@ -112,7 +114,7 @@ const Home: React.FC = () => {
               <p className="mb-6">
                 We are launching our first pilot site in Hudson, Wisconsin. We are actively seeking families managing children of any age with chronic illness or disability in these communities to help us develop and build our network of services. To learn more about what we have planned, click on the link below.
               </p>
-              <a href="https://buildinghealthieramerica.org/contact/" className="bg-[#df4c7f] text-white px-6 py-3 rounded-full font-semibold" target="_self">
+              <a href="/contact/" className="bg-[#df4c7f] text-white px-6 py-3 rounded-full font-semibold" target="_self">
                 LET'S CONNECT
               </a>
             </div>
