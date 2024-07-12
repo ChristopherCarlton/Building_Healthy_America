@@ -1,65 +1,77 @@
-{/* <footer className="bg-gray-800 text-white py-10">
-        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div>
-            <a href="/">
-              <img
-                src="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/Building-Healthier-America-Logo-300x300.png"
-                alt="Building Healthier America"
-                className="h-20 w-20 mb-4"
-              />
-            </a>
-            <p>Hudson, WI, 54016</p>
-          </div>
-          <div>
-            <h2 className="text-xl font-bold mb-4">Popular Links</h2>
-            <ul className="space-y-2">
-              <li>
-                <a href="/#donate" className="hover:underline">
-                  Donate
-                </a>
-              </li>
-              <li>
-                <a href="https://buildinghealthieramerica.org/contact/" className="hover:underline">
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a href="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2022/01/BHA-Privacy-Policy.pdf" className="hover:underline">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2022/01/BHA-Terms-and-Conditions.pdf" className="hover:underline">
-                  Terms and Conditions
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 className="text-xl font-bold mb-4">Connect</h2>
-            <ul className="space-y-2">
-              <li>
-                <a href="mailto:dhofstedt@bha4families.org" className="hover:underline">
-                  <strong>Email:</strong> dhofstedt@bha4families.org
-                </a>
-              </li>
-            </ul>
-          </div>
+import React from 'react';
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaPhoneAlt } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+
+const Footer = () => {
+  return (
+    <footer
+      className="relative bg-gray-800 text-black py-32"
+      style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/footer-rev4-1600x800.jpg)', backgroundPosition: 'center' }}
+    >
+      <div className="absolute inset-0 bg-white opacity-60"></div>
+      <div className="relative container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 justify-between items-center">
+        <div className="text-center">
+          <a href="/">
+            <img
+              src="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/Building-Healthier-America-Logo-300x300.png"
+              alt="Building Healthier America"
+              className="h-48 w-48 mb-4 mx-auto"
+            />
+          </a>
+          <p>Hudson, WI, 54016</p>
         </div>
-        <div className="text-center mt-8">
-          <ul className="inline-flex space-x-4">
-            <li>&copy; 2024 Building Healthier America</li>
+        <div className="text-center">
+          <h2 className="text-xl mb-4">Popular Links</h2>
+          <ul className="space-y-2">
             <li>
-              <a href="/wp-admin/" target="_blank" className="hover:underline">
-                Admin
+              <a href="/#donate" className="text-[#286fb4] hover:underline">
+                Donate
               </a>
             </li>
             <li>
-              Web production by{' '}
-              <a href="https://kramerdigital.com/" target="_blank" className="hover:underline">
-                Kramer<span>Digital</span>
+              <a href="/contact/" className="text-[#286fb4] hover:underline">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2022/01/BHA-Privacy-Policy.pdf" className="text-[#286fb4] hover:underline">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2022/01/BHA-Terms-and-Conditions.pdf" className="text-[#286fb4] hover:underline">
+                Terms and Conditions
               </a>
             </li>
           </ul>
         </div>
-      </footer> */}
+        <div className="text-center">
+          <h2 className="text-xl mb-4">Connect</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="mailto:dhofstedt@bha4families.org" className="text-[#286fb4] hover:underline">
+                <MdEmail className="inline mr-2" /> dhofstedt@bha4families.org
+              </a>
+            </li>
+            <li className="flex justify-center space-x-4 mt-4">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-[#286fb4]">
+                <FaFacebook size={24} />
+              </a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-[#286fb4]">
+                <FaTwitter size={24} />
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[#286fb4]">
+                <FaLinkedin size={24} />
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-[#286fb4]">
+                <FaInstagram size={24} />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

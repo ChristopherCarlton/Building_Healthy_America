@@ -140,28 +140,48 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-full feature-grid-container">
-          <div className="flex flex-wrap">
-            <div className="w-full lg:w-1/2 text-center lg:text-left bg-white p-8">
-              <div className="card">
-                <div className="card-body">
-                  <h3 className="text-2xl text-[#df4c7f] pb-2">Designed by Our Users</h3>
-                  <h2 className="text-6xl text-[#286fb4] font-bold mb-4">Our Program Goals</h2>
-                  <p className="mb-4 text-black">
-                    The needs of our families are not just medical, educational, or human services related. Stress management, mental health services, employment considerations for parent, clothing needs, claims processing, changes to the physical structure of the home are all services families need.
-                  </p>
-                  <p className="text-black">
-                    Our programs are being built from the ground up by families living with chronic illness and disability, we want parents to have the opportunity to customize virtual communities with the resources they need.
-                  </p>
-                </div>
-              </div>
-            </div>
 
-            <div className="w-full lg:w-1/2 bg-cover bg-center" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/programs-1600x1067.jpg)' }}>
-              <div className="absolute inset-0 bg-opacity-25"></div>
-            </div>
-          </div>
+
+
+
+
+
+
+
+        <div className="w-full feature-grid-container">
+  <div className="flex flex-wrap">
+    <div className="w-full lg:w-2/5 bg-white p-16 flex items-center justify-center text-center">
+      <div className="card">
+        <div className="card-body">
+          <h3 className="text-2xl text-[#df4c7f] pb-2">Designed by Our Users</h3>
+          <h2 className="text-5xl text-[#286fb4] mb-4">Our Program Goals</h2>
+          <p className="mb-4 text-black">
+            The needs of our families are not just medical, educational, or human services related. Stress management, mental health services, employment considerations for parent, clothing needs, claims processing, changes to the physical structure of the home are all services families need.
+          </p>
+          <p className="text-black">
+            Our programs are being built from the ground up by families living with chronic illness and disability, we want parents to have the opportunity to customize virtual communities with the resources they need.
+          </p>
         </div>
+      </div>
+    </div>
+
+    <div className="w-full lg:w-3/5 bg-cover bg-center" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/programs-1600x1067.jpg)' }}>
+      <div className="absolute inset-0 bg-opacity-25"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
         <div className="w-full h-[45rem] relative bg-cover bg-center bg-fixed" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/newsletter-1600x1076.jpg)' }}>
           <div className="absolute inset-0 bg-[#286fb4] bg-opacity-70"></div>
@@ -170,104 +190,23 @@ const Home: React.FC = () => {
               <h3 className="text-3xl text-[#df4c7f] pb-2">Subscribe to Updates</h3>
               <h2 className="text-6xl font-semibold">Stay Connected</h2>
               <div className="block-description mt-4">
-                <p className="text-xl">If you like what we’re doing and want to stay up to date as our program develops, let us know by opting into emails from us. We promise to not overwhelm your inbox or share your information with anyone.</p>
+                <p className="text-xl w-[50rem]">If you like what we’re doing and want to stay up to date as our program develops, let us know by opting into emails from us. We promise to not overwhelm your inbox or share your information with anyone.</p>
               </div>
             </div>
             <div className="mt-6">
-              <a href="https://buildinghealthieramerica.org/contact/" className="btn bg-[#df4c7f] text-white py-2 px-4 rounded-md">
+              <a href="https://buildinghealthieramerica.org/contact/" className="btn bg-[#df4c7f] text-white py-4 px-14 rounded-md">
                 Opt In
               </a>
             </div>
           </div>
         </div>
 
-        <div id="donate" className="w-full bg-[#286fb4] text-white py-8">
-          <div className="container mx-auto flex justify-between items-center">
-            <h2 className="text-2xl">Like What We're Doing? Please Consider a Financial Contribution.</h2>
-            <a href="https://buildinghealthieramerica.org/donate-today/" className="btn bg-white text-[#286fb4] py-2 px-4 rounded-md" target="_self">
-              Donate
-            </a>
-          </div>
+        <div className="w-full bg-[#286fb4] text-white py-14">
+            <div className="container mx-auto px-4 flex items-center justify-between">
+                <h2 className="text-4xl mb-2">Like What We're Doing? Please Consider a Financial Contribution.</h2>
+                <a href="/#donate" className="bg-white text-[#286fb4] px-6 py-2 rounded font-semibold">DONATE NOW</a>
+            </div>
         </div>
-
-        <footer>
-          <div className="container-fluid footer-container bg-cover bg-overlay text-white py-8" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/footer-rev4-1600x800.jpg)' }}>
-            <div className="container">
-              <div className="row columns-container">
-                <div className="content-column col-lg-4">
-                  <a href="/">
-                    <img src="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/Building-Healthier-America-Logo-300x300.png" className="img-fluid alignnone logo" alt="Building Healthier America" title="Building Healthier America" />
-                  </a>
-                  <p>Hudson, WI, 54016</p>
-                </div>
-
-                <div className="content-column col-lg-4">
-                  <h2>Popular Links</h2>
-                  <ul id="footer-menu" className="menu">
-                    <li>
-                      <a href="/#donate" aria-current="page">
-                        Donate
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://buildinghealthieramerica.org/contact/">Contact</a>
-                    </li>
-                    <li>
-                      <a href="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2022/01/BHA-Privacy-Policy.pdf">Privacy Policy</a>
-                    </li>
-                    <li>
-                      <a href="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2022/01/BHA-Terms-and-Conditions.pdf">Terms and Conditions</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="content-column col-lg-4">
-                  <h2>Connect</h2>
-                  <ul>
-                    <li>
-                      <a href="mailto:dhofstedt@bha4families.org">
-                        <strong>Email:</strong> dhofstedt@bha4families.org
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="container-fluid baseline-container text-alternate">
-            <div className="container">
-              <div className="row">
-                <div className="col flex-wrap items-center justify-center">
-                  <ul className="pipes small">
-                    <li>&copy; 2024 Building Healthier America</li>
-                    <li>
-                      <a href="/wp-admin/" target="_blank">
-                        Admin
-                      </a>
-                    </li>
-                    <li>
-                      Web production by{' '}
-                      <a href="https://kramerdigital.com/" className="kd" target="_blank">
-                        Kramer<span>Digital</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-
-        {/* <a href="#top" id="scrolltotop" className="scrolllink">
-          <i className="fa fa-arrow-up"></i>
-        </a>
-
-        <div id="edit-link">
-          <a href="https://buildinghealthieramerica.org/wp-admin/post.php?post=219&action=edit" target="edit_post_window">
-            Edit This
-          </a>
-        </div> */}
       </main>
     </>
   );

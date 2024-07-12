@@ -5,8 +5,8 @@ import { MdEmail } from "react-icons/md";
 const AboutUs = () => {
   return (
     <div className="bg-white w-full">
-      <main className="w-full py-10">
-        <div className='py-24'></div>
+      <main className="w-full">
+        <div className='py-32'></div>
         <section className="text-center mb-20 w-full">
           <h3 className="text-[#df4c7f] font-semibold text-2xl pb-2">Our Tenets</h3>
           <h1 className="text-6xl font-semibold text-[#286fb4]">We Believe</h1>
