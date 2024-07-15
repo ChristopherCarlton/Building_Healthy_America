@@ -1,29 +1,7 @@
-"use client"
-import React, { useEffect } from 'react';
+import React from 'react';
 import Head from 'next/head';
-import FlipCardLetsConnect from './components/FlipCardLetsConnect';
 
 const Home: React.FC = () => {
-  useEffect(() => {
-    const handleScroll = () => {
-      const elements = document.querySelectorAll('.fade-in');
-      const windowHeight = window.innerHeight;
-      elements.forEach((element) => {
-        const positionFromTop = element.getBoundingClientRect().top;
-        if (positionFromTop - windowHeight <= 0) {
-          element.classList.add('opacity-100', 'translate-y-0');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Trigger once on mount
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
     <>
       <Head>
@@ -37,14 +15,14 @@ const Home: React.FC = () => {
         <link rel="shortcut icon" type="image/x-icon" href="https://buildinghealthieramerica.org/wp-content/themes/buildinghealthieramerica/favicon.ico" />
       </Head>
 
-      <main id="top" className="bg-gray-100">
+      <main id="top" className="home page-template page-template-page-templates page-template-template-full-width page-template-page-templatestemplate-full-width-php page page-id-219 logged-in admin-bar no-customize-support">
         <a href="#main" className="sr-only sr-only-focusable color--alternate" aria-label="Navigation Skip Link">
           <span className="screen-reader-text">Skip Navigation or Skip to Content</span>
         </a>
 
-        <div className='py-16'></div>
+        <div className='py-20'></div>
 
-        <div className="w-screen h-[45rem] relative fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+        <div className="w-screen h-[45rem] relative">
           <div id="hero-slider" className="h-full">
             <div className="h-full bg-cover bg-center relative" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/bha-hero-slider1-1600x1067.jpg)' }}>
               <div className="absolute inset-0 bg-[#286fb4] bg-opacity-70 z-10"></div>
@@ -63,7 +41,7 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-full py-16 bg-white text-center fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+        <div className="w-full py-16 bg-white text-center">
           <div className="max-w-7xl mx-auto px-4">
             <div className="mb-8">
               <h3 className="text-[#df4c7f] text-2xl font-medium">We Listened</h3>
@@ -76,13 +54,13 @@ const Home: React.FC = () => {
                 allowFullScreen
               ></iframe>
             </div>
-            <p className="text-gray-500 text-lg max-w-4xl mx-auto mt-4">
+            <p className="text-gray-500 text-lg max-w-4xl mx-auto mt-4 ">
               Families with children managing a chronic illness or disability report their greatest stress comes from arranging numerous services through multiple agencies. Building Healthier America is building a national network to support families within their home communities so they can better navigate the medical, educational, and human services systems, improving quality of time and life for the entire family.
             </p>
           </div>
         </div>
 
-        <div className="w-full feature-grid-container fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+        <div className="w-full feature-grid-container">
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/3 bg-cover bg-center relative" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/home-child-wheelchair-1600x1120.jpg)' }}>
               <div className="absolute inset-0 bg-black bg-opacity-25"></div>
@@ -102,6 +80,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
             </div>
+
             <div className="w-full lg:w-1/3 bg-[#df4c7f] text-white p-20">
               <div className="card">
                 <div className="card-body">
@@ -119,7 +98,7 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        <div id="donate" className="w-full py-16 bg-white text-center fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+        <div id="donate" className="w-full py-16 bg-white text-center">
           <div className="max-w-7xl mx-auto px-4">
             <div className="mb-8">
               <h3 className="text-[#df4c7f] text-xl font-medium">Founding Principle</h3>
@@ -128,12 +107,21 @@ const Home: React.FC = () => {
                 <p>Our mission is to serve as a central community resource for families as they navigate the medical, human service, educational and local agencies serving children with chronic illness or disability.</p>
               </div>
             </div>
-
-            <FlipCardLetsConnect />
+            
+            <div className="max-w-3xl mx-auto bg-[#286fb4] text-white p-8 rounded-lg">
+              <h5 className="text-lg font-medium">Pilot Cities</h5>
+              <h4 className="text-2xl font-bold mt-2 mb-4">Get Involved</h4>
+              <p className="mb-6">
+                We are launching our first pilot site in Hudson, Wisconsin. We are actively seeking families managing children of any age with chronic illness or disability in these communities to help us develop and build our network of services. To learn more about what we have planned, click on the link below.
+              </p>
+              <a href="/contact/" className="bg-[#df4c7f] text-white px-6 py-3 rounded-full font-semibold" target="_self">
+                LET'S CONNECT
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="w-full relative h-[45rem] fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+        <div className="w-full relative h-[45rem]">
           <div id="hero-slider" className="h-full">
             <div className="h-full bg-cover bg-center relative" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/hero-slider-2-1600x1067.jpg)' }}>
               <div className="absolute inset-0 bg-white bg-opacity-70 z-10"></div>
@@ -152,7 +140,7 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-full feature-grid-container fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+        <div className="w-full feature-grid-container">
           <div className="flex flex-wrap">
             <div className="w-full lg:w-2/5 bg-white p-16 flex items-center justify-center text-center">
               <div className="card">
@@ -175,7 +163,7 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-full h-[45rem] relative bg-cover bg-center bg-fixed fade-in transition-opacity duration-1000 opacity-0 translate-y-4" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/newsletter-1600x1076.jpg)' }}>
+        <div className="w-full h-[45rem] relative bg-cover bg-center bg-fixed" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/newsletter-1600x1076.jpg)' }}>
           <div className="absolute inset-0 bg-[#286fb4] bg-opacity-70"></div>
           <div className="container mx-auto flex flex-col justify-center items-center text-center h-full relative z-20">
             <div className="text-white mb-4">
@@ -193,11 +181,11 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-full bg-[#286fb4] text-white py-14 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-          <div className="container mx-auto px-4 flex items-center justify-between">
-            <h2 className="text-4xl mb-2">Like What We're Doing? Please Consider a Financial Contribution.</h2>
-            <a href="/#donate" className="bg-white text-[#286fb4] px-6 py-2 rounded font-semibold">DONATE NOW</a>
-          </div>
+        <div className="w-full bg-[#286fb4] text-white py-14">
+            <div className="container mx-auto px-4 flex items-center justify-between">
+                <h2 className="text-4xl mb-2">Like What We're Doing? Please Consider a Financial Contribution.</h2>
+                <a href="/#donate" className="bg-white text-[#286fb4] px-6 py-2 rounded font-semibold">DONATE NOW</a>
+            </div>
         </div>
       </main>
     </>
@@ -205,6 +193,11 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+
+
+
+
+
 
 
 
