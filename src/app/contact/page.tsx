@@ -148,8 +148,9 @@ const ContactPage = () => {
       </div>
 
       <div className="w-full h-[27rem] relative overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-fixed md:bg-center" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/contact-1600x1067.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-      </div>
+  <div className="absolute inset-0 bg-fixed md:bg-center bg-center sm:bg-contain md:bg-cover" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/contact-1600x1067.jpg)' }}></div>
+</div>
+
 
 
       <div className="w-full bg-[#286fb4] text-white py-8">
