@@ -157,6 +157,6 @@ const ContactPage = () => {
        </div>
     </main>
   );
-};
+}; 
 
 export default ContactPage;
