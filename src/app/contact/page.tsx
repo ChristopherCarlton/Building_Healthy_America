@@ -145,10 +145,13 @@ const ContactPage = () => {
           {submitSuccess && <p className="text-green-500 mt-4">Thank you! Your message has been submitted.</p>}
           {error && <p className="text-red-500 mt-4">{error}</p>}
         </form>
-         </div>
-            <div className="w-full h-[27rem] relative bg-cover bg-fixed bg-left md:bg-center" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/contact-1600x1067.jpg)' }}>
-        <div className="absolute inset-0"></div>
       </div>
+
+      <div className="w-full h-[27rem] relative overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-fixed md:bg-center" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/contact-1600x1067.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+      </div>
+
+
       <div className="w-full bg-[#286fb4] text-white py-8">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
           <h2 className="text-xl lg:text-2xl font-bold mb-4 lg:mb-2 text-center lg:text-left">
@@ -159,9 +162,6 @@ const ContactPage = () => {
           </a>
         </div>
       </div>
-
-
-
     </main>
   );
 }; 
