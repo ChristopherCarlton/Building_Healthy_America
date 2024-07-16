@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { FaPhoneVolume, FaMapMarkerAlt, FaRegClock, FaThumbsUp, FaFacebookF, FaGoogle, FaYelp, FaInstagram, FaPinterest, FaYoutube } from 'react-icons/fa';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -82,77 +83,131 @@ const ContactPage = () => {
         <p className="text-gray-700 mb-8">
           Interested in learning more about Building Healthier America? Are you a member of a family managing a child with chronic illness or disability? Do you have ideas you’d like to share, or simply want to be involved? Let us know. We will respond to each and every message received!
         </p>
-        <form className="max-w-2xl mx-auto" onSubmit={handleSubmit}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-            <div>
-              <label className="block text-left font-medium text-gray-700" htmlFor="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                className="mt-1 p-2 w-full border border-gray-300 rounded text-black"
-                placeholder="First & Last Name"
-                value={formData.name}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label className="block text-left font-medium text-gray-700" htmlFor="email">Email Address <span className="text-red-500">*</span></label>
-              <input
-                type="email"
-                id="email"
-                className="mt-1 p-2 w-full border border-gray-300 rounded text-black"
-                placeholder="info@example.com"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div>
-              <label className="block text-left font-medium text-gray-700" htmlFor="phone">Phone</label>
-              <input
-                type="tel"
-                id="phone"
-                className="mt-1 p-2 w-full border border-gray-300 rounded text-black"
-                placeholder="(555) 555-5555"
-                value={formData.phone}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label className="block text-left font-medium text-gray-700" htmlFor="bestTime">Best Time to Reach You</label>
-              <input
-                type="text"
-                id="bestTime"
-                className="mt-1 p-2 w-full border border-gray-300 rounded text-black"
-                placeholder="Morning, Day, Evening and/or specific time"
-                value={formData.bestTime}
-                onChange={handleChange}
-              />
-            </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="bg-white p-8 rounded-md shadow-md">
+            <form className="max-w-2xl mx-auto" onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label className="block text-left font-medium text-gray-700" htmlFor="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="mt-1 p-2 w-full border border-gray-300 rounded text-black"
+                    placeholder="First & Last Name"
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <label className="block text-left font-medium text-gray-700" htmlFor="email">Email Address <span className="text-red-500">*</span></label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="mt-1 p-2 w-full border border-gray-300 rounded text-black"
+                    placeholder="info@example.com"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-left font-medium text-gray-700" htmlFor="phone">Phone</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    className="mt-1 p-2 w-full border border-gray-300 rounded text-black"
+                    placeholder="(555) 555-5555"
+                    value={formData.phone}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <label className="block text-left font-medium text-gray-700" htmlFor="bestTime">Best Time to Reach You</label>
+                  <input
+                    type="text"
+                    id="bestTime"
+                    className="mt-1 p-2 w-full border border-gray-300 rounded text-black"
+                    placeholder="Morning, Day, Evening and/or specific time"
+                    value={formData.bestTime}
+                    onChange={handleChange}
+                  />
+                </div>
+              </div>
+              <div className="mb-4">
+                <label className="block text-left font-medium text-gray-700" htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  className="mt-1 p-2 w-full border border-gray-300 rounded text-black"
+                  rows={10}
+                  placeholder="Enter basic project details, comments, questions, concerns or anything else we should know"
+                  value={formData.message}
+                  onChange={handleChange}
+                ></textarea>
+              </div>
+              <button type="submit" className="px-6 py-3 bg-[#ff3366] text-white font-bold rounded hover:bg-[#ff6699] transition">SUBMIT</button>
+              {submitSuccess && <p className="text-green-500 mt-4">Thank you! Your message has been submitted.</p>}
+              {error && <p className="text-red-500 mt-4">{error}</p>}
+            </form>
           </div>
-          <div className="mb-4">
-            <label className="block text-left font-medium text-gray-700" htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              className="mt-1 p-2 w-full border border-gray-300 rounded text-black"
-              rows={10}
-              placeholder="Enter basic project details, comments, questions, concerns or anything else we should know"
-              value={formData.message}
-              onChange={handleChange}
-            ></textarea>
+
+          <div className="bg-[#f9f4e4] text-black p-8 rounded-md shadow-md space-y-4">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="flex items-center space-x-4">
+                <FaPhoneVolume className="text-3xl text-[#8b6e34]" />
+                <div>
+                  <h3 className="text-lg font-bold">Contact Info</h3>
+                  <p>Phone: <a href="tel:(512) 686-2525" className="text-blue-500">(612) 750-6538</a></p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-4">
+                <FaMapMarkerAlt className="text-3xl text-[#8b6e34]" />
+                <div>
+                  <h3 className="text-lg font-bold">Location</h3>
+                  <p>715 Countryview Cir<br />Hudson, WI 54016</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-4">
+                <FaRegClock className="text-3xl text-[#8b6e34]" />
+                <div>
+                  <h3 className="text-lg font-bold">Office Hours</h3>
+                  <p>Mon: 8am-6pm<br />
+                    Tue, Wed, Thur: 8am-4pm<br />
+                    Fri: 8am-1pm<br />
+                    Sat & Sun: Closed</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-4">
+                <FaThumbsUp className="text-3xl text-[#8b6e34]" />
+                <div>
+                  <h3 className="text-lg font-bold">Follow Us</h3>
+                  <div className="flex space-x-2">
+                    <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+                    <a href="https://www.google.com/maps/place/715+Countryview+Cir,+Hudson,+WI+54016/@44.9658153,-92.709131,17z/data=!3m1!4b1!4m6!3m5!1s0x87f7e1e2d906333b:0xd355b5c19cc9dee7!8m2!3d44.9658153!4d-92.709131!16s%2Fg%2F11cpjd3wrv?entry=ttu" aria-label="Google" target="_blank" rel="noopener noreferrer"><FaGoogle /></a>
+                    <a href="https://www.yelp.com/" aria-label="Yelp" target="_blank" rel="noopener noreferrer"><FaYelp /></a>
+                    <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+                    <a href="https://www.pinterest.com/" aria-label="Pinterest" target="_blank" rel="noopener noreferrer"><FaPinterest /></a>
+                    <a href="https://www.youtube.com/" aria-label="Youtube" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2816.7425743656487!2d-92.709131!3d44.9658153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f7e1e2d906333b%3A0xd355b5c19cc9dee7!2s715%20Countryview%20Cir%2C%20Hudson%2C%20WI%2054016%2C%20USA!5e0!3m2!1sen!2sus!4v1688408970289!5m2!1sen!2sus" 
+    width="100%" 
+    height="250" 
+    className="rounded-md shadow-md border-0" 
+    allowFullScreen 
+    loading="lazy"></iframe>
+</div>
+
           </div>
-          <button type="submit" className="px-6 py-3 bg-[#ff3366] text-white font-bold rounded hover:bg-[#ff6699] transition">SUBMIT</button>
-          {submitSuccess && <p className="text-green-500 mt-4">Thank you! Your message has been submitted.</p>}
-          {error && <p className="text-red-500 mt-4">{error}</p>}
-        </form>
+        </div>
       </div>
 
       <div className="w-full h-[27rem] relative overflow-hidden">
-  <div className="absolute inset-0 bg-fixed md:bg-center bg-center sm:bg-[50%] md:bg-cover" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/contact-1600x1067.jpg)' }}></div>
-</div>
-
-
-
+        <div className="absolute inset-0 bg-fixed md:bg-center bg-center sm:bg-[50%] md:bg-cover" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/contact-1600x1067.jpg)' }}></div>
+      </div>
 
       <div className="w-full bg-[#286fb4] text-white py-8">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">

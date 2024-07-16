@@ -34,10 +34,9 @@ const Header: React.FC = () => {
   return (
     <header className="w-full fixed top-0 z-50">
       {/* Top Menu for Mobile */}
-      <nav className="bg-secondary text-white p-2 lg:hidden">
+      <nav className="bg-[#286fb4] text-white p-2 lg:hidden">
         <div className="container mx-auto">
           <ul className="flex space-x-4">
-            <li>Hudson:</li>
             <li>
               <a href="mailto:dhofstedt@bha4families.org" className="flex items-center">
                 <i className="fa fa-envelope mr-1"></i> Email Us
@@ -113,12 +112,12 @@ const Header: React.FC = () => {
               </a>
             </li>
           </ul>
-          <button onClick={handleMenuToggle} className="text-white lg:hidden z-50">
+          <button onClick={handleMenuToggle} className="text-black lg:hidden z-50">
             {isMenuOpen ? <TbLetterX className="text-5xl" /> : <IoIosMenu className="text-5xl" />}
           </button>
         </div>
       </nav>
-      {isMenuOpen && <Menu />}
+      {isMenuOpen && <Menu closeModal={handleMenuToggle} />}
     </header>
   );
 };

@@ -44,39 +44,35 @@ const AboutUs = () => {
             <div className="bg-cover bg-center h-100 w-full" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/tenets-image-1600x1120.jpg)', height: '25rem', width: '100%' }}>
             </div>
             <div className="w-full h-auto min-h-[25rem] relative bg-blue-500 text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
-    <h3 className="text-2xl font-semibold mb-4">Nimble Framework</h3>
-    <h2 className="text-4xl font-bold mb-2">Community Resource</h2>
-    <p className="mt-4 px-2 sm:px-4">
-        We will be a central community resource for families and their unique needs in
-        navigating local medical, educational, and human services agencies. We have developed
-        a national framework designed to be simple, relevant, collaborative, and adaptable at
-        the local level. That's not to say once built, it will remain static. We must be
-        nimble enough to evaluate and improve based on the needs of the communities we serve
-        no matter the age or the needs of the child and family.
-    </p>
-</div>
-<div className="w-full h-auto min-h-[25rem] relative bg-[#df4c7f] text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
-    <h3 className="text-2xl font-semibold mb-4">Pass It On</h3>
-    <h2 className="text-4xl font-bold mb-2">Family Strength</h2>
-    <p className="mt-4 px-2 sm:px-4">
-        While our families face challenges based on chronic illness or the disability of a
-        child, there is also an ability to celebrate and share strengths with each other.
-        Community partners like the YMCA, Boys and Girls Clubs and other local organizations
-        can aid in providing a welcoming environment – whether in person or virtually – to
-        bring families together...allowing a comfortable and private forum to share
-        strategies while providing mutual support.
-    </p>
-</div>
-
-
-
-
+                <h3 className="text-2xl font-semibold mb-4">Nimble Framework</h3>
+                <h2 className="text-4xl font-bold mb-2">Community Resource</h2>
+                <p className="mt-4 px-2 sm:px-4">
+                    We will be a central community resource for families and their unique needs in
+                    navigating local medical, educational, and human services agencies. We have developed
+                    a national framework designed to be simple, relevant, collaborative, and adaptable at
+                    the local level. That's not to say once built, it will remain static. We must be
+                    nimble enough to evaluate and improve based on the needs of the communities we serve
+                    no matter the age or the needs of the child and family.
+                </p>
+            </div>
+            <div className="w-full h-auto min-h-[25rem] relative bg-[#df4c7f] text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
+                <h3 className="text-2xl font-semibold mb-4">Pass It On</h3>
+                <h2 className="text-4xl font-bold mb-2">Family Strength</h2>
+                <p className="mt-4 px-2 sm:px-4">
+                    While our families face challenges based on chronic illness or the disability of a
+                    child, there is also an ability to celebrate and share strengths with each other.
+                    Community partners like the YMCA, Boys and Girls Clubs and other local organizations
+                    can aid in providing a welcoming environment – whether in person or virtually – to
+                    bring families together...allowing a comfortable and private forum to share
+                    strategies while providing mutual support.
+                </p>
+            </div>
         </section>
 
         <section className="text-center mb-14 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <h3 className="text-[#df4c7f] text-xl font-semibold">Knowledgeable Leadership</h3>
           <h2 className="text-4xl text-[#286fb4] font-semibold">Our Leadership and Board</h2>
-          <p className="text-gray-500 text-lg mt-4 sm:w-[50%] mx-auto">
+          <p className="text-gray-500 text-lg mt-4 sm:w-[50%] mx-auto px-4">
             Our Executive Board is made up of people with experience in healthcare and service to
             families and children with chronic illness and disability. But experience only goes so
             far. Most importantly, all are passionate about improving the lives of those we serve
