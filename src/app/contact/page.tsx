@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const ContactPage = () => {
@@ -12,6 +12,26 @@ const ContactPage = () => {
   });
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [error, setError] = useState('');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll('.fade-in');
+      const windowHeight = window.innerHeight;
+      elements.forEach((element) => {
+        const positionFromTop = element.getBoundingClientRect().top;
+        if (positionFromTop - windowHeight <= 0) {
+          element.classList.add('opacity-100', 'translate-y-0');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Trigger once on mount
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target;
@@ -56,7 +76,7 @@ const ContactPage = () => {
   return (
     <main className="text-center bg-white">
       <div className='py-24'></div>
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
         <h3 className="text-[#ff3366] text-2xl mb-2">We Want to Hear from You!</h3>
         <h1 className="text-[#286fb4] text-5xl font-semibold mb-4">Connect</h1>
         <p className="text-gray-700 mb-8">
@@ -126,13 +146,13 @@ const ContactPage = () => {
           {error && <p className="text-red-500 mt-4">{error}</p>}
         </form>
       </div>
-      <div className="w-full h-[27rem] relative bg-cover bg-center bg-fixed" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/contact-1600x1067.jpg)' }}>
+      <div className="w-full h-[27rem] relative bg-cover bg-center bg-fixed fade-in transition-opacity duration-1000 opacity-0 translate-y-4" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/contact-1600x1067.jpg)' }}>
         <div className="absolute inset-0"></div>
       </div>
-      <div className="w-full bg-[#286fb4] text-white py-4">
+      <div className="w-full bg-[#286fb4] text-white py-8 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
          <div className="container mx-auto px-4 flex justify-between items-center">
            <h2 className="text-2xl font-bold mb-2">Consider Making a Tax Deductible Donation. Any Amount Helps!</h2>
-           <a href="/#donate" className="mt-2 bg-white text-[#286fb4] px-4 py-2 rounded font-semibold">DONATE</a>
+           <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="mt-2 bg-white text-[#286fb4] px-4 py-2 rounded font-semibold">DONATE</a>
          </div>
        </div>
     </main>

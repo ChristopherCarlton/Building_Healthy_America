@@ -196,7 +196,7 @@ const Home: React.FC = () => {
         <div className="w-full bg-[#286fb4] text-white py-14 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <div className="container mx-auto px-4 flex items-center justify-between">
             <h2 className="text-4xl mb-2">Like What We're Doing? Please Consider a Financial Contribution.</h2>
-            <a href="/#donate" className="bg-white text-[#286fb4] px-6 py-2 rounded font-semibold">DONATE NOW</a>
+            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-[#286fb4] px-6 py-2 rounded font-semibold">DONATE NOW</a>
           </div>
         </div>
       </main>

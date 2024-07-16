@@ -1,13 +1,34 @@
-import React from 'react';
+'use client'
+import React, { useEffect } from 'react';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const AboutUs = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll('.fade-in');
+      const windowHeight = window.innerHeight;
+      elements.forEach((element) => {
+        const positionFromTop = element.getBoundingClientRect().top;
+        if (positionFromTop - windowHeight <= 0) {
+          element.classList.add('opacity-100', 'translate-y-0');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Trigger once on mount
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="bg-white w-full">
       <main className="w-full">
         <div className='py-32'></div>
-        <section className="text-center mb-20 w-full">
+        <section className="text-center mb-20 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <h3 className="text-[#df4c7f] font-semibold text-2xl pb-2">Our Tenets</h3>
           <h1 className="text-6xl font-semibold text-[#286fb4]">We Believe</h1>
           <p className="text-gray-500 text-xl mt-10 w-full sm:w-[55%] mx-auto">
@@ -19,7 +40,7 @@ const AboutUs = () => {
           </p>
         </section>
 
-        <section className="grid grid-cols-1 w-full lg:grid-cols-3 mb-20">
+        <section className="grid grid-cols-1 w-full lg:grid-cols-3 mb-20 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
             <div className="bg-cover bg-center h-100 w-full" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/tenets-image-1600x1120.jpg)', height: '25rem', width: '100%' }}>
             </div>
             <div className="bg-blue-500 text-white px-24 py-12 w-full flex flex-col justify-center" style={{ height: '25rem' }}>
@@ -48,7 +69,7 @@ const AboutUs = () => {
             </div>
         </section>
 
-        <section className="text-center mb-14 w-full">
+        <section className="text-center mb-14 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <h3 className="text-[#df4c7f] text-xl font-semibold">Knowledgeable Leadership</h3>
           <h2 className="text-4xl text-[#286fb4] font-semibold">Our Leadership and Board</h2>
           <p className="text-gray-500 text-lg mt-4 sm:w-[50%] mx-auto">
@@ -59,7 +80,7 @@ const AboutUs = () => {
           </p>
         </section>
 
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-24 w-3/4 mx-auto">
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-24 w-3/4 mx-auto fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
         <div className="card bg-white p-6 rounded-lg shadow-md">
             <a href="https://buildinghealthieramerica.org/board-member/amy-schneider/">
             <img
@@ -152,7 +173,7 @@ const AboutUs = () => {
         </div>
         </section>
 
-        <section className="grid grid-cols-1 lg:grid-cols-5 w-full">
+        <section className="grid grid-cols-1 lg:grid-cols-5 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
             <div className="lg:col-span-3 bg-cover bg-center h-128 lg:h-auto w-full" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/11/bha-history-1600x1120.jpg)', height: '42rem' }}>
             </div>
             <div className="lg:col-span-2 bg-blue-500 text-white p-8 lg:p-12 flex items-center justify-center w-full" style={{ height: '42rem' }}>
@@ -175,7 +196,7 @@ const AboutUs = () => {
             </div>
         </section>
 
-        <section className="grid grid-cols-1 lg:grid-cols-5 gap-8 w-full">
+        <section className="grid grid-cols-1 lg:grid-cols-5 gap-8 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
             <div className="lg:col-span-2 bg-white text-gray-800 p-12 flex items-center justify-center w-full">
                 <div className="text-center">
                 <h3 className="text-2xl font-bold text-[#df4c7f]">Want to Get Involved?</h3>
@@ -208,10 +229,10 @@ const AboutUs = () => {
                 </div>
             </div>
         </section>
-        <div className="w-full bg-[#286fb4] text-white py-20">
+        <div className="w-full bg-[#286fb4] text-white py-20 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
             <div className="container mx-auto px-4 flex items-center justify-between">
                 <h2 className="text-5xl mb-2">Interested in Helping with a Financial Contribution?</h2>
-                <a href="/#donate" className="bg-white text-[#286fb4] px-6 py-2 rounded font-semibold">DONATE NOW</a>
+                <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-[#286fb4] px-6 py-2 rounded font-semibold">DONATE NOW</a>
             </div>
         </div>
       </main>
