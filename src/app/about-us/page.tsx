@@ -32,19 +32,18 @@ const AboutUs = () => {
           <h3 className="text-[#df4c7f] font-semibold text-2xl pb-2">Our Tenets</h3>
           <h1 className="text-6xl font-semibold text-[#286fb4]">We Believe</h1>
           <p className="text-gray-500 text-xl mt-10 w-full sm:w-[80%] md:w-[70%] lg:w-[55%] mx-auto px-4 sm:px-0">
-  What we develop is driven by those we serve. Families at the local level and their
-  community services will provide guidance and the relevant direction needed for our
-  programs...building on the strengths of their own local communities. This strategy will
-  help ensure local support and sustainability as we build a framework that can be
-  replicated in communities across the country.
-</p>
-
+            What we develop is driven by those we serve. Families at the local level and their
+            community services will provide guidance and the relevant direction needed for our
+            programs...building on the strengths of their own local communities. This strategy will
+            help ensure local support and sustainability as we build a framework that can be
+            replicated in communities across the country.
+          </p>
         </section>
 
         <section className="grid grid-cols-1 w-full lg:grid-cols-3 mb-20 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
             <div className="bg-cover bg-center h-100 w-full" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/tenets-image-1600x1120.jpg)', height: '25rem', width: '100%' }}>
             </div>
-            <div className="w-full h-[25rem] relative bg-blue-500 text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
+            <div className="w-full h-auto min-h-[25rem] relative bg-blue-500 text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
     <h3 className="text-2xl font-semibold mb-4">Nimble Framework</h3>
     <h2 className="text-4xl font-bold mb-2">Community Resource</h2>
     <p className="mt-4 px-2 sm:px-4">
@@ -56,7 +55,7 @@ const AboutUs = () => {
         no matter the age or the needs of the child and family.
     </p>
 </div>
-<div className="w-full h-[25rem] relative bg-[#df4c7f] text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
+<div className="w-full h-auto min-h-[25rem] relative bg-[#df4c7f] text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
     <h3 className="text-2xl font-semibold mb-4">Pass It On</h3>
     <h2 className="text-4xl font-bold mb-2">Family Strength</h2>
     <p className="mt-4 px-2 sm:px-4">
@@ -68,6 +67,7 @@ const AboutUs = () => {
         strategies while providing mutual support.
     </p>
 </div>
+
 
 
 
