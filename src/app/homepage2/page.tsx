@@ -174,7 +174,7 @@ const Home: React.FC = () => {
               </div>
             </div>
             <div className="mt-6">
-              <a href="https://buildinghealthieramerica.org/contact/" className="btn bg-[#df4c7f] text-white py-4 px-14 rounded-md">
+              <a href="/contact/" className="btn bg-[#df4c7f] text-white py-4 px-14 rounded-md">
                 Opt In
               </a>
             </div>

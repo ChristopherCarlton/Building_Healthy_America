@@ -230,10 +230,14 @@ const AboutUs = () => {
             </div>
         </section>
         <div className="w-full bg-[#286fb4] text-white py-20 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-            <div className="container mx-auto px-4 flex items-center justify-between">
-                <h2 className="text-5xl mb-2">Interested in Helping with a Financial Contribution?</h2>
-                <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-[#286fb4] px-6 py-2 rounded font-semibold">DONATE NOW</a>
-            </div>
+        <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+            <h2 className="text-3xl lg:text-5xl mb-4 lg:mb-2 text-center lg:text-left">
+            Interested in Helping with a Financial Contribution?
+            </h2>
+            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-[#286fb4] px-6 py-2 rounded font-semibold mt-4 lg:mt-0">
+            DONATE NOW
+            </a>
+        </div>
         </div>
       </main>
     </div>
