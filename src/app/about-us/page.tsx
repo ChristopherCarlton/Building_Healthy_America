@@ -40,34 +40,27 @@ const AboutUs = () => {
           </p>
         </section>
 
-        <section className="grid grid-cols-1 w-full lg:grid-cols-3 mb-20 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-            <div className="bg-cover bg-center h-100 w-full" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/tenets-image-1600x1120.jpg)', height: '25rem', width: '100%' }}>
-            </div>
-            <div className="w-full h-auto min-h-[25rem] relative bg-blue-500 text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
-                <h3 className="text-2xl font-semibold mb-4">Nimble Framework</h3>
-                <h2 className="text-4xl font-bold mb-2">Community Resource</h2>
-                <p className="mt-4 px-2 sm:px-4">
-                    We will be a central community resource for families and their unique needs in
-                    navigating local medical, educational, and human services agencies. We have developed
-                    a national framework designed to be simple, relevant, collaborative, and adaptable at
-                    the local level. That's not to say once built, it will remain static. We must be
-                    nimble enough to evaluate and improve based on the needs of the communities we serve
-                    no matter the age or the needs of the child and family.
-                </p>
-            </div>
-            <div className="w-full h-auto min-h-[25rem] relative bg-[#df4c7f] text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
-                <h3 className="text-2xl font-semibold mb-4">Pass It On</h3>
-                <h2 className="text-4xl font-bold mb-2">Family Strength</h2>
-                <p className="mt-4 px-2 sm:px-4">
-                    While our families face challenges based on chronic illness or the disability of a
-                    child, there is also an ability to celebrate and share strengths with each other.
-                    Community partners like the YMCA, Boys and Girls Clubs and other local organizations
-                    can aid in providing a welcoming environment – whether in person or virtually – to
-                    bring families together...allowing a comfortable and private forum to share
-                    strategies while providing mutual support.
-                </p>
-            </div>
-        </section>
+        <section className="grid grid-cols-1 lg:grid-cols-3 w-full mb-20 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+  <div 
+    className="bg-cover bg-center w-full min-h-[25rem]"
+    style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/tenets-image-1600x1120.jpg)' }}
+  ></div>
+  <div className="w-full h-auto min-h-[25rem] relative bg-blue-500 text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
+    <h3 className="text-2xl font-semibold mb-4">Nimble Framework</h3>
+    <h2 className="text-4xl font-bold mb-2">Community Resource</h2>
+    <p className="mt-4 px-2 sm:px-4">
+      We will be a central community resource for families and their unique needs in navigating local medical, educational, and human services agencies. We have developed a national framework designed to be simple, relevant, collaborative, and adaptable at the local level. That's not to say once built, it will remain static. We must be nimble enough to evaluate and improve based on the needs of the communities we serve no matter the age or the needs of the child and family.
+    </p>
+  </div>
+  <div className="w-full h-auto min-h-[25rem] relative bg-[#df4c7f] text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
+    <h3 className="text-2xl font-semibold mb-4">Pass It On</h3>
+    <h2 className="text-4xl font-bold mb-2">Family Strength</h2>
+    <p className="mt-4 px-2 sm:px-4">
+      While our families face challenges based on chronic illness or the disability of a child, there is also an ability to celebrate and share strengths with each other. Community partners like the YMCA, Boys and Girls Clubs and other local organizations can aid in providing a welcoming environment – whether in person or virtually – to bring families together...allowing a comfortable and private forum to share strategies while providing mutual support.
+    </p>
+  </div>
+</section>
+
 
         <section className="text-center mb-14 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <h3 className="text-[#df4c7f] text-xl font-semibold">Knowledgeable Leadership</h3>
