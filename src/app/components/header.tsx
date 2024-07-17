@@ -70,11 +70,17 @@ const Header: React.FC = () => {
             />
           </a>
           <ul className={`hidden lg:flex space-x-6 font-semibold text-[#286fb4] transition-all duration-300 ${isScrolled ? 'text-base' : 'text-lg'}`}>
-            <li>
+            {/* <li>
               <a href="/" className="hover:underline">
                 Home
               </a>
+            </li> */}
+            <li>
+              <a href="/homepage2" className="hover:underline">
+                Old Home Page
+              </a>
             </li>
+            <li></li>
             <li>
               <a href="/about-us/" className="hover:underline">
                 About Us
@@ -82,7 +88,7 @@ const Header: React.FC = () => {
             </li>
             <li>
               <a href="/contact/" className="hover:underline">
-                Contact
+                Get Involved
               </a>
             </li>
             <li>
@@ -91,10 +97,28 @@ const Header: React.FC = () => {
                 target="_blank"
                 className="hover:underline border border-[#286fb4] px-3 py-2 rounded"
               >
-                BHA4families Member Entry
+                Member Entry
               </a>
             </li>
             <li>
+              <a
+                href="https://app.handzin.com/login"
+                target="_blank"
+                className="hover:underline border border-[#286fb4] px-3 py-2 rounded"
+              >
+                Join Community
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://buy.stripe.com/cN216geI46bI0M0eUU"
+                target="_blank"
+                className="hover:underline border border-[#286fb4] px-3 py-2 rounded"
+              >
+                Donate
+              </a>
+            </li>
+            {/* <li>
               <a
                 href="https://forms.gle/sYvuKeTbYKPv4URc6"
                 target="_blank"
@@ -102,15 +126,15 @@ const Header: React.FC = () => {
               >
                 BHA Survey
               </a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a
                 href="mailto:dhofstedt@bha4families.org"
                 className="hover:underline border border-[#286fb4] px-3 py-2 rounded"
               >
                 Email the Navigator
               </a>
-            </li>
+            </li> */}
           </ul>
           <button onClick={handleMenuToggle} className="text-black lg:hidden z-50">
             {isMenuOpen ? <TbLetterX className="text-5xl" /> : <IoIosMenu className="text-5xl" />}

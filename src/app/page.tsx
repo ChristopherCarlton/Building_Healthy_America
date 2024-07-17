@@ -2,6 +2,9 @@
 import React, { useEffect } from 'react';
 import Head from 'next/head';
 import FlipCardLetsConnect from './components/FlipCardLetsConnect';
+import CardSlide from './components/cardSlide';
+import Partners from './components/partners';
+import Enews from './components/enews';
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -50,11 +53,12 @@ const Home: React.FC = () => {
               <div className="absolute inset-0 bg-[#286fb4] bg-opacity-70 z-10"></div>
               <div className="container mx-auto flex justify-center items-center text-center h-full relative z-20 px-4">
                 <div className="block-lede text-white">
-                  <h3 className="text-3xl sm:text-4xl pb-2">Welcome To</h3>
+                  {/* <h3 className="text-3xl sm:text-4xl pb-2">Welcome To</h3> */}
                   <h2 className="text-5xl sm:text-6xl md:text-7xl font-semibold">Building Healthier America</h2>
-                  <div className="block-description mt-4">
+                  <div className="block-description mt-8">
                     <p className="text-lg sm:text-2xl md:text-3xl">
-                      Connecting Families with Children Managing a Chronic Illness or Disability to the<br className="hidden sm:block" /> Services and Support They Need
+                      {/* Connecting Families with Children Managing a Chronic Illness or Disability to the<br className="hidden sm:block" /> Services and Support They Need */}
+                      WE'RE BUILDING A FIRST-OF-ITS-KIND NETWORK OF SUPPORT FOR FAMILIES OF CHILDREN WITH CHRONIC ILLNESS OR DISABILITY.
                     </p>
                   </div>
                 </div>
@@ -66,19 +70,11 @@ const Home: React.FC = () => {
         <div className="w-full py-16 bg-white text-center fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <div className="max-w-7xl mx-auto px-4">
             <div className="mb-8">
-              <h3 className="text-[#df4c7f] text-2xl font-medium">We Listened</h3>
-              <h1 className="text-[#286fb4] text-5xl font-semibold mt-2">Our Partners & Our Why</h1>
-            </div>
-            <div className="relative mb-8 w-full lg:w-[1000px] lg:h-[450px] mx-auto" style={{ paddingBottom: '56.25%', height: 0 }}>
-              <iframe
-                src="//www.youtube.com/embed/LfwsGYyQtwE?modestbranding=1&rel=0"
-                className="absolute top-0 left-0 w-full h-full"
-                style={{ border: 0 }}
-                allowFullScreen
-              ></iframe>
+              <h3 className="text-[#df4c7f] text-2xl font-medium">Founding Principle</h3>
+              <h1 className="text-[#286fb4] text-5xl font-semibold mt-2">Mission, ETC</h1>
             </div>
             <p className="text-gray-500 text-lg sm:text-xl md:text-2xl max-w-4xl mx-auto mt-4 px-4 sm:px-6 md:px-8">
-              Families with children managing a chronic illness or disability report their greatest stress comes from arranging numerous services through multiple agencies. Building Healthier America is building a national network to support families within their home communities so they can better navigate the medical, educational, and human services systems, improving quality of time and life for the entire family.
+              Our mission is to serve as a centralized resource and point of connection for families of children with chronic illness or disability as they navigate medical, human services, educational, and local agencies.
             </p>
           </div>
         </div>
@@ -88,21 +84,7 @@ const Home: React.FC = () => {
             <div className="w-full lg:w-1/3 bg-cover bg-center relative" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/home-child-wheelchair-1600x1120.jpg)' }}>
               <div className="absolute inset-0 bg-black bg-opacity-25"></div>
             </div>
-
-            <div className="w-full lg:w-1/3 bg-[#98ccd6] text-white p-20">
-              <div className="card">
-                <div className="card-body">
-                  <h3 className="text-2xl font-semibold">Build Local Networks</h3>
-                  <h2 className="text-4xl font-bold mb-4">What We Do</h2>
-                  <p className="mb-4">
-                    Families whose children have a chronic illness or disability must interact with at least three huge bureaucracies: the <strong>medical</strong> system, the <strong>educational</strong> system, and the <strong>local human services</strong> system. Unfortunately, it's rare the three-share basic information or collaborate on behalf of the child.
-                  </p>
-                  <p>
-                    Building Healthier America is creating a solution by developing a community network at the local level for families to tap into, so they can share information and resources to help streamline the process.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <CardSlide/>
             <div className="w-full lg:w-1/3 bg-[#df4c7f] text-white p-20">
               <div className="card">
                 <div className="card-body">
@@ -123,18 +105,20 @@ const Home: React.FC = () => {
         <div id="donate" className="w-full py-16 bg-white text-center fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <div className="max-w-7xl mx-auto px-4">
             <div className="mb-8">
-              <h3 className="text-[#df4c7f] text-xl font-medium">Founding Principle</h3>
-              <h2 className="text-[#286fb4] text-4xl font-bold mt-2">Our Mission</h2>
+              {/* <h3 className="text-[#df4c7f] text-xl font-medium">Founding Principle</h3> */}
+              <h2 className="text-[#286fb4] text-4xl font-bold mt-2">Partners</h2>
               <div className="mt-4 text-gray-700 text-lg max-w-2xl mx-auto">
-                <p>Our mission is to serve as a central community resource for families as they navigate the medical, human service, educational and local agencies serving children with chronic illness or disability.</p>
+                <p>Our success depends largely on working closely with partners who are aligned with our mission. Our 2024 partners include:</p>
               </div>
             </div>
+
+            <Partners/>
 
             <FlipCardLetsConnect />
           </div>
         </div>
 
-        <div className="w-full relative h-[45rem] fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+        {/* <div className="w-full relative h-[45rem] fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <div id="hero-slider" className="h-full">
             <div className="h-full bg-cover bg-center relative" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/hero-slider-2-1600x1067.jpg)' }}>
               <div className="absolute inset-0 bg-white bg-opacity-70 z-10"></div>
@@ -151,7 +135,7 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="w-full feature-grid-container fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <div className="flex flex-wrap">
@@ -159,13 +143,13 @@ const Home: React.FC = () => {
               <div className="card">
                 <div className="card-body">
                   <h3 className="text-2xl text-[#df4c7f] pb-2">Designed by Our Users</h3>
-                  <h2 className="text-5xl text-[#286fb4] mb-4">Our Program Goals</h2>
-                  <p className="mb-4 text-black">
-                    The needs of our families are not just medical, educational, or human services related. Stress management, mental health services, employment considerations for parent, clothing needs, claims processing, changes to the physical structure of the home are all services families need.
+                  <h2 className="text-5xl text-[#286fb4] mb-4">Get Involved</h2>
+                  <p className="mb-8 text-black">
+                    We are launching our first pilot site in Hudson, Wisconsin and are actively seeking families managing children of any age with chronic illness or disability in these communities to help us develop and build our network of services.
                   </p>
-                  <p className="text-black">
-                    Our programs are being built from the ground up by families living with chronic illness and disability, we want parents to have the opportunity to customize virtual communities with the resources they need.
-                  </p>
+                  <a href="/contact/" className="bg-[#df4c7f] text-white px-6 py-3 rounded-full font-semibold">
+                    Join Our Pilot Community
+                  </a>
                 </div>
               </div>
             </div>
@@ -175,26 +159,9 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
+
+        <Enews/>
         
-        <div className="w-full h-[45rem] relative bg-cover bg-center bg-fixed sm:h-[30rem] md:h-[40rem] lg:h-[45rem]" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/newsletter-1600x1076.jpg)' }}>
-          <div className="absolute inset-0 bg-[#286fb4] bg-opacity-70"></div>
-          <div className="container mx-auto flex flex-col justify-center items-center text-center h-full relative z-20 px-4">
-            <div className="text-white mb-4">
-              <h3 className="text-3xl text-[#df4c7f] pb-2">Subscribe to Updates</h3>
-              <h2 className="text-6xl font-semibold">Stay Connected</h2>
-              <div className="block-description mt-4">
-                <p className="text-xl w-full sm:w-[30rem] md:w-[40rem] lg:w-[50rem]">
-                  If you like what we’re doing and want to stay up to date as our program develops, let us know by opting into emails from us. We promise to not overwhelm your inbox or share your information with anyone.
-                </p>
-              </div>
-            </div>
-            <div className="mt-6">
-              <a href="/contact/" className="btn bg-[#df4c7f] text-white py-4 px-14 rounded-md">
-                Opt In
-              </a>
-            </div>
-          </div>
-        </div>
         <div className="w-full bg-[#286fb4] text-white py-14">
           <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
             <h2 className="text-2xl lg:text-4xl mb-4 lg:mb-2 text-center lg:text-left">
