@@ -1,6 +1,8 @@
 "use client"
 import React, { useEffect } from 'react';
 import Head from 'next/head';
+import MissionFlip from './components/missionCardFlip';
+import MissionSlide from './components/missionSlide';
 import FlipCardLetsConnect from './components/FlipCardLetsConnect';
 import CardSlide from './components/cardSlide';
 import Partners from './components/partners';
@@ -78,6 +80,24 @@ const Home: React.FC = () => {
             </p>
           </div>
         </div>
+
+
+
+
+
+
+
+
+      <MissionFlip/>
+      <MissionSlide/>
+
+
+
+
+
+
+
+
 
         <div className="w-full feature-grid-container fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <div className="flex flex-wrap">
