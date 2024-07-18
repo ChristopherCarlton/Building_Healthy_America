@@ -91,7 +91,7 @@ const Home: React.FC = () => {
 
             <Partners/>
 
-            <div className="fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mt-8 mx-auto max-w-2xl p-8 bg-[#286fb4] text-white rounded-lg flex flex-col items-center justify-center">
+            <div className="fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mt-8 mx-auto max-w-2xl p-8 bg-[#1D568B] text-white rounded-lg flex flex-col items-center justify-center">
               <h4 className="text-2xl font-bold mt-2 mb-4">LET'S WORK TOGETHER</h4>
               <p className="mb-6">
                 We are launching our first pilot site in Hudson, Wisconsin. We are actively seeking families managing children of any age with chronic illness or disability in these communities to help us develop and build our network of services. To learn more about what we have planned, click on the link below.
