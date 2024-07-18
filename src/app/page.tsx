@@ -56,7 +56,7 @@ const Home: React.FC = () => {
               <div className="container mx-auto flex justify-center items-center text-center h-full relative z-20 px-4">
                 <div className="block-lede text-white">
                   <div className="block-description">
-                    <p className="text-lg sm:text-3xl md:text-4xl">
+                    <p className="text-lg sm:text-4xl md:text-6xl">
                       WE'RE BUILDING A FIRST-OF-ITS-KIND NETWORK OF SUPPORT FOR FAMILIES OF CHILDREN WITH CHRONIC ILLNESS OR DISABILITY.
                     </p>
                   </div>
@@ -96,7 +96,7 @@ const Home: React.FC = () => {
               <p className="mb-6">
                 We are launching our first pilot site in Hudson, Wisconsin. We are actively seeking families managing children of any age with chronic illness or disability in these communities to help us develop and build our network of services. To learn more about what we have planned, click on the link below.
               </p>
-              <a href="/contact/" className="bg-[#df4c7f] text-white px-6 py-3 rounded-full font-semibold">
+              <a href="/contact/" className="bg-white text-[#BA4A68] px-6 py-3 rounded-full font-semibold">
                 LET'S CONNECT
               </a>
             </div>

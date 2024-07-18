@@ -29,8 +29,8 @@ const AboutUs = () => {
       <main className="w-full">
         <div className='py-32'></div>
         <section className="text-center mb-20 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-          <h3 className="text-[#df4c7f] font-semibold text-2xl pb-2">Our Tenets</h3>
-          <h1 className="text-6xl font-semibold text-[#286fb4]">We Believe</h1>
+          <h3 className="text-[#BA4A68] font-semibold text-2xl pb-2">Our Tenets</h3>
+          <h1 className="text-6xl font-semibold text-[#1D568B]">WE BELIEVE</h1>
           <p className="text-gray-500 text-xl mt-10 w-full sm:w-[80%] md:w-[70%] lg:w-[55%] mx-auto px-4 sm:px-0">
             What we develop is driven by those we serve. Families at the local level and their
             community services will provide guidance and the relevant direction needed for our
@@ -45,16 +45,16 @@ const AboutUs = () => {
     className="bg-cover bg-center w-full min-h-[25rem]"
     style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/tenets-image-1600x1120.jpg)' }}
   ></div>
-  <div className="w-full h-auto min-h-[25rem] relative bg-blue-500 text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
+  <div className="w-full h-auto min-h-[25rem] relative bg-[#1D568B] text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
     <h3 className="text-2xl font-semibold mb-4">Nimble Framework</h3>
-    <h2 className="text-4xl font-bold mb-2">Community Resource</h2>
+    <h2 className="text-4xl font-bold mb-2">COMMUNITY RESOURCE</h2>
     <p className="mt-4 px-2 sm:px-4">
       We will be a central community resource for families and their unique needs in navigating local medical, educational, and human services agencies. We have developed a national framework designed to be simple, relevant, collaborative, and adaptable at the local level. That's not to say once built, it will remain static. We must be nimble enough to evaluate and improve based on the needs of the communities we serve no matter the age or the needs of the child and family.
     </p>
   </div>
-  <div className="w-full h-auto min-h-[25rem] relative bg-[#df4c7f] text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
+  <div className="w-full h-auto min-h-[25rem] relative bg-[#BA4A68] text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
     <h3 className="text-2xl font-semibold mb-4">Pass It On</h3>
-    <h2 className="text-4xl font-bold mb-2">Family Strength</h2>
+    <h2 className="text-4xl font-bold mb-2">FAMILY STRENGTH</h2>
     <p className="mt-4 px-2 sm:px-4">
       While our families face challenges based on chronic illness or the disability of a child, there is also an ability to celebrate and share strengths with each other. Community partners like the YMCA, Boys and Girls Clubs and other local organizations can aid in providing a welcoming environment – whether in person or virtually – to bring families together...allowing a comfortable and private forum to share strategies while providing mutual support.
     </p>
@@ -63,8 +63,8 @@ const AboutUs = () => {
 
 
         <section className="text-center mb-14 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-          <h3 className="text-[#df4c7f] text-xl font-semibold">Knowledgeable Leadership</h3>
-          <h2 className="text-4xl text-[#286fb4] font-semibold">Our Leadership and Board</h2>
+          <h3 className="text-[#BA4A68] text-xl font-semibold">Knowledgeable Leadership</h3>
+          <h2 className="text-4xl text-[#1D568B] font-semibold">OUR LEADERSHIP AND BOARD</h2>
           <p className="text-gray-500 text-lg mt-4 sm:w-[50%] mx-auto px-4">
             Our Executive Board is made up of people with experience in healthcare and service to
             families and children with chronic illness and disability. But experience only goes so
@@ -83,16 +83,16 @@ const AboutUs = () => {
             />
             </a>
             <div className="pt-4 text-center">
-            <h3 className="text-xl font-bold text-[#286fb4]">Amy Schneider</h3>
+            <h3 className="text-xl font-bold text-[#1D568B]">Amy Schneider</h3>
             <h4 className="text-gray-500">Board Member</h4>
             <ul className="mt-2 flex justify-between px-4">
                 <li>
-                <a href="tel:+17153862128" className="text-[#df4c7f] flex items-center">
+                <a href="tel:+17153862128" className="text-[#BA4A68] flex items-center">
                     <FaPhoneAlt className="mr-2" /> 715-386-2128
                 </a>
                 </li>
                 <li>
-                <a href="mailto:www.stcroixtherapy.org" className="text-[#df4c7f] flex items-center">
+                <a href="mailto:www.stcroixtherapy.org" className="text-[#BA4A68] flex items-center">
                     <MdEmail className="mr-2" /> Send Email
                 </a>
                 </li>
@@ -108,16 +108,16 @@ const AboutUs = () => {
             />
             </a>
             <div className="pt-4 text-center">
-            <h3 className="text-xl font-bold text-[#286fb4]">Chris Kost</h3>
+            <h3 className="text-xl font-bold text-[#1D568B]">Chris Kost</h3>
             <h4 className="text-gray-500">Board Member</h4>
             <ul className="mt-2 flex justify-between px-4">
                 <li>
-                <a href="tel:+16512592125" className="text-[#df4c7f] flex items-center">
+                <a href="tel:+16512592125" className="text-[#BA4A68] flex items-center">
                     <FaPhoneAlt className="mr-2" /> 651-259-2125
                 </a>
                 </li>
                 <li>
-                <a href="mailto:Chris.Kost@ymcamn.org" className="text-[#df4c7f] flex items-center">
+                <a href="mailto:Chris.Kost@ymcamn.org" className="text-[#BA4A68] flex items-center">
                     <MdEmail className="mr-2" /> Send Email
                 </a>
                 </li>
@@ -133,11 +133,11 @@ const AboutUs = () => {
             />
             </a>
             <div className="pt-4 text-center">
-            <h3 className="text-xl font-bold text-[#286fb4]">Andy Nelson</h3>
+            <h3 className="text-xl font-bold text-[#1D568B]">Andy Nelson</h3>
             <h4 className="text-gray-500">Board Member</h4>
             <ul className="mt-2 space-y-1 flex justify-center">
                 <li>
-                <a href="mailto:bha4families@gmail.com" className="text-[#df4c7f] flex items-center">
+                <a href="mailto:bha4families@gmail.com" className="text-[#BA4A68] flex items-center">
                     <MdEmail className="mr-2" /> Send Email
                 </a>
                 </li>
@@ -153,11 +153,11 @@ const AboutUs = () => {
             />
             </a>
             <div className="pt-4 text-center">
-            <h3 className="text-xl font-bold text-[#286fb4]">Thomas Brinsko</h3>
+            <h3 className="text-xl font-bold text-[#1D568B]">Thomas Brinsko</h3>
             <h4 className="text-gray-500">Board Member</h4>
             <ul className="mt-2 space-y-1 flex justify-center">
                 <li>
-                <a href="mailto:bha4families@gmail.com" className="text-[#df4c7f] flex items-center">
+                <a href="mailto:bha4families@gmail.com" className="text-[#BA4A68] flex items-center">
                     <MdEmail className="mr-2" /> Send Email
                 </a>
                 </li>
@@ -169,10 +169,10 @@ const AboutUs = () => {
         <section className="grid grid-cols-1 lg:grid-cols-5 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
             <div className="lg:col-span-3 bg-cover bg-center h-128 lg:h-auto w-full" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/11/bha-history-1600x1120.jpg)', height: '42rem' }}>
             </div>
-            <div className="lg:col-span-2 bg-blue-500 text-white p-8 lg:p-12 flex items-center justify-center w-full" style={{ height: '42rem' }}>
+            <div className="lg:col-span-2 bg-[#1D568B] text-white p-8 lg:p-12 flex items-center justify-center w-full" style={{ height: '42rem' }}>
                 <div className="text-center">
                 <h3 className="text-2xl ">From Past to the Present</h3>
-                <h2 className="text-4xl font-bold mt-2">Our History</h2>
+                <h2 className="text-4xl font-bold mt-2">OUR HISTORY</h2>
                 <p className="mt-4">
                     Building Healthier America has a history of work to understand the challenges families
                     face when their child has a chronic disease or disability including work funded by the
@@ -192,8 +192,8 @@ const AboutUs = () => {
         <section className="grid grid-cols-1 lg:grid-cols-5 gap-8 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
             <div className="lg:col-span-2 bg-white text-gray-800 p-12 flex items-center justify-center w-full">
                 <div className="text-center">
-                <h3 className="text-2xl font-bold text-[#df4c7f]">Want to Get Involved?</h3>
-                <h2 className="text-5xl font-bold mt-2 text-[#286fb4]">Join Our Advisory Groups</h2>
+                <h3 className="text-2xl font-bold text-[#BA4A68]">Want to Get Involved?</h3>
+                <h2 className="text-5xl font-bold mt-2 text-[#1D568B]">JOIN OUR ADVISORY GROUPS</h2>
                 <p className="mt-8 text-lg leading-relaxed">
                     Building Healthier America is actively seeking advisors to help guide us in
                     implementing our mission. We are looking for passionate people willing to contribute
@@ -210,7 +210,7 @@ const AboutUs = () => {
                 <div className="mt-8">
                     <a
                     href="https://buildinghealthieramerica.org/contact/"
-                    className="btn bg-[#df4c7f] text-white py-2 px-8 rounded-full hover:bg-pink-600"
+                    className="btn bg-[#BA4A68] text-white py-2 px-8 rounded-full hover:bg-pink-600"
                     >
                     Tell Me More
                     </a>
@@ -222,12 +222,12 @@ const AboutUs = () => {
                 </div>
             </div>
         </section>
-        <div className="w-full bg-[#286fb4] text-white py-20 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+        <div className="w-full bg-[#1D568B] text-white py-20 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
             <h2 className="text-3xl lg:text-5xl mb-4 lg:mb-2 text-center lg:text-left">
             Interested in Helping with a Financial Contribution?
             </h2>
-            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-[#286fb4] px-6 py-2 rounded font-semibold mt-4 lg:mt-0">
+            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-[#1D568B] px-6 py-2 rounded font-semibold mt-4 lg:mt-0">
             DONATE NOW
             </a>
         </div>

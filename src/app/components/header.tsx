@@ -57,10 +57,10 @@ const Header: React.FC = () => {
           isScrolled ? 'py-4' : 'py-8'
         }`}
         style={{
-          backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/brick-header-mix-1600x1071.jpg)',
+          // backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/brick-header-mix-1600x1071.jpg)',
         }}
       >
-        <div className="absolute inset-0 bg-white bg-opacity-90"></div>
+        <div className="absolute inset-0 bg-white bg-opacity-100"></div>
         <div className="container mx-auto flex flex-col items-center relative z-10">
           <a href="/" className="mb-10">
             <img
@@ -102,7 +102,7 @@ const Header: React.FC = () => {
             </li>
             <li>
               <a
-                href="https://app.handzin.com/login"
+                href="https://forms.gle/sYvuKeTbYKPv4URc6"
                 target="_blank"
                 className="hover:underline border border-[#286fb4] px-3 py-2 rounded"
               >
