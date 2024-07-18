@@ -8,21 +8,21 @@ const MissionFlip = () => {
         <div className="relative w-full h-96 text-center transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           {/* Front Side */}
           <div
-            className="absolute w-full h-full flex items-center justify-center [backface-visibility:hidden] rounded-lg overflow-hidden bg-cover bg-center"
+            className="absolute w-full h-full flex items-center justify-center [backface-visibility:hidden] overflow-hidden bg-cover bg-center"
             style={{ backgroundImage: "url('https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/home-child-wheelchair-1600x1120.jpg')" }}
           >
-            <div className="absolute w-full h-full bg-black opacity-25"></div>
-            <h2 className="text-4xl font-bold text-white z-10">What We Do</h2>
+            <div className="absolute w-full h-full bg-[#2D7B86] opacity-80"></div>
+            <h2 className="text-4xl font-bold text-white z-10">WHAT WE DO</h2>
           </div>
           {/* Back Side */}
-          <div className="absolute w-full h-full bg-[#98ccd6] text-white p-8 rounded-lg flex flex-col items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
-            <h3 className="text-2xl font-semibold">Build Local Networks</h3>
-            <h2 className="text-4xl font-bold mb-4">What We Do</h2>
+          <div className="absolute w-full h-full bg-[#2D7B86] text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+            <h3 className="text-2xl font-semibold mb-4">Build Local Networks</h3>
+            {/* <h2 className="text-4xl font-bold mb-4">What We Do</h2> */}
             <p className="mb-4">
-              Families whose children have a chronic illness or disability must interact with at least three huge bureaucracies: the <strong>medical</strong> system, the <strong>educational</strong> system, and the <strong>local human services</strong> system. Unfortunately, it's rare the three-share basic information or collaborate on behalf of the child.
+              Building Healthier America connects families who are navigating chronic illness or disability of a child -- to services and to each other.
             </p>
             <p>
-              Building Healthier America is creating a solution by developing a community network at the local level for families to tap into, so they can share information and resources to help streamline the process.
+              We provide a centralized and searchable database of resources, and a growing network of families who are walking a similar path.
             </p>
           </div>
         </div>
@@ -33,21 +33,21 @@ const MissionFlip = () => {
         <div className="relative w-full h-96 text-center transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           {/* Front Side */}
           <div
-            className="absolute w-full h-full flex items-center justify-center [backface-visibility:hidden] rounded-lg overflow-hidden bg-cover bg-center"
-            style={{ backgroundImage: "url('https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/home-child-wheelchair-1600x1120.jpg')" }}
+            className="absolute w-full h-full flex items-center justify-center [backface-visibility:hidden] overflow-hidden bg-cover bg-center"
+            style={{ backgroundImage: "url('https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/hero-slider-2-1600x1067.jpg')" }}
           >
-            <div className="absolute w-full h-full bg-black opacity-25"></div>
-            <h2 className="text-4xl font-bold text-white z-10">Who We Serve</h2>
+            <div className="absolute w-full h-full bg-[#BA4A68] opacity-80"></div>
+            <h2 className="text-4xl font-bold text-white z-10">WHO WE SERVE</h2>
           </div>
           {/* Back Side */}
-          <div className="absolute w-full h-full bg-[#df4c7f] text-white p-8 rounded-lg flex flex-col items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
-            <h3 className="text-2xl font-semibold">Inclusivity</h3>
-            <h2 className="text-4xl font-bold mb-4">Who We Serve</h2>
+          <div className="absolute w-full h-full bg-[#BA4A68] text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+            <h3 className="text-2xl font-semibold mb-4">Inclusivity, Not Exclusivity</h3>
+            {/* <h2 className="text-4xl font-bold mb-4">Who We Serve</h2> */}
             <p className="mb-4">
-              Building Healthier America is about inclusivity, not exclusivity. Most organizations focus on singular categories of illness or disability. Our purpose is to serve all – including families with adult-age children.
+              Our community-centric framework allows us to serve as many families as possible; our vision is that no family is ever turned away.
             </p>
             <p>
-              Families who are managing children with a wide variety of illnesses and disabilities will be served by our program. Our philosophy is to benefit all and that no one will be turned away regardless of a child’s condition. Our unique framework and technology were developed to be family centric, connecting families with others with similar conditions to share resources, knowledge, experiences, and just to talk in a just-in-time information both virtually and in person, most importantly, this is a safe, secure and confidential platform to communicate in.
+              While we provide localized resources based on funding, our digital-first approach provides families a way to connect regardless of their geographic location.
             </p>
           </div>
         </div>
@@ -58,16 +58,16 @@ const MissionFlip = () => {
         <div className="relative w-full h-96 text-center transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           {/* Front Side */}
           <div
-            className="absolute w-full h-full flex items-center justify-center [backface-visibility:hidden] rounded-lg overflow-hidden bg-cover bg-center"
-            style={{ backgroundImage: "url('https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/home-child-wheelchair-1600x1120.jpg')" }}
+            className="absolute w-full h-full flex items-center justify-center [backface-visibility:hidden] overflow-hidden bg-cover bg-center"
+            style={{ backgroundImage: "url('/images/water.png')" }}
           >
-            <div className="absolute w-full h-full bg-black opacity-25"></div>
-            <h2 className="text-4xl font-bold text-white z-10">How We Do It</h2>
+            <div className="absolute w-full h-full bg-[#1D568B] opacity-80"></div>
+            <h2 className="text-4xl font-bold text-white z-10">HOW WE DO IT</h2>
           </div>
           {/* Back Side */}
-          <div className="absolute w-full h-full bg-[#286fb4] text-white p-8 rounded-lg flex flex-col items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
-            <h3 className="text-2xl font-semibold">Secure Connection</h3>
-            <h2 className="text-4xl font-bold mb-4">How We Do It</h2>
+          <div className="absolute w-full h-full bg-[#1D568B] text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+            <h3 className="text-2xl font-semibold mb-4">Secure Connection</h3>
+            {/* <h2 className="text-4xl font-bold mb-4">How We Do It</h2> */}
             <p className="mb-4">
               We partner with Handzin, a secure community platform, to create a hub of connection for our families.
             </p>
