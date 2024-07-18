@@ -96,36 +96,16 @@ const Home: React.FC = () => {
               <p className="mb-6">
                 We are launching our first pilot site in Hudson, Wisconsin. We are actively seeking families managing children of any age with chronic illness or disability in these communities to help us develop and build our network of services. To learn more about what we have planned, click on the link below.
               </p>
-              <a href="/contact/" className="bg-white text-[#BA4A68] px-6 py-3 rounded-full font-semibold">
+              <a href="/contact/" className="bg-white text-[#BA4A68] px-6 py-3 rounded-full font-semibold hover:bg-[#BA4A68] hover:text-white transition-colors duration-300">
                 LET'S CONNECT
               </a>
             </div>
           </div>
         </div>
 
-
-        {/* <div className="w-full relative h-[45rem] fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-          <div id="hero-slider" className="h-full">
-            <div className="h-full bg-cover bg-center relative" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/hero-slider-2-1600x1067.jpg)' }}>
-              <div className="absolute inset-0 bg-white bg-opacity-70 z-10"></div>
-              <div className="container mx-auto flex items-center h-full relative z-20 px-4">
-                <div className="w-full md:w-1/2 text-left flex flex-col justify-center">
-                  <div className="block-lede text-[#1D568B]">
-                    <h3 className="text-2xl text-[#BA4A68] pb-2">It's About Connections</h3>
-                    <h2 className="text-6xl font-bold">Our Vision</h2>
-                    <div className="block-description mt-4 text-gray-700 text-lg">
-                      <p>Families and their children with chronic illness or disabilities should have access to independent care coordination and family advocacy that is family-centered, community-based and culturally sensitive.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
         <div className="w-full feature-grid-container fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-          <div className="flex flex-wrap">
-            <div className="w-full lg:w-2/5 bg-white p-16 flex items-center justify-center text-center">
+          <div className="flex flex-wrap relative">
+            <div className="w-full lg:w-2/5 bg-white p-16 flex items-center justify-center text-center relative z-10">
               <div className="card">
                 <div className="card-body">
                   <h3 className="text-2xl text-[#BA4A68] pb-2">Designed by Our Users</h3>
@@ -133,18 +113,18 @@ const Home: React.FC = () => {
                   <p className="mb-8 text-black">
                     We are launching our first pilot site in Hudson, Wisconsin and are actively seeking families managing children of any age with chronic illness or disability in these communities to help us develop and build our network of services.
                   </p>
-                  <a href="/contact/" className="bg-[#BA4A68] text-white px-6 py-3 rounded-full font-semibold">
+                  <a href="/contact/" className="bg-[#BA4A68] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#1D568B] hover:text-white transition-colors duration-300">
                     Join Our Pilot Community
                   </a>
                 </div>
               </div>
             </div>
-
-            <div className="w-full lg:w-3/5 bg-cover bg-center" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/programs-1600x1067.jpg)' }}>
-              <div className="absolute inset-0 bg-opacity-25"></div>
+            <div className="w-full lg:w-3/5 bg-cover bg-center relative" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/programs-1600x1067.jpg)' }}>
+              <div className="absolute inset-0 bg-black bg-opacity-25"></div>
             </div>
           </div>
         </div>
+
 
         <Enews/>
         
