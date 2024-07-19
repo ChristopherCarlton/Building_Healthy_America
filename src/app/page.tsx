@@ -56,9 +56,10 @@ const Home: React.FC = () => {
               <div className="container mx-auto flex justify-center items-center text-center h-full relative z-20 px-4">
                 <div className="block-lede text-white">
                   <div className="block-description">
-                    <p className="text-lg sm:text-4xl md:text-6xl">
+                    <p className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold">WE'RE BUILDING A FIRST-OF-ITS-KIND NETWORK OF SUPPORT FOR FAMILIES OF CHILDREN WITH CHRONIC ILLNESS OR DISABILITY.</p>
+                    {/* <p className="text-lg sm:text-4xl md:text-6xl">
                       WE'RE BUILDING A FIRST-OF-ITS-KIND NETWORK OF SUPPORT FOR FAMILIES OF CHILDREN WITH CHRONIC ILLNESS OR DISABILITY.
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
@@ -91,19 +92,19 @@ const Home: React.FC = () => {
 
             <Partners/>
 
-            <div className="fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mt-8 mx-auto max-w-2xl p-8 bg-[#1D568B] text-white rounded-lg flex flex-col items-center justify-center">
+            <div className="fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mt-8 mx-auto max-w-2xl p-8 bg-[#2D7B86] text-white rounded-lg flex flex-col items-center justify-center mb-20">
               <h4 className="text-2xl font-bold mt-2 mb-4">LET'S WORK TOGETHER</h4>
               <p className="mb-6">
-                We are launching our first pilot site in Hudson, Wisconsin. We are actively seeking families managing children of any age with chronic illness or disability in these communities to help us develop and build our network of services. To learn more about what we have planned, click on the link below.
+                We are launching a pilot site in Hudson, Wisconsin. We are actively seeking families managing children of any age with chronic illness or disability in the St. Croix River Valley to help us test and build our network of services.
               </p>
-              <a href="/contact/" className="bg-white text-[#BA4A68] px-6 py-3 rounded-full font-semibold hover:bg-[#BA4A68] hover:text-white transition-colors duration-300">
-                LET'S CONNECT
+              <a href="/contact/" className="bg-white text-[#BA4A68] px-6 py-3 rounded-md font-semibold hover:bg-[#BA4A68] hover:text-white transition-colors duration-300">
+                GET INVOLVED
               </a>
             </div>
           </div>
         </div>
 
-        <div className="w-full feature-grid-container fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+        {/* <div className="w-full feature-grid-container fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <div className="flex flex-wrap relative">
             <div className="w-full lg:w-2/5 bg-white p-16 flex items-center justify-center text-center relative z-10">
               <div className="card">
@@ -123,7 +124,7 @@ const Home: React.FC = () => {
               <div className="absolute inset-0 bg-black bg-opacity-25"></div>
             </div>
           </div>
-        </div>
+        </div> */}
 
 
         <Enews/>
@@ -131,9 +132,9 @@ const Home: React.FC = () => {
         <div className="w-full bg-[#1D568B] text-white py-14">
           <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
             <h2 className="text-2xl lg:text-4xl mb-4 lg:mb-2 text-center lg:text-left">
-              Like What We're Doing? Please Consider a Financial Contribution.
+              Your support keeps us going.
             </h2>
-            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-[#1D568B] px-6 py-2 rounded font-semibold mt-4 lg:mt-0">
+            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-[#1D568B] px-6 py-2 rounded-md font-semibold mt-4 lg:mt-0">
               DONATE NOW
             </a>
           </div>

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer
       className="relative bg-white text-black py-32"
-      style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/footer-rev4-1600x800.jpg)', backgroundPosition: 'center' }}
+      // style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/footer-rev4-1600x800.jpg)', backgroundPosition: 'center' }}
     >
       <div className="absolute inset-0 bg-white opacity-60"></div>
       <div className="relative container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 justify-between items-center">

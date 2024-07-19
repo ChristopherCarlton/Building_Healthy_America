@@ -2,6 +2,9 @@
 import React, { useEffect } from 'react';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Collapse from '../components/weBelieveCollapse';
+import FamiliesWeServe from '../components/familiesWeServe';
+import BoardFlip from '../components/boardFlip';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -29,41 +32,45 @@ const AboutUs = () => {
       <main className="w-full">
         <div className='py-32'></div>
         <section className="text-center mb-20 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-          <h3 className="text-[#BA4A68] font-semibold text-2xl pb-2">Our Tenets</h3>
-          <h1 className="text-6xl font-semibold text-[#1D568B]">WE BELIEVE</h1>
-          <p className="text-gray-500 text-xl mt-10 w-full sm:w-[80%] md:w-[70%] lg:w-[55%] mx-auto px-4 sm:px-0">
-            What we develop is driven by those we serve. Families at the local level and their
-            community services will provide guidance and the relevant direction needed for our
-            programs...building on the strengths of their own local communities. This strategy will
-            help ensure local support and sustainability as we build a framework that can be
-            replicated in communities across the country.
-          </p>
+          <h1 className="text-5xl font-semibold text-[#1D568B] mb-10">WE BELIEVE</h1>
+          <Collapse/>
         </section>
 
-        <section className="grid grid-cols-1 lg:grid-cols-3 w-full mb-20 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-  <div 
-    className="bg-cover bg-center w-full min-h-[25rem]"
-    style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/tenets-image-1600x1120.jpg)' }}
-  ></div>
-  <div className="w-full h-auto min-h-[25rem] relative bg-[#1D568B] text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
-    <h3 className="text-2xl font-semibold mb-4">Nimble Framework</h3>
-    <h2 className="text-4xl font-bold mb-2">COMMUNITY RESOURCE</h2>
-    <p className="mt-4 px-2 sm:px-4">
-      We will be a central community resource for families and their unique needs in navigating local medical, educational, and human services agencies. We have developed a national framework designed to be simple, relevant, collaborative, and adaptable at the local level. That's not to say once built, it will remain static. We must be nimble enough to evaluate and improve based on the needs of the communities we serve no matter the age or the needs of the child and family.
-    </p>
-  </div>
-  <div className="w-full h-auto min-h-[25rem] relative bg-[#BA4A68] text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center">
-    <h3 className="text-2xl font-semibold mb-4">Pass It On</h3>
-    <h2 className="text-4xl font-bold mb-2">FAMILY STRENGTH</h2>
-    <p className="mt-4 px-2 sm:px-4">
-      While our families face challenges based on chronic illness or the disability of a child, there is also an ability to celebrate and share strengths with each other. Community partners like the YMCA, Boys and Girls Clubs and other local organizations can aid in providing a welcoming environment – whether in person or virtually – to bring families together...allowing a comfortable and private forum to share strategies while providing mutual support.
-    </p>
-  </div>
-</section>
+        <section className="text-center mb-20 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+          <h1 className="text-5xl font-semibold text-[#1D568B] mb-10">OUR STORY</h1>
+        </section>
 
+
+        <section className="grid grid-cols-1 lg:grid-cols-3 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+          <div 
+            className="bg-cover bg-center w-full min-h-[25rem]"
+            style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/tenets-image-1600x1120.jpg)' }}
+          ></div>
+          <div className="w-full h-auto min-h-[25rem] relative bg-[#1D568B] text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center lg:col-span-2">
+            <p className="mt-4 px-2 sm:px-4">
+              The seeds for Building Healthier America were planted in 1997, when the Robert Wood Johnson Foundation teamed up with HealthPartners, The PACER Center, and what is now known as the Center for Children with Special Health Care Needs out of the University of Minnesota for [a study] that identified some of the hurdles that families face when managing a disability or chronic illness diagnosis.
+            </p>
+            <p className="mt-4 px-2 sm:px-4">
+              A key finding of the study found that, regardless of a child's diagnosis, <span className="font-bold">a major hurdle for families is having to navigate several complex and siloed systems</span> — namely medical, educational, and human services — which rarely collaborate for the benefit of the child.
+            </p>
+            <p className="mt-4 px-2 sm:px-4">
+              Unfortunately, several decades later, the data still supports this.
+            </p>
+            <p className="mt-4 px-2 sm:px-4 font-bold">
+              Enter Building Healthier America. <span className="font-normal">[Insert another sentence about how key folks who were involved in the study regrouped to address the issue that remained addressed.]</span>
+            </p>
+            <p className="mt-4 px-2 sm:px-4">
+              Our aim is to create <span className="font-bold">a sustainable support community that is built upon connection</span> — to local resources and to other families.
+            </p>
+          </div>
+        </section>
+
+        <section className="text-center mb-20 w-full">
+          <FamiliesWeServe/>
+        </section>
 
         <section className="text-center mb-14 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-          <h3 className="text-[#BA4A68] text-xl font-semibold">Knowledgeable Leadership</h3>
+          {/* <h3 className="text-[#BA4A68] text-xl font-semibold">Knowledgeable Leadership</h3> */}
           <h2 className="text-4xl text-[#1D568B] font-semibold">OUR LEADERSHIP AND BOARD</h2>
           <p className="text-gray-500 text-lg mt-4 sm:w-[50%] mx-auto px-4">
             Our Executive Board is made up of people with experience in healthcare and service to
@@ -73,98 +80,7 @@ const AboutUs = () => {
           </p>
         </section>
 
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-24 w-3/4 mx-auto fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-        <div className="card bg-white p-6 rounded-lg shadow-md">
-            <a href="https://buildinghealthieramerica.org/board-member/amy-schneider/">
-            <img
-                src="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2023/11/Amy-Schneider-Headshot-600x600.jpg"
-                alt="Amy Schneider"
-                className="h-80 w-full object-cover rounded-t-lg"
-            />
-            </a>
-            <div className="pt-4 text-center">
-            <h3 className="text-xl font-bold text-[#1D568B]">Amy Schneider</h3>
-            <h4 className="text-gray-500">Board Member</h4>
-            <ul className="mt-2 flex justify-between px-4">
-                <li>
-                <a href="tel:+17153862128" className="text-[#BA4A68] flex items-center">
-                    <FaPhoneAlt className="mr-2" /> 715-386-2128
-                </a>
-                </li>
-                <li>
-                <a href="mailto:www.stcroixtherapy.org" className="text-[#BA4A68] flex items-center">
-                    <MdEmail className="mr-2" /> Send Email
-                </a>
-                </li>
-            </ul>
-            </div>
-        </div>
-        <div className="card bg-white p-6 rounded-lg shadow-md">
-            <a href="https://buildinghealthieramerica.org/board-member/chris-kost/">
-            <img
-                src="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2023/11/pic-board-600x600.jpg"
-                alt="Chris Kost"
-                className="h-80 w-full object-cover rounded-t-lg"
-            />
-            </a>
-            <div className="pt-4 text-center">
-            <h3 className="text-xl font-bold text-[#1D568B]">Chris Kost</h3>
-            <h4 className="text-gray-500">Board Member</h4>
-            <ul className="mt-2 flex justify-between px-4">
-                <li>
-                <a href="tel:+16512592125" className="text-[#BA4A68] flex items-center">
-                    <FaPhoneAlt className="mr-2" /> 651-259-2125
-                </a>
-                </li>
-                <li>
-                <a href="mailto:Chris.Kost@ymcamn.org" className="text-[#BA4A68] flex items-center">
-                    <MdEmail className="mr-2" /> Send Email
-                </a>
-                </li>
-            </ul>
-            </div>
-        </div>
-        <div className="card bg-white p-6 rounded-lg shadow-md">
-            <a href="https://buildinghealthieramerica.org/board-member/andy-nelson/">
-            <img
-                src="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/andy-nelson-bha-600x600.jpg"
-                alt="Andy Nelson"
-                className="h-80 w-full object-cover rounded-t-lg"
-            />
-            </a>
-            <div className="pt-4 text-center">
-            <h3 className="text-xl font-bold text-[#1D568B]">Andy Nelson</h3>
-            <h4 className="text-gray-500">Board Member</h4>
-            <ul className="mt-2 space-y-1 flex justify-center">
-                <li>
-                <a href="mailto:bha4families@gmail.com" className="text-[#BA4A68] flex items-center">
-                    <MdEmail className="mr-2" /> Send Email
-                </a>
-                </li>
-            </ul>
-            </div>
-        </div>
-        <div className="card bg-white p-6 rounded-lg shadow-md">
-            <a href="https://buildinghealthieramerica.org/board-member/thomas-brinsko/">
-            <img
-                src="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/tom-brinsko-bha-600x600.jpg"
-                alt="Thomas Brinsko"
-                className="h-80 w-full object-cover rounded-t-lg"
-            />
-            </a>
-            <div className="pt-4 text-center">
-            <h3 className="text-xl font-bold text-[#1D568B]">Thomas Brinsko</h3>
-            <h4 className="text-gray-500">Board Member</h4>
-            <ul className="mt-2 space-y-1 flex justify-center">
-                <li>
-                <a href="mailto:bha4families@gmail.com" className="text-[#BA4A68] flex items-center">
-                    <MdEmail className="mr-2" /> Send Email
-                </a>
-                </li>
-            </ul>
-            </div>
-        </div>
-        </section>
+        <BoardFlip/>
 
         <section className="grid grid-cols-1 lg:grid-cols-5 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
             <div className="lg:col-span-3 bg-cover bg-center h-128 lg:h-auto w-full" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/11/bha-history-1600x1120.jpg)', height: '42rem' }}>
@@ -192,7 +108,7 @@ const AboutUs = () => {
         <section className="grid grid-cols-1 lg:grid-cols-5 gap-8 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
             <div className="lg:col-span-2 bg-white text-gray-800 p-12 flex items-center justify-center w-full">
                 <div className="text-center">
-                <h3 className="text-2xl font-bold text-[#BA4A68]">Want to Get Involved?</h3>
+                {/* <h3 className="text-2xl font-bold text-[#BA4A68]">Want to Get Involved?</h3> */}
                 <h2 className="text-5xl font-bold mt-2 text-[#1D568B]">JOIN OUR ADVISORY GROUPS</h2>
                 <p className="mt-8 text-lg leading-relaxed">
                     Building Healthier America is actively seeking advisors to help guide us in
@@ -209,7 +125,7 @@ const AboutUs = () => {
                 </p>
                 <div className="mt-8">
                     <a
-                    href="https://buildinghealthieramerica.org/contact/"
+                    href="/contact/"
                     className="btn bg-[#BA4A68] text-white py-2 px-8 rounded-full hover:bg-pink-600"
                     >
                     Tell Me More
@@ -225,10 +141,10 @@ const AboutUs = () => {
         <div className="w-full bg-[#1D568B] text-white py-20 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
             <h2 className="text-3xl lg:text-5xl mb-4 lg:mb-2 text-center lg:text-left">
-            Interested in Helping with a Financial Contribution?
+              Support our work with a financial contribution.
             </h2>
             <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-[#1D568B] px-6 py-2 rounded font-semibold mt-4 lg:mt-0">
-            DONATE NOW
+              DONATE NOW
             </a>
         </div>
         </div>

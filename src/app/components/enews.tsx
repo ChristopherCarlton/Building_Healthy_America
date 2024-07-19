@@ -10,7 +10,7 @@ const Enews = () => {
       <div className="container mx-auto flex flex-col justify-center items-center text-center h-full relative z-20 px-4 py-8 sm:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-[95rem]">
           <div className="text-white text-left">
-            <p className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">Subscribe To Our Newsletter</p>
+            <p className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold">SUBSCRIBE TO NEWSLETTER</p>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-2xl mt-4 sm:mt-8">
               Our bi-monthly newsletter is a collection of BHA news, localized resources, and a digest of what has happened inside the Handzin platform.
             </p>
