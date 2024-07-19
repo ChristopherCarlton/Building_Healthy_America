@@ -36,30 +36,26 @@ const AboutUs = () => {
           <Collapse/>
         </section>
 
-        <section className="text-center mb-20 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-          <h1 className="text-5xl font-semibold text-[#1D568B] mb-10">OUR STORY</h1>
-        </section>
-
-
         <section className="grid grid-cols-1 lg:grid-cols-3 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <div 
             className="bg-cover bg-center w-full min-h-[25rem]"
             style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/tenets-image-1600x1120.jpg)' }}
           ></div>
-          <div className="w-full h-auto min-h-[25rem] relative bg-[#1D568B] text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-12 flex flex-col justify-center text-center lg:col-span-2">
-            <p className="mt-4 px-2 sm:px-4">
+          <div className="w-full h-auto min-h-[25rem] relative bg-[#2D7B86] text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-20 flex flex-col justify-center text-center lg:col-span-2">
+            <h1 className="text-5xl font-semibold text-white mb-10">OUR STORY</h1>
+            <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl">
               The seeds for Building Healthier America were planted in 1997, when the Robert Wood Johnson Foundation teamed up with HealthPartners, The PACER Center, and what is now known as the Center for Children with Special Health Care Needs out of the University of Minnesota for [a study] that identified some of the hurdles that families face when managing a disability or chronic illness diagnosis.
             </p>
-            <p className="mt-4 px-2 sm:px-4">
+            <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl">
               A key finding of the study found that, regardless of a child's diagnosis, <span className="font-bold">a major hurdle for families is having to navigate several complex and siloed systems</span> — namely medical, educational, and human services — which rarely collaborate for the benefit of the child.
             </p>
-            <p className="mt-4 px-2 sm:px-4">
+            <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl">
               Unfortunately, several decades later, the data still supports this.
             </p>
-            <p className="mt-4 px-2 sm:px-4 font-bold">
+            <p className="mt-4 px-2 sm:px-4 font-bold text-lg sm:text-xl md:text-2xl lg:text-2xl">
               Enter Building Healthier America. <span className="font-normal">[Insert another sentence about how key folks who were involved in the study regrouped to address the issue that remained addressed.]</span>
             </p>
-            <p className="mt-4 px-2 sm:px-4">
+            <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl mb-6">
               Our aim is to create <span className="font-bold">a sustainable support community that is built upon connection</span> — to local resources and to other families.
             </p>
           </div>
@@ -71,18 +67,15 @@ const AboutUs = () => {
 
         <section className="text-center mb-14 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           {/* <h3 className="text-[#BA4A68] text-xl font-semibold">Knowledgeable Leadership</h3> */}
-          <h2 className="text-4xl text-[#1D568B] font-semibold">OUR LEADERSHIP AND BOARD</h2>
-          <p className="text-gray-500 text-lg mt-4 sm:w-[50%] mx-auto px-4">
-            Our Executive Board is made up of people with experience in healthcare and service to
-            families and children with chronic illness and disability. But experience only goes so
-            far. Most importantly, all are passionate about improving the lives of those we serve
-            through their individual and family strengths, and community assets.
+          <h2 className="text-5xl text-[#1D568B] font-semibold">OUR LEADERSHIP AND BOARD</h2>
+          <p className="text-gray-500 text-lg sm:text-xl md:text-2xl lg:text-2xl mt-4 sm:w-[50%] mx-auto px-4">
+            Our Executive Board is made up of people with a breadth of experience in healthcare and human services, all of whom are passionate about improving the lives of those we serve.
           </p>
         </section>
 
         <BoardFlip/>
 
-        <section className="grid grid-cols-1 lg:grid-cols-5 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+        {/* <section className="grid grid-cols-1 lg:grid-cols-5 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
             <div className="lg:col-span-3 bg-cover bg-center h-128 lg:h-auto w-full" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/11/bha-history-1600x1120.jpg)', height: '42rem' }}>
             </div>
             <div className="lg:col-span-2 bg-[#1D568B] text-white p-8 lg:p-12 flex items-center justify-center w-full" style={{ height: '42rem' }}>
@@ -103,12 +96,12 @@ const AboutUs = () => {
                 </p>
                 </div>
             </div>
-        </section>
+        </section> */}
 
-        <section className="grid grid-cols-1 lg:grid-cols-5 gap-8 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+        {/* <section className="grid grid-cols-1 lg:grid-cols-5 gap-8 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
             <div className="lg:col-span-2 bg-white text-gray-800 p-12 flex items-center justify-center w-full">
                 <div className="text-center">
-                {/* <h3 className="text-2xl font-bold text-[#BA4A68]">Want to Get Involved?</h3> */}
+                <h3 className="text-2xl font-bold text-[#BA4A68]">Want to Get Involved?</h3>
                 <h2 className="text-5xl font-bold mt-2 text-[#1D568B]">JOIN OUR ADVISORY GROUPS</h2>
                 <p className="mt-8 text-lg leading-relaxed">
                     Building Healthier America is actively seeking advisors to help guide us in
@@ -137,16 +130,17 @@ const AboutUs = () => {
                 <div className="bg-cover bg-center h-full w-full" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/adisory-1600x1120.jpg)' }}>
                 </div>
             </div>
-        </section>
-        <div className="w-full bg-[#1D568B] text-white py-20 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-        <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
-            <h2 className="text-3xl lg:text-5xl mb-4 lg:mb-2 text-center lg:text-left">
-              Support our work with a financial contribution.
+        </section> */}
+
+        <div className="w-full bg-[#1D568B] text-white py-14">
+          <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center">
+            <h2 className="text-2xl lg:text-4xl mb-4 lg:mb-2 text-center lg:text-left pr-20 font-semibold">
+               SUPPORT OUR WORK WITH A FINANCIAL CONTRIBUTION.
             </h2>
-            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-[#1D568B] px-6 py-2 rounded font-semibold mt-4 lg:mt-0">
+            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-[#1D568B] px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold">
               DONATE NOW
             </a>
-        </div>
+          </div>
         </div>
       </main>
     </div>

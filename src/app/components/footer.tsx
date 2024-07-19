@@ -18,10 +18,10 @@ const Footer = () => {
               className="h-48 w-48 mb-4 mx-auto"
             />
           </a>
-          <p>Hudson, WI, 54016</p>
+          {/* <p>Hudson, WI, 54016</p> */}
         </div>
         <div className="text-center">
-          <h2 className="text-xl mb-4">Popular Links</h2>
+          {/* <h2 className="text-xl mb-4">Links</h2> */}
           <ul className="space-y-2">
             <li>
               <a href="/#donate" className="text-[#286fb4] hover:underline">
@@ -46,13 +46,13 @@ const Footer = () => {
           </ul>
         </div>
         <div className="text-center">
-          <h2 className="text-xl mb-4">Connect</h2>
+          {/* <h2 className="text-xl mb-4">Connect</h2> */}
           <ul className="space-y-2">
-            <li>
+            {/* <li>
               <a href="mailto:dhofstedt@bha4families.org" className="text-[#286fb4] hover:underline">
                 <MdEmail className="inline mr-2" /> dhofstedt@bha4families.org
               </a>
-            </li>
+            </li> */}
             <li className="flex justify-center space-x-4 mt-4">
               <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-[#286fb4]">
                 <FaFacebook size={24} />
