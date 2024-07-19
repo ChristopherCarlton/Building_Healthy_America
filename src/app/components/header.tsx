@@ -86,11 +86,11 @@ const Header: React.FC = () => {
                 About Us
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="/contact/" className="hover:underline">
                 Get Involved
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="https://app.handzin.com/login"

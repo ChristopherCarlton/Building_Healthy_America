@@ -35,7 +35,7 @@ const Enews = () => {
               <p className="text-white text-sm sm:text-base">By entering your email address, you are confirming that you are 13+.</p>
               <button 
                 type="submit" 
-                className="w-full bg-white text-[#BA4A68] py-3 sm:py-4 px-8 sm:px-14 rounded-md mt-4 hover:bg-[#1D568B] hover:text-white transition-colors duration-300"
+                className="w-full bg-white text-[#BA4A68] py-3 sm:py-4 px-8 sm:px-14 rounded-md mt-4 hover:bg-[#1D568B] hover:text-white transition-colors duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold"
               >
                 SIGN UP
               </button>

@@ -16,7 +16,7 @@ const MissionFlip = () => {
           </div>
           {/* Back Side */}
           <div className="absolute w-full h-full bg-[#2D7B86] text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
-          <h2 className="text-4xl font-bold text-white z-10 mb-4">WHAT WE DO</h2>
+          {/* <h2 className="text-4xl font-bold text-white z-10 mb-4">WHAT WE DO</h2> */}
             <h3 className="text-2xl font-semibold mb-4">Build Local Networks</h3>
             <p className="mb-4">
               Building Healthier America connects families who are navigating chronic illness or disability of a child -- to services and to each other.
@@ -41,7 +41,7 @@ const MissionFlip = () => {
           </div>
           {/* Back Side */}
           <div className="absolute w-full h-full bg-[#BA4A68] text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
-            <h2 className="text-4xl font-bold text-white z-1 mb-4">WHO WE SERVE</h2>
+            {/* <h2 className="text-4xl font-bold text-white z-1 mb-4">WHO WE SERVE</h2> */}
             <h3 className="text-2xl font-semibold mb-4">Inclusivity, Not Exclusivity</h3>
             <p className="mb-4">
               Our community-centric framework allows us to serve as many families as possible; our vision is that no family is ever turned away.
@@ -66,7 +66,7 @@ const MissionFlip = () => {
           </div>
           {/* Back Side */}
           <div className="absolute w-full h-full bg-[#1D568B] text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
-            <h2 className="text-4xl font-bold text-white z-10 mb-4">HOW WE DO IT</h2>
+            {/* <h2 className="text-4xl font-bold text-white z-10 mb-4">HOW WE DO IT</h2> */}
             <h3 className="text-2xl font-semibold mb-4">Secure Connection</h3>
             <p className="mb-4">
               We partner with Handzin, a secure community platform, to create a hub of connection for our families.

@@ -56,7 +56,7 @@ const Home: React.FC = () => {
               <div className="container mx-auto flex justify-center items-center text-center h-full relative z-20 px-4">
                 <div className="block-lede text-white">
                   <div className="block-description">
-                    <p className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold">WE'RE BUILDING A FIRST-OF-ITS-KIND NETWORK OF SUPPORT FOR FAMILIES OF CHILDREN WITH CHRONIC ILLNESS OR DISABILITY.</p>
+                    <p className="text-3xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold">WE'RE BUILDING A FIRST-OF-ITS-KIND NETWORK OF SUPPORT FOR FAMILIES OF CHILDREN WITH CHRONIC ILLNESS OR DISABILITY.</p>
                     {/* <p className="text-lg sm:text-4xl md:text-6xl">
                       WE'RE BUILDING A FIRST-OF-ITS-KIND NETWORK OF SUPPORT FOR FAMILIES OF CHILDREN WITH CHRONIC ILLNESS OR DISABILITY.
                     </p> */}
@@ -70,7 +70,6 @@ const Home: React.FC = () => {
         <div className="w-full py-16 bg-white text-center fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <div className="max-w-7xl mx-auto px-4">
             <div className="mb-8">
-              {/* <h3 className="text-[#BA4A68] text-2xl font-medium">Founding Principle</h3> */}
               <h1 className="text-[#1D568B] text-5xl font-semibold mt-2">OUR MISSION</h1>
             </div>
             <p className="text-gray-500 text-lg sm:text-2xl md:text-3xl max-w-4xl mx-auto mt-4 px-4 sm:px-8 md:px-10">
@@ -85,7 +84,7 @@ const Home: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4">
             <div className="mb-8">
               <h1 className="text-[#1D568B] text-5xl font-semibold mt-2">OUR PARTNERS</h1>
-              <div className="mt-4 text-gray-700 text-lg max-w-2xl mx-auto">
+              <div className="mt-4 text-gray-500 text-lg sm:text-xl md:text-2xl lg:text-2xl max-w-2xl mx-auto">
                 <p>Our success depends largely on working closely with partners who are aligned with our mission. Our 2024 partners include:</p>
               </div>
             </div>
@@ -93,11 +92,11 @@ const Home: React.FC = () => {
             <Partners/>
 
             <div className="fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mt-8 mx-auto max-w-2xl p-8 bg-[#2D7B86] text-white rounded-lg flex flex-col items-center justify-center mb-20">
-              <h4 className="text-2xl font-bold mt-2 mb-4">LET'S WORK TOGETHER</h4>
-              <p className="mb-6">
+              <h4 className="text-4xl font-bold mt-2 mb-6">LET'S WORK TOGETHER</h4>
+              <p className="mb-8 text-lg sm:text-xl md:text-2xl lg:text-2xl">
                 We are launching a pilot site in Hudson, Wisconsin. We are actively seeking families managing children of any age with chronic illness or disability in the St. Croix River Valley to help us test and build our network of services.
               </p>
-              <a href="/contact/" className="bg-white text-[#BA4A68] px-6 py-3 rounded-md font-semibold hover:bg-[#BA4A68] hover:text-white transition-colors duration-300">
+              <a href="/contact/" className="bg-white text-[#BA4A68] px-6 py-3 rounded-md font-semibold hover:bg-[#BA4A68] hover:text-white transition-colors duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl">
                 GET INVOLVED
               </a>
             </div>
@@ -130,11 +129,12 @@ const Home: React.FC = () => {
         <Enews/>
         
         <div className="w-full bg-[#1D568B] text-white py-14">
-          <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
-            <h2 className="text-2xl lg:text-4xl mb-4 lg:mb-2 text-center lg:text-left">
-              Your support keeps us going.
+          <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center">
+            <h2 className="text-2xl lg:text-4xl mb-4 lg:mb-2 text-center lg:text-left pr-20 font-semibold">
+              {/* Your support keeps us going. */}
+              YOUR SUPPORT KEEPS US GOING.
             </h2>
-            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-[#1D568B] px-6 py-2 rounded-md font-semibold mt-4 lg:mt-0">
+            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-[#1D568B] px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold">
               DONATE NOW
             </a>
           </div>
