@@ -69,7 +69,7 @@ const Home: React.FC = () => {
         <section className="text-center mb-20 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <h1 className="text-5xl font-semibold text-[#1D568B] mb-10">WE BELIEVE</h1>
           <Collapse/>
-          
+
           <BeliefSlide/>
 
         </section>
@@ -92,16 +92,25 @@ const Home: React.FC = () => {
             <div className="mb-8">
               <h1 className="text-[#1D568B] text-5xl font-semibold mt-2">OUR PARTNERS</h1>
               <div className="mt-4 text-gray-500 text-lg sm:text-xl md:text-2xl lg:text-2xl max-w-2xl mx-auto">
-                <p>Our success depends largely on working closely with partners who are aligned with our mission. Our 2024 partners include:</p>
+                <p>
+                  Our success depends largely on working closely with partners who are aligned with our mission. 
+                  <br /> 
+                  Our 2024 partners include:
+                </p>
               </div>
             </div>
-
             <Partners/>
 
+            <div className="mt-8">
+      <a href="/contact/" className="bg-[#BA4A68] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#1D568B] hover:text-white transition-colors duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl">
+        LET'S WORK TOGETHER
+      </a>
+    </div>
+
             <div className="fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mt-8 mx-auto max-w-2xl p-8 bg-[#2D7B86] text-white rounded-lg flex flex-col items-center justify-center mb-20">
-              <h4 className="text-4xl font-bold mt-2 mb-6">LET'S WORK TOGETHER</h4>
+              <h4 className="text-4xl font-bold mt-2 mb-6">JOIN OUR PILOT SITE </h4>
               <p className="mb-8 text-lg sm:text-xl md:text-2xl lg:text-2xl">
-                We are launching a pilot site in Hudson, Wisconsin. We are actively seeking families managing children of any age with chronic illness or disability in the St. Croix River Valley to help us test and build our network of services.
+                We are launching our first pilot site in Hudson, Wisconsin and are actively seeking families managing children of any age with chronic illness or disability in these communities to help us develop and build our network of services.
               </p>
               <a href="/contact/" className="bg-white text-[#BA4A68] px-6 py-3 rounded-md font-semibold hover:bg-[#BA4A68] hover:text-white transition-colors duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl">
                 GET INVOLVED
