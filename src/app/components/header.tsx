@@ -75,22 +75,22 @@ const Header: React.FC = () => {
                 Home
               </a>
             </li> */}
-            <li>
+            {/* <li>
               <a href="/homepage2" className="hover:underline">
                 Old Home Page
               </a>
-            </li>
+            </li> */}
             <li></li>
             <li>
               <a href="/about-us/" className="hover:underline">
                 About Us
               </a>
             </li>
-            {/* <li>
+            <li>
               <a href="/contact/" className="hover:underline">
                 Get Involved
               </a>
-            </li> */}
+            </li>
             <li>
               <a
                 href="https://app.handzin.com/login"
