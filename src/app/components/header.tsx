@@ -64,7 +64,8 @@ const Header: React.FC = () => {
         <div className="container mx-auto flex flex-col items-center relative z-10">
           <a href="/" className="mb-10">
             <img
-              src="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/Building-Healthier-America-Logo-300x300.png"
+              // src="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/Building-Healthier-America-Logo-300x300.png"
+              src="/images/BHAlogo.png"
               alt="Building Healthier America"
               className={`transition-all duration-300 ${isScrolled ? 'h-20 md:h-24' : 'h-32 md:h-40'}`}
             />

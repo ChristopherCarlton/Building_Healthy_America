@@ -53,7 +53,9 @@ const Home: React.FC = () => {
 
         <div className="w-screen h-[45rem] sm:h-[30rem] md:h-[40rem] lg:h-[45rem] relative fade-in transition-opacity duration-1000 opacity-0 translate-y-4 pb-20">
           <div id="hero-slider" className="h-full">
-            <div className="h-full bg-cover bg-center relative lg:bg-fixed" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/bha-hero-slider1-1600x1067.jpg)' }}>
+            <div className="h-full bg-cover bg-center relative lg:bg-fixed" 
+            // style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/bha-hero-slider1-1600x1067.jpg)' }}>
+              style={{ backgroundImage: 'url(/images/BHAheroslider.jpg)' }}>
               <div className="absolute inset-0 bg-[#1D568B] bg-opacity-70 z-10"></div>
               <div className="container mx-auto flex justify-center items-center text-center h-full relative z-20 px-4">
                 <div className="block-lede text-white">
