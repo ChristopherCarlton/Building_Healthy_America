@@ -39,7 +39,8 @@ const AboutUs = () => {
         <section className="grid grid-cols-1 lg:grid-cols-3 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <div 
             className="bg-cover bg-center w-full min-h-[25rem]"
-            style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/tenets-image-1600x1120.jpg)' }}
+            // style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/tenets-image-1600x1120.jpg)' }}
+            style={{ backgroundImage: 'url(/images/BHAgrass.jpg)' }}
           ></div>
           <div className="w-full h-auto min-h-[25rem] relative bg-[#2D7B86] text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-20 flex flex-col justify-center text-center lg:col-span-2">
             <h1 className="text-5xl font-semibold text-white mb-10">OUR STORY</h1>
