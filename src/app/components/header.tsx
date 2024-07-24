@@ -136,7 +136,7 @@ const Header: React.FC = () => {
               </a>
             </li> */}
           </ul>
-          <button onClick={handleMenuToggle} className="text-black lg:hidden z-50">
+          <button onClick={handleMenuToggle} className="text-black lg:hidden z-50" >
             {isMenuOpen ? <TbLetterX className="text-5xl" /> : <IoIosMenu className="text-5xl" />}
           </button>
         </div>

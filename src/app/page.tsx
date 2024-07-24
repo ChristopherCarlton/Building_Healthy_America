@@ -33,6 +33,17 @@ const Home: React.FC = () => {
 
   return (
     <>
+      <Head>
+        <title>Building Healthier America</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <link rel="apple-touch-icon" href="https://buildinghealthieramerica.org/wp-content/themes/buildinghealthieramerica/apple-touch-icon.png" />
+        <link rel="icon" href="https://buildinghealthieramerica.org/wp-content/themes/buildinghealthieramerica/apple-touch-icon.png" />
+        <link rel="profile" href="http://gmpg.org/xfn/11" />
+        <link rel="pingback" href="https://buildinghealthieramerica.org/xmlrpc.php" />
+        <link rel="shortcut icon" type="image/x-icon" href="https://buildinghealthieramerica.org/wp-content/themes/buildinghealthieramerica/favicon.ico" />
+      </Head>
+      
       <main id="top" className="bg-white">
         <a href="#main" className="sr-only sr-only-focusable color--alternate" aria-label="Navigation Skip Link">
           <span className="screen-reader-text">Skip Navigation or Skip to Content</span>
