@@ -13,8 +13,8 @@ const Footer = () => {
         <div className="text-center">
           <a href="/">
             <img
-              // src="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/Building-Healthier-America-Logo-300x300.png"
-              src="/images/BHAlogo.png"
+              // src="/images/BHAlogo.png"
+              src='/images/BHAAltIcon.png'
               alt="Building Healthier America"
               className="h-48 w-48 mb-4 mx-auto"
             />

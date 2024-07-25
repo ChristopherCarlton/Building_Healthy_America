@@ -64,23 +64,13 @@ const Header: React.FC = () => {
         <div className="container mx-auto flex flex-col items-center relative z-10">
           <a href="/" className="mb-10">
             <img
-              // src="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/Building-Healthier-America-Logo-300x300.png"
-              src="/images/BHAlogo.png"
+              // src="/images/BHAlogo.png"
+              src="/images/BHAAltIcon.png"
               alt="Building Healthier America"
               className={`transition-all duration-300 ${isScrolled ? 'h-20 md:h-24' : 'h-32 md:h-40'}`}
             />
           </a>
           <ul className={`hidden lg:flex space-x-6 font-semibold text-[#286fb4] transition-all duration-300 ${isScrolled ? 'text-base' : 'text-lg'}`}>
-            {/* <li>
-              <a href="/" className="hover:underline">
-                Home
-              </a>
-            </li> */}
-            {/* <li>
-              <a href="/homepage2" className="hover:underline">
-                Old Home Page
-              </a>
-            </li> */}
             <li></li>
             <li>
               <a href="/about-us/" className="hover:underline">
@@ -103,7 +93,7 @@ const Header: React.FC = () => {
             </li>
             <li>
               <a
-                href="https://forms.gle/sYvuKeTbYKPv4URc6"
+                href="https://ttboev5xtyu.typeform.com/to/cPYeoeri"
                 target="_blank"
                 className="hover:underline border border-[#286fb4] px-3 py-2 rounded"
               >
@@ -119,23 +109,6 @@ const Header: React.FC = () => {
                 Donate
               </a>
             </li>
-            {/* <li>
-              <a
-                href="https://forms.gle/sYvuKeTbYKPv4URc6"
-                target="_blank"
-                className="hover:underline border border-[#286fb4] px-3 py-2 rounded"
-              >
-                BHA Survey
-              </a>
-            </li> */}
-            {/* <li>
-              <a
-                href="mailto:dhofstedt@bha4families.org"
-                className="hover:underline border border-[#286fb4] px-3 py-2 rounded"
-              >
-                Email the Navigator
-              </a>
-            </li> */}
           </ul>
           <button onClick={handleMenuToggle} className="text-black lg:hidden z-50" >
             {isMenuOpen ? <TbLetterX className="text-5xl" /> : <IoIosMenu className="text-5xl" />}
