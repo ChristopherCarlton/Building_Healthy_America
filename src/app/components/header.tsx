@@ -34,7 +34,7 @@ const Header: React.FC = () => {
   return (
     <header className="w-full fixed top-0 z-50">
       {/* Top Menu for Mobile */}
-      <nav className="bg-[#286fb4] text-white p-2 lg:hidden">
+      <nav className="bg-primary text-white p-2 lg:hidden">
         <div className="container mx-auto">
           <ul className="flex space-x-4">
             <li>
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
               className={`transition-all duration-300 ${isScrolled ? 'h-20 md:h-24' : 'h-32 md:h-40'}`}
             />
           </a>
-          <ul className={`hidden lg:flex space-x-6 font-semibold text-[#286fb4] transition-all duration-300 ${isScrolled ? 'text-base' : 'text-lg'}`}>
+          <ul className={`hidden lg:flex space-x-6 font-semibold text-primary transition-all duration-300 ${isScrolled ? 'text-base' : 'text-lg'}`}>
             <li></li>
             <li>
               <a href="/about-us/" className="hover:underline">
@@ -86,7 +86,7 @@ const Header: React.FC = () => {
               <a
                 href="https://app.handzin.com/login"
                 target="_blank"
-                className="hover:underline border border-[#286fb4] px-3 py-2 rounded"
+                className="hover:underline border border-primary px-3 py-2 rounded"
               >
                 Member Entry
               </a>
@@ -95,7 +95,7 @@ const Header: React.FC = () => {
               <a
                 href="https://ttboev5xtyu.typeform.com/to/cPYeoeri"
                 target="_blank"
-                className="hover:underline border border-[#286fb4] px-3 py-2 rounded"
+                className="hover:underline border border-primary px-3 py-2 rounded"
               >
                 Join Community
               </a>
@@ -104,7 +104,7 @@ const Header: React.FC = () => {
               <a
                 href="https://buy.stripe.com/cN216geI46bI0M0eUU"
                 target="_blank"
-                className="hover:underline border border-[#286fb4] px-3 py-2 rounded"
+                className="hover:underline border border-primary px-3 py-2 rounded"
               >
                 Donate
               </a>

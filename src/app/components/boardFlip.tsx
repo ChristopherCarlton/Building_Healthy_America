@@ -18,12 +18,12 @@ const BoardFlip = () => {
                   />
                 </a>
                 <div className="pt-4 text-center">
-                  <h3 className="text-xl font-bold text-[#1D568B]">{member.name}</h3>
+                  <h3 className="text-xl font-bold text-primary">{member.name}</h3>
                   <h4 className="text-gray-500">{member.title}</h4>
                   <ul className="mt-2 flex justify-center px-4">
                     {member.email && (
                       <li>
-                        <a href={`mailto:${member.email}`} className="text-[#BA4A68] flex items-center">
+                        <a href={`mailto:${member.email}`} className="text-secondary flex items-center">
                           <MdEmail className="mr-2" /> Send Email
                         </a>
                       </li>
@@ -33,7 +33,7 @@ const BoardFlip = () => {
               </div>
             </div>
             {/* Back Side */}
-            <div className="absolute w-full h-full bg-[#1D568B] text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+            <div className="absolute w-full h-full bg-primary text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
               <p className="mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>

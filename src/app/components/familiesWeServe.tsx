@@ -4,10 +4,9 @@ const FamiliesWeServe = () => {
   return (
     <div
       className="w-full h-auto sm:h-auto md:h-[40rem] lg:h-[45rem] relative bg-cover bg-center bg-fixed"
-      // style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/programs-1600x1067.jpg)' }}
       style={{ backgroundImage: 'url(/images/BHAfamiliesWeServe.jpg)' }}
     >
-      <div className="absolute inset-0 bg-[#1D568B] bg-opacity-70"></div>
+      <div className="absolute inset-0 bg-primary bg-opacity-70"></div>
       <div className="container mx-auto flex flex-col justify-center items-center text-center h-full relative z-20 px-4 py-8 sm:py-16">
         <div className="w-full max-w-[95rem]">
           <div className="text-white text-left">

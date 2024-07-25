@@ -32,17 +32,16 @@ const AboutUs = () => {
       <main className="w-full">
         <div className='py-32'></div>
         <section className="text-center mb-20 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-          <h1 className="text-5xl font-semibold text-[#1D568B] mb-10">WE BELIEVE</h1>
+          <h1 className="text-5xl font-semibold text-primary mb-10">WE BELIEVE</h1>
           <Collapse/>
         </section>
 
         <section className="grid grid-cols-1 lg:grid-cols-3 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <div 
             className="bg-cover bg-center w-full min-h-[25rem]"
-            // style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/tenets-image-1600x1120.jpg)' }}
             style={{ backgroundImage: 'url(/images/BHAgrass.jpg)' }}
           ></div>
-          <div className="w-full h-auto min-h-[25rem] relative bg-[#2D7B86] text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-20 flex flex-col justify-center text-center lg:col-span-2">
+          <div className="w-full h-auto min-h-[25rem] relative bg-accent text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-20 flex flex-col justify-center text-center lg:col-span-2">
             <h1 className="text-5xl font-semibold text-white mb-10">OUR STORY</h1>
             <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl">
               The seeds for Building Healthier America were planted in 1997, when the Robert Wood Johnson Foundation teamed up with HealthPartners, The PACER Center, and what is now known as the Center for Children with Special Health Care Needs out of the University of Minnesota for [a study] that identified some of the hurdles that families face when managing a disability or chronic illness diagnosis.
@@ -67,8 +66,7 @@ const AboutUs = () => {
         </section>
 
         <section className="text-center mb-14 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-          {/* <h3 className="text-[#BA4A68] text-xl font-semibold">Knowledgeable Leadership</h3> */}
-          <h2 className="text-5xl text-[#1D568B] font-semibold">OUR LEADERSHIP AND BOARD</h2>
+          <h2 className="text-5xl text-primary font-semibold">OUR LEADERSHIP AND BOARD</h2>
           <p className="text-gray-500 text-lg sm:text-xl md:text-2xl lg:text-2xl mt-4 sm:w-[50%] mx-auto px-4">
             Our Executive Board is made up of people with a breadth of experience in healthcare and human services, all of whom are passionate about improving the lives of those we serve.
           </p>
@@ -76,69 +74,12 @@ const AboutUs = () => {
 
         <BoardFlip/>
 
-        {/* <section className="grid grid-cols-1 lg:grid-cols-5 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-            <div className="lg:col-span-3 bg-cover bg-center h-128 lg:h-auto w-full" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/11/bha-history-1600x1120.jpg)', height: '42rem' }}>
-            </div>
-            <div className="lg:col-span-2 bg-[#1D568B] text-white p-8 lg:p-12 flex items-center justify-center w-full" style={{ height: '42rem' }}>
-                <div className="text-center">
-                <h3 className="text-2xl ">From Past to the Present</h3>
-                <h2 className="text-4xl font-bold mt-2">OUR HISTORY</h2>
-                <p className="mt-4">
-                    Building Healthier America has a history of work to understand the challenges families
-                    face when their child has a chronic disease or disability including work funded by the
-                    Robert Wood Johnson Foundation. We also have worked with cities to reverse the obesity
-                    trends faced by children, families and communities – many of whom wrestled with the
-                    impact diabetes was having on their lives. Our guiding philosophy is building a
-                    sustainable culture of healthy behavior requires engagement in not only the individual
-                    behavior, but within our communities. Successful strides for community wide diabetes
-                    efforts were made in Chicago, Washington DC, Los Angeles and the Pacific Northwest.
-                    The models developed in these communities are transferable to today's expanded mission
-                    of serving families with children managing chronic illness or disability.
-                </p>
-                </div>
-            </div>
-        </section> */}
-
-        {/* <section className="grid grid-cols-1 lg:grid-cols-5 gap-8 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-            <div className="lg:col-span-2 bg-white text-gray-800 p-12 flex items-center justify-center w-full">
-                <div className="text-center">
-                <h3 className="text-2xl font-bold text-[#BA4A68]">Want to Get Involved?</h3>
-                <h2 className="text-5xl font-bold mt-2 text-[#1D568B]">JOIN OUR ADVISORY GROUPS</h2>
-                <p className="mt-8 text-lg leading-relaxed">
-                    Building Healthier America is actively seeking advisors to help guide us in
-                    implementing our mission. We are looking for passionate people willing to contribute
-                    their ideas, experience, intellect, and specific talents as we grow. Advisors can be
-                    members of a family or someone managing chronic illness or disability, professionals
-                    working in healthcare and/or social services, attorneys, teachers, accountants…anyone
-                    that has a passion for improving the lives of our families. Your support through
-                    funding, time and talent is needed as we build a healthier America.
-                </p>
-                <p className="mt-4 text-lg leading-relaxed">
-                    We hope you consider getting involved. The commitment is not overly time consuming,
-                    but we promise you it will be rewarding. To learn more click on the button below.
-                </p>
-                <div className="mt-8">
-                    <a
-                    href="/contact/"
-                    className="btn bg-[#BA4A68] text-white py-2 px-8 rounded-full hover:bg-pink-600"
-                    >
-                    Tell Me More
-                    </a>
-                </div>
-                </div>
-            </div>
-            <div className="lg:col-span-3 h-full w-full">
-                <div className="bg-cover bg-center h-full w-full" style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/adisory-1600x1120.jpg)' }}>
-                </div>
-            </div>
-        </section> */}
-
-        <div className="w-full bg-[#1D568B] text-white py-14">
+        <div className="w-full bg-primary text-white py-14">
           <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center">
             <h2 className="text-2xl lg:text-4xl mb-4 lg:mb-2 text-center lg:text-left pr-20 font-semibold">
                SUPPORT OUR WORK WITH A FINANCIAL CONTRIBUTION.
             </h2>
-            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-[#1D568B] px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold">
+            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-primary px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold">
               DONATE NOW
             </a>
           </div>

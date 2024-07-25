@@ -25,22 +25,22 @@ const Footer = () => {
           {/* <h2 className="text-xl mb-4">Links</h2> */}
           <ul className="space-y-2">
             <li>
-              <a href="/#donate" className="text-[#286fb4] hover:underline">
+              <a href="/#donate" className="text-primary hover:underline">
                 Donate
               </a>
             </li>
             <li>
-              <a href="/contact/" className="text-[#286fb4] hover:underline">
+              <a href="/contact/" className="text-primary hover:underline">
                 Contact
               </a>
             </li>
             <li>
-              <a href="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2022/01/BHA-Privacy-Policy.pdf" className="text-[#286fb4] hover:underline">
+              <a href="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2022/01/BHA-Privacy-Policy.pdf" className="text-primary hover:underline">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2022/01/BHA-Terms-and-Conditions.pdf" className="text-[#286fb4] hover:underline">
+              <a href="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2022/01/BHA-Terms-and-Conditions.pdf" className="text-primary hover:underline">
                 Terms and Conditions
               </a>
             </li>
@@ -50,21 +50,21 @@ const Footer = () => {
           {/* <h2 className="text-xl mb-4">Connect</h2> */}
           <ul className="space-y-2">
             {/* <li>
-              <a href="mailto:dhofstedt@bha4families.org" className="text-[#286fb4] hover:underline">
+              <a href="mailto:dhofstedt@bha4families.org" className="text-primary hover:underline">
                 <MdEmail className="inline mr-2" /> dhofstedt@bha4families.org
               </a>
             </li> */}
             <li className="flex justify-center space-x-4 mt-4">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-[#286fb4]">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary">
                 <FaFacebook size={24} />
               </a>
-              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-[#286fb4]">
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-primary">
                 <FaTwitter size={24} />
               </a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[#286fb4]">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-primary">
                 <FaLinkedin size={24} />
               </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-[#286fb4]">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-primary">
                 <FaInstagram size={24} />
               </a>
             </li>

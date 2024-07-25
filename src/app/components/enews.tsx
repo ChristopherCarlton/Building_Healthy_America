@@ -4,10 +4,9 @@ const Enews = () => {
   return (
     <div
       className="w-full h-auto sm:h-auto md:h-[40rem] lg:h-[45rem] relative bg-cover bg-center bg-fixed"
-      // style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/newsletter-1600x1076.jpg)' }}
       style={{ backgroundImage: 'url(/images/BHAtogether.jpg)' }}
     >
-      <div className="absolute inset-0 bg-[#1D568B] bg-opacity-70"></div>
+      <div className="absolute inset-0 bg-primary bg-opacity-70"></div>
       <div className="container mx-auto flex flex-col justify-center items-center text-center h-full relative z-20 px-4 py-8 sm:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-[95rem]">
           <div className="text-white text-left">
@@ -17,7 +16,7 @@ const Enews = () => {
             </p>
           </div>
           <div className="flex flex-col items-start space-y-4">
-            <form className="flex flex-col space-y-4 w-full bg-[#BA4A68] p-4 sm:p-8 rounded-md">
+            <form className="flex flex-col space-y-4 w-full bg-secondary p-4 sm:p-8 rounded-md">
               <input 
                 type="text" 
                 placeholder="Name"
@@ -36,7 +35,7 @@ const Enews = () => {
               <p className="text-white text-sm sm:text-base">By entering your email address, you are confirming that you are 13+.</p>
               <button 
                 type="submit" 
-                className="w-full bg-white text-[#BA4A68] py-3 sm:py-4 px-8 sm:px-14 rounded-md mt-4 hover:bg-[#1D568B] hover:text-white transition-colors duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold"
+                className="w-full bg-white text-secondary py-3 sm:py-4 px-8 sm:px-14 rounded-md mt-4 hover:bg-primary hover:text-white transition-colors duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold"
               >
                 SIGN UP
               </button>

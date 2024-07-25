@@ -9,14 +9,13 @@ const MissionFlip = () => {
           {/* Front Side */}
           <div
             className="absolute w-full h-full flex items-center justify-center [backface-visibility:hidden] overflow-hidden bg-cover bg-center front"
-            // style={{ backgroundImage: "url('https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/home-child-wheelchair-1600x1120.jpg')" }}
             style={{ backgroundImage: "url('/images/b1.png')" }}
           >
-            {/* <div className="absolute w-full h-full bg-[#2D7B86] opacity-80"></div>
+            {/* <div className="absolute w-full h-full bg-accent opacity-80"></div>
             <h2 className="text-4xl font-bold text-white z-20">WHAT WE DO</h2> */}
           </div>
           {/* Back Side */}
-          <div className="absolute w-full h-full bg-[#2D7B86] text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
+          <div className="absolute w-full h-full bg-accent text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
             <h3 className="text-2xl font-semibold mb-4">Build Local Networks</h3>
             <p className="mb-4">
               Building Healthier America connects families who are navigating chronic illness or disability of a child -- to services and to each other.
@@ -37,11 +36,11 @@ const MissionFlip = () => {
             style={{ backgroundImage: "url('/images/b2.png')" }}
             // style={{ backgroundImage: "url('https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/hero-slider-2-1600x1067.jpg')" }}
           >
-            {/* <div className="absolute w-full h-full bg-[#BA4A68] opacity-80"></div>
+            {/* <div className="absolute w-full h-full bg-secondary opacity-80"></div>
             <h2 className="text-4xl font-bold text-white z-20">WHO WE SERVE</h2> */}
           </div>
           {/* Back Side */}
-          <div className="absolute w-full h-full bg-[#BA4A68] text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
+          <div className="absolute w-full h-full bg-secondary text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
             <h3 className="text-2xl font-semibold mb-4">Inclusivity, Not Exclusivity</h3>
             <p className="mb-4">
               Our community-centric framework allows us to serve as many families as possible; our vision is that no family is ever turned away.
@@ -61,11 +60,11 @@ const MissionFlip = () => {
             className="absolute w-full h-full flex items-center justify-center [backface-visibility:hidden] overflow-hidden bg-cover bg-center front"
             style={{ backgroundImage: "url('/images/b3.png')" }}
           >
-            {/* <div className="absolute w-full h-full bg-[#1D568B] opacity-80"></div>
+            {/* <div className="absolute w-full h-full bg-primary opacity-80"></div>
             <h2 className="text-4xl font-bold text-white z-20">HOW WE DO IT</h2> */}
           </div>
           {/* Back Side */}
-          <div className="absolute w-full h-full bg-[#1D568B] text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
+          <div className="absolute w-full h-full bg-primary text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
             <h3 className="text-2xl font-semibold mb-4">Secure Connection</h3>
             <p className="mb-4">
               We partner with Handzin, a secure community platform, to create a hub of connection for our families.
@@ -81,6 +80,7 @@ const MissionFlip = () => {
 };
 
 export default MissionFlip;
+
 
 
 
