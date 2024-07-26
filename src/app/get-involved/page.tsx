@@ -17,7 +17,7 @@ export default function GetInvolved() {
         <div className="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
           <h2 className="text-3xl font-bold mb-6 text-secondary">DONATE</h2>
           <p className="mb-6 text-[#7f8c8d] leading-relaxed">We're here for families during some of their most challenging times. Make a gift today to help ensure that no family ever has to walk alone.</p>
-          <a href="#" className="inline-block text-secondary hover:text-secondary-dark font-semibold transition duration-300">LEARN MORE <i className="fas fa-arrow-right ml-2"></i></a>
+          <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="inline-block text-secondary hover:text-secondary-dark font-semibold transition duration-300">LEARN MORE <i className="fas fa-arrow-right ml-2"></i></a>
         </div>
         
         <div className="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
