@@ -65,12 +65,7 @@ const BeliefSlide = () => {
       <div className="relative flex flex-col md:flex-row items-center justify-center bg-white">
         <div className="relative flex flex-col md:flex-row items-center justify-end w-full md:w-auto pr-4 md:pr-12">
           <img
-            // src="/images/fam.png"
-            // src='/images/BHAbeliefs.jpg'
             src='/images/BHAbeliefs2.jpg'
-            // src='/images/BHAbeliefs3.jpg'
-            // src='/images/BHAbeliefs4.jpg'
-
             alt="Background"
             className="object-cover rounded-md w-full md:w-[60%] h-64 md:h-[75vh] max-w-[1200px]"
           />

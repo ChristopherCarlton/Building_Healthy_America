@@ -78,7 +78,7 @@ const ContactPage = () => {
     <main className="text-center bg-white">
       <div className='py-24'></div>
       <div className="container mx-auto px-4 py-8 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-        <h3 className="text-secondary text-2xl mb-2">We Want to Hear from You!</h3>
+        {/* <h3 className="text-secondary text-2xl mb-2">We Want to Hear from You!</h3> */}
         <h1 className="text-primary text-5xl font-semibold mb-4">CONNECT</h1>
         <p className="text-gray-700 mb-8">
           Interested in learning more about Building Healthier America? Are you a member of a family managing a child with chronic illness or disability? Do you have ideas you’d like to share, or simply want to be involved? Send us a note!
