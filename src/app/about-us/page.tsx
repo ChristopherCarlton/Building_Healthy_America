@@ -31,32 +31,32 @@ const AboutUs = () => {
     <div className="bg-white w-full">
       <main className="w-full">
         <div className='py-32'></div>
-        <section className="text-center mb-20 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+        {/* <section className="text-center mb-20 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <h1 className="text-5xl font-semibold text-primary mb-10">WE BELIEVE</h1>
           <Collapse/>
-        </section>
+        </section> */}
 
         <section className="grid grid-cols-1 lg:grid-cols-3 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-          <div 
+          {/* <div 
             className="bg-cover bg-center w-full min-h-[25rem]"
             style={{ backgroundImage: 'url(/images/BHAgrass.jpg)' }}
-          ></div>
-          <div className="w-full h-auto min-h-[25rem] relative bg-accent text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-20 flex flex-col justify-center text-center lg:col-span-2">
+          ></div> */}
+          <div className="w-full h-auto min-h-[25rem] relative bg-accent text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-20 flex flex-col justify-center text-center lg:col-span-3">
             <h1 className="text-5xl font-semibold text-white mb-10">OUR STORY</h1>
             <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl">
-              The seeds for Building Healthier America were planted in 1997, when the Robert Wood Johnson Foundation teamed up with HealthPartners, The PACER Center, and what is now known as the Center for Children with Special Health Care Needs out of the University of Minnesota for [a study] that identified some of the hurdles that families face when managing a disability or chronic illness diagnosis.
+              <span className="font-bold">The seeds for Building Healthier America were planted in 1997</span>, when the Robert Wood Johnson Foundation teamed up with HealthPartners, The PACER Center, and what is now known as the Center for Children with Special Health Care Needs out of the University of Minnesota for [a study] that identified some of the hurdles that families face when managing a disability or chronic illness diagnosis.
             </p>
             <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl">
-              A key finding of the study found that, regardless of a child's diagnosis, <span className="font-bold">a major hurdle for families is having to navigate several complex and siloed systems</span> — namely medical, educational, and human services — which rarely collaborate for the benefit of the child.
+                A key finding of the study found that, regardless of a child's diagnosis, <span className="font-bold">a major hurdle for families is having to navigate several complex and siloed systems</span> — namely medical, educational, and human services — which rarely collaborate for the benefit of the child.
             </p>
             <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl">
-              Unfortunately, several decades later, the data still supports this.
+                Unfortunately, several decades later, the data still supports this. According to a [more recent study] [cite a statistic that helps support this narrative.]
             </p>
-            <p className="mt-4 px-2 sm:px-4 font-bold text-lg sm:text-xl md:text-2xl lg:text-2xl">
-              Enter Building Healthier America. <span className="font-normal">[Insert another sentence about how key folks who were involved in the study regrouped to address the issue that remained addressed.]</span>
+            <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl">
+                Andrew Nelson and Thomas Brinsko, both involved in the 1997 study and both on the Building Healthier America founding board of directors, agreed upon retiring from their respective careers that there was still a long way to go to ensuring that families feel supported throughout their initial diagnoses and the long journey that follows. <span className="font-bold">Enter Building Healthier America.</span>
             </p>
             <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl mb-6">
-              Our aim is to create <span className="font-bold">a sustainable support community that is built upon connection</span> — to local resources and to other families.
+              <span className="font-bold">Our vision is to create a sustainable support community that is built upon connection — to local resources and to other families.</span>
             </p>
           </div>
         </section>

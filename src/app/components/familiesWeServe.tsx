@@ -12,7 +12,10 @@ const FamiliesWeServe = () => {
           <div className="text-white text-left">
             <p className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">THE FAMILIES WE SERVE</p>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-2xl mt-4 sm:mt-8">
-              Our Executive Board is made up of people with experience in healthcare and service to families and children with chronic illness and disability. But experience only goes so far. Most importantly, all are passionate about improving the lives of those we serve through their individual and family strengths, and community assets.
+            Our platform and services are not limited to a single diagnosis, but some of the most common diagnosis our families navigate are ADHD, autism, bipolar disorder, cerebral palsy, congenital heart defects, Down syndrome, dyslexia, emotional disturbance, epilepsy, fetal alcohol syndrome, hearing impairment including deafness, intellectual disabilities, orthopedic impairment, Prader-Willi syndrome, spina fifida, traumatic brain injury, vision impairment including blindness, and Williams syndrome.
+            </p>
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-2xl mt-4 sm:mt-8">
+            Families benefit from being part of the Building Healthier America community regardless of geographic location. Our funding does determine the amount of localized resources we are able to provide, but much of the value simply comes from families that are willing to help other families.
             </p>
           </div>
         </div>

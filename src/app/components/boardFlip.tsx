@@ -20,14 +20,8 @@ const BoardFlip = () => {
                 <div className="pt-4 text-center">
                   <h3 className="text-xl font-bold text-primary">{member.name}</h3>
                   <h4 className="text-gray-500">{member.title}</h4>
-                  <ul className="mt-2 flex justify-center px-4">
-                    {member.email && (
-                      <li>
-                        <a href={`mailto:${member.email}`} className="text-secondary flex items-center">
-                          <MdEmail className="mr-2" /> Send Email
-                        </a>
-                      </li>
-                    )}
+                  <ul className="mt-2 flex flex-col items-center px-4">
+                    <li className="text-secondary">{member.affiliation}</li>
                   </ul>
                 </div>
               </div>
@@ -37,6 +31,9 @@ const BoardFlip = () => {
               <p className="mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
+              <a href={`mailto:${member.email}`} className="bg-secondary hover:bg-white hover:text-secondary text-white font-bold py-2 px-4 rounded inline-flex items-center transition-colors duration-300 mt-8">
+                <MdEmail className="mr-2" /> Email
+              </a>
             </div>
           </div>
         </div>
@@ -48,31 +45,35 @@ const BoardFlip = () => {
 const boardMembers = [
   {
     name: 'Amy Schneider',
-    title: 'Board Member',
+    title: 'Executive Director',
     image: '/images/AmySchneider.jpg',
     profileLink: 'https://buildinghealthieramerica.org/board-member/amy-schneider/',
     email: 'aschneider@stcroixtherapy.org',
-  },
-  {
-    name: 'Chris Kost',
-    title: 'Board Member',
-    image: '/images/ChrisKost.jpg',
-    profileLink: 'https://buildinghealthieramerica.org/board-member/chris-kost/',
-    email: 'Chris.Kost@ymcamn.org',
+    affiliation: 'St. Croix Therapy',
   },
   {
     name: 'Andy Nelson',
-    title: 'Board Member',
+    title: 'Retired Executive',
     image: '/images/AndyNelson.jpg',
     profileLink: 'https://buildinghealthieramerica.org/board-member/andy-nelson/',
     email: 'bha4families@gmail.com',
+    affiliation: 'HealthPartners, Inc.',
+  },
+  {
+    name: 'Chris Kost',
+    title: 'Executive Director',
+    image: '/images/ChrisKost.jpg',
+    profileLink: 'https://buildinghealthieramerica.org/board-member/chris-kost/',
+    email: 'Chris.Kost@ymcamn.org',
+    affiliation: 'Hudson YMCA',
   },
   {
     name: 'Thomas Brinsko',
-    title: 'Board Member',
+    title: 'Retired Executive',
     image: '/images/TomBrinsko.jpg',
     profileLink: 'https://buildinghealthieramerica.org/board-member/thomas-brinsko/',
     email: 'bha4families@gmail.com',
+    affiliation: 'YMCA of the Greater Twin Cities',
   },
 ];
 

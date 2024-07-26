@@ -78,7 +78,7 @@ const Header: React.FC = () => {
               </a>
             </li>
             <li>
-              <a href="/contact/" className="hover:underline">
+              <a href="/get-involved/" className="hover:underline">
                 Get Involved
               </a>
             </li>
