@@ -37,11 +37,7 @@ const AboutUs = () => {
         </section> */}
 
         <section className="grid grid-cols-1 lg:grid-cols-3 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-          {/* <div 
-            className="bg-cover bg-center w-full min-h-[25rem]"
-            style={{ backgroundImage: 'url(/images/BHAgrass.jpg)' }}
-          ></div> */}
-          <div className="w-full h-auto min-h-[25rem] relative bg-accent text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-20 flex flex-col justify-center text-center lg:col-span-3">
+          <div className="w-full h-auto min-h-[25rem] relative bg-accent text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-20 flex flex-col justify-center text-center lg:col-span-2">
             <h1 className="text-5xl font-semibold text-white mb-10">OUR STORY</h1>
             <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl">
               <span className="font-bold">The seeds for Building Healthier America were planted in 1997</span>, when the Robert Wood Johnson Foundation teamed up with HealthPartners, The PACER Center, and what is now known as the Center for Children with Special Health Care Needs out of the University of Minnesota for [a study] that identified some of the hurdles that families face when managing a disability or chronic illness diagnosis.
@@ -59,6 +55,23 @@ const AboutUs = () => {
               <span className="font-bold">Our vision is to create a sustainable support community that is built upon connection — to local resources and to other families.</span>
             </p>
           </div>
+
+
+
+          <div className="relative w-full min-h-[25rem]">
+  <div 
+    className="bg-fixed bg-center bg-cover w-full h-full" 
+    style={{ backgroundImage: 'url(/images/books.png)' }}
+  ></div>
+  <div className="absolute inset-0 bg-primary bg-opacity-70"></div>
+</div>
+
+
+
+          {/* <div 
+            className="bg-cover bg-center w-full min-h-[25rem]"
+            style={{ backgroundImage: 'url(/images/books.png)' }}
+          ></div> */}
         </section>
 
         <section className="text-center mb-20 w-full">
