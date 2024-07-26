@@ -81,7 +81,7 @@ const ContactPage = () => {
         <h3 className="text-secondary text-2xl mb-2">We Want to Hear from You!</h3>
         <h1 className="text-primary text-5xl font-semibold mb-4">CONNECT</h1>
         <p className="text-gray-700 mb-8">
-          Interested in learning more about Building Healthier America? Are you a member of a family managing a child with chronic illness or disability? Do you have ideas you’d like to share, or simply want to be involved? Let us know. We will respond to each and every message received!
+          Interested in learning more about Building Healthier America? Are you a member of a family managing a child with chronic illness or disability? Do you have ideas you’d like to share, or simply want to be involved? Send us a note!
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="bg-white p-8 rounded-md shadow-md">
@@ -149,65 +149,34 @@ const ContactPage = () => {
               {error && <p className="text-secondary mt-4">{error}</p>}
             </form>
           </div>
-
-          <div className="bg-primary text-white p-8 rounded-md shadow-md space-y-4">
-            <div className="grid grid-cols-2 gap-4">
-              <div className="flex items-center space-x-4">
-                <FaPhoneVolume className="text-3xl text-white" />
-                <div>
-                  <h3 className="text-lg font-bold">Contact Info</h3>
-                  <p>Phone: <a href="tel:(512) 686-2525" className="text-white">(612) 750-6538</a></p>
-                </div>
+          <div className="bg-primary text-white p-8 rounded-md shadow-md space-y-4 flex justify-center items-center text-center h-full">
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-3xl font-bold">Contact Info</h3>
+                <p className="text-3xl">(612) 750-6538<br />
+                  <a href="mailto:bha4families@gmail.com" className="text-secondary text-3xl">bha4families@gmail.com</a>
+                </p>
               </div>
-              <div className="flex items-center space-x-4">
-                <FaMapMarkerAlt className="text-3xl text-white" />
-                <div>
-                  <h3 className="text-lg font-bold">Location</h3>
-                  <p>715 Countryview Cir<br />Hudson, WI 54016</p>
-                </div>
+              <div>
+                <h3 className="text-3xl font-bold">Office Hours</h3>
+                <p className="text-3xl">Mon - Fri: 8 a.m. - 6 p.m.</p>
               </div>
-              <div className="flex items-center space-x-4">
-                <FaRegClock className="text-3xl text-white" />
-                <div>
-                  <h3 className="text-lg font-bold">Office Hours</h3>
-                  <p>Mon: 8am-6pm<br />
-                    Tue, Wed, Thur: 8am-4pm<br />
-                    Fri: 8am-1pm<br />
-                    Sat & Sun: Closed</p>
-                </div>
-              </div>
-              <div className="flex items-center space-x-4">
-                <FaThumbsUp className="text-3xl text-white" />
-                <div>
-                  <h3 className="text-lg font-bold">Follow Us</h3>
-                  <div className="flex space-x-2">
-                    <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer" className="text-white"><FaFacebookF /></a>
-                    <a href="https://www.google.com/maps/place/715+Countryview+Cir,+Hudson,+WI+54016/@44.9658153,-92.709131,17z/data=!3m1!4b1!4m6!3m5!1s0x87f7e1e2d906333b:0xd355b5c19cc9dee7!8m2!3d44.9658153!4d-92.709131!16s%2Fg%2F11cpjd3wrv?entry=ttu" aria-label="Google" target="_blank" rel="noopener noreferrer" className="text-white"><FaGoogle /></a>
-                    <a href="https://www.yelp.com/" aria-label="Yelp" target="_blank" rel="noopener noreferrer" className="text-white"><FaYelp /></a>
-                    <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer" className="text-white"><FaInstagram /></a>
-                    <a href="https://www.pinterest.com/" aria-label="Pinterest" target="_blank" rel="noopener noreferrer" className="text-white"><FaPinterest /></a>
-                    <a href="https://www.youtube.com/" aria-label="Youtube" target="_blank" rel="noopener noreferrer" className="text-white"><FaYoutube /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2816.7425743656487!2d-92.709131!3d44.9658153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f7e1e2d906333b%3A0xd355b5c19cc9dee7!2s715%20Countryview%20Cir%2C%20Hudson%2C%20WI%2054016%2C%20USA!5e0!3m2!1sen!2sus!4v1688408970289!5m2!1sen!2sus" 
-                width="100%" 
-                height="250" 
-                className="rounded-md shadow-md border-0" 
-                allowFullScreen 
-                loading="lazy"></iframe>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="w-full h-[27rem] relative overflow-hidden">
+      {/* <div className="w-full h-[27rem] relative overflow-hidden">
         <div className="absolute inset-0 bg-fixed md:bg-center bg-center sm:bg-[50%] md:bg-cover" 
         style={{ backgroundImage: 'url(/images/BHAcontact.jpg)' }}></div>
-      </div>
+      </div> */}
+
+<div className="w-full h-[27rem] relative overflow-hidden">
+  <div className="absolute inset-0 bg-fixed md:bg-center bg-center sm:bg-[50%] md:bg-cover" 
+       style={{ backgroundImage: 'url(/images/BHAcontact.jpg)' }}></div>
+  <div className="absolute inset-0 bg-primary bg-opacity-70"></div>
+</div>
+
 
       <div className="w-full bg-primary text-white py-8">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
@@ -224,3 +193,68 @@ const ContactPage = () => {
 }; 
 
 export default ContactPage;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <div className="bg-primary text-white p-8 rounded-md shadow-md space-y-4">
+//             <div className="grid grid-cols-2 gap-4">
+//               <div className="flex items-center space-x-4">
+//                 <FaPhoneVolume className="text-3xl text-white" />
+//                 <div>
+//                   <h3 className="text-lg font-bold">Contact Info</h3>
+//                   <p>Phone: <a href="tel:(512) 686-2525" className="text-white">(612) 750-6538</a></p>
+//                 </div>
+//               </div>
+//               <div className="flex items-center space-x-4">
+//                 <FaMapMarkerAlt className="text-3xl text-white" />
+//                 <div>
+//                   <h3 className="text-lg font-bold">Location</h3>
+//                   <p>715 Countryview Cir<br />Hudson, WI 54016</p>
+//                 </div>
+//               </div>
+//               <div className="flex items-center space-x-4">
+//                 <FaRegClock className="text-3xl text-white" />
+//                 <div>
+//                   <h3 className="text-lg font-bold">Office Hours</h3>
+//                   <p>Mon: 8am-6pm<br />
+//                     Tue, Wed, Thur: 8am-4pm<br />
+//                     Fri: 8am-1pm<br />
+//                     Sat & Sun: Closed</p>
+//                 </div>
+//               </div>
+//               <div className="flex items-center space-x-4">
+//                 <FaThumbsUp className="text-3xl text-white" />
+//                 <div>
+//                   <h3 className="text-lg font-bold">Follow Us</h3>
+//                   <div className="flex space-x-2">
+//                     <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer" className="text-white"><FaFacebookF /></a>
+//                     <a href="https://www.google.com/maps/place/715+Countryview+Cir,+Hudson,+WI+54016/@44.9658153,-92.709131,17z/data=!3m1!4b1!4m6!3m5!1s0x87f7e1e2d906333b:0xd355b5c19cc9dee7!8m2!3d44.9658153!4d-92.709131!16s%2Fg%2F11cpjd3wrv?entry=ttu" aria-label="Google" target="_blank" rel="noopener noreferrer" className="text-white"><FaGoogle /></a>
+//                     <a href="https://www.yelp.com/" aria-label="Yelp" target="_blank" rel="noopener noreferrer" className="text-white"><FaYelp /></a>
+//                     <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer" className="text-white"><FaInstagram /></a>
+//                     <a href="https://www.pinterest.com/" aria-label="Pinterest" target="_blank" rel="noopener noreferrer" className="text-white"><FaPinterest /></a>
+//                     <a href="https://www.youtube.com/" aria-label="Youtube" target="_blank" rel="noopener noreferrer" className="text-white"><FaYoutube /></a>
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+//             <div>
+//               <iframe 
+//                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2816.7425743656487!2d-92.709131!3d44.9658153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f7e1e2d906333b%3A0xd355b5c19cc9dee7!2s715%20Countryview%20Cir%2C%20Hudson%2C%20WI%2054016%2C%20USA!5e0!3m2!1sen!2sus!4v1688408970289!5m2!1sen!2sus" 
+//                 width="100%" 
+//                 height="250" 
+//                 className="rounded-md shadow-md border-0" 
+//                 allowFullScreen 
+//                 loading="lazy"></iframe>
+//             </div>
+//           </div>
