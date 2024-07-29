@@ -38,6 +38,9 @@ const Header: React.FC = () => {
         className={`hidden lg:flex relative bg-cover bg-center text-white transition-all duration-300 ${
           isScrolled ? 'py-4' : 'py-8'
         }`}
+        style={{
+          // backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/brick-header-mix-1600x1071.jpg)',
+        }}
       >
         <div className="absolute inset-0 bg-white bg-opacity-100"></div>
         <div className="container mx-auto flex flex-col items-center relative z-10">
@@ -96,7 +99,10 @@ const Header: React.FC = () => {
       <nav
         className={`lg:hidden relative bg-cover bg-center text-white transition-all duration-300 ${
           isScrolled ? 'py-4' : 'py-8'
-        }`}
+        } px-4`}
+        style={{
+          // backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/brick-header-mix-1600x1071.jpg)',
+        }}
       >
         <div className="absolute inset-0 bg-white bg-opacity-100"></div>
         <div className="container mx-auto flex justify-between items-center relative z-10">

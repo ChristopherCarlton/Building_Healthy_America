@@ -9,11 +9,11 @@ const Partners = () => {
   ];
 
   return (
-    <div className="w-full p-10 bg-white flex justify-center">
-      <div className="flex space-x-8">
+    <div className="w-full p-4 md:p-10 bg-white flex justify-center">
+      <div className="flex flex-wrap justify-center space-x-4 md:space-x-8">
         {logos.map((logo, index) => (
-          <a key={index} href={logo.link} className="flex justify-center items-center">
-            <img src={logo.src} alt={logo.alt} className="h-32" />
+          <a key={index} href={logo.link} className="flex justify-center items-center p-2">
+            <img src={logo.src} alt={logo.alt} className="h-20 md:h-32" />
           </a>
         ))}
       </div>
