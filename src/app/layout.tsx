@@ -18,6 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="theme-color" content="primary" />
+      </head>
       <body className={inter.className}>
         <Header />
         <main className="pt-32">{children}</main>
