@@ -10,29 +10,29 @@ const Menu: React.FC<{ closeModal: () => void }> = ({ closeModal }) => {
       >
         <TbLetterX size={30} />
       </button>
-      <a href="/" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-[#c5a46d] text-left">
-        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-[#c5a46d]"></span>
+      <a href="/" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left">
+        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
         Home
       </a>
-      <a href="/about-us/" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-[#c5a46d] text-left">
-        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-[#c5a46d]"></span>
+      <a href="/about-us/" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left">
+        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
         About Us
       </a>
-      <a href="/contact/" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-[#c5a46d] text-left">
-        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-[#c5a46d]"></span>
+      <a href="/get-involved/" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left">
+        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
+        Get Involved
+      </a>
+      <a href="/contact/" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left">
+        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
         Contact
       </a>
-      <a href="https://app.handzin.com/login" target="_blank" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-[#c5a46d] text-left border border-white">
-        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-[#c5a46d]"></span>
-        BHA4families Member Entry
+      <a href="https://app.handzin.com/login" target="_blank" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left border border-white">
+        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
+        Member Entry
       </a>
-      <a href="https://forms.gle/sYvuKeTbYKPv4URc6" target="_blank" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-[#c5a46d] text-left border border-white">
-        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-[#c5a46d]"></span>
-        BHA Survey
-      </a>
-      <a href="mailto:dhofstedt@bha4families.org" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-[#c5a46d] text-left border border-white">
-        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-[#c5a46d]"></span>
-        Email the Navigator
+      <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" target="_blank" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left border border-white">
+        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
+        Join Community
       </a>
     </div>
   );

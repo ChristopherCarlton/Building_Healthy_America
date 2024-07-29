@@ -33,32 +33,11 @@ const Header: React.FC = () => {
 
   return (
     <header className="w-full fixed top-0 z-50">
-      {/* Top Menu for Mobile */}
-      <nav className="bg-primary text-white p-2 lg:hidden">
-        <div className="container mx-auto">
-          <ul className="flex space-x-4">
-            <li>
-              <a href="mailto:dhofstedt@bha4families.org" className="flex items-center">
-                <i className="fa fa-envelope mr-1"></i> Email Us
-              </a>
-            </li>
-            <li>
-              <a href="https://goo.gl/maps/HkWvyi32DcnMDnPD9" target="_blank" rel="noreferrer" className="flex items-center">
-                <i className="fa fa-map-marker-alt mr-1"></i> Find Us
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
       {/* Main Menu */}
       <nav
-        className={`relative bg-cover bg-center text-white transition-all duration-300 ${
+        className={`hidden lg:flex relative bg-cover bg-center text-white transition-all duration-300 ${
           isScrolled ? 'py-4' : 'py-8'
         }`}
-        style={{
-          // backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/brick-header-mix-1600x1071.jpg)',
-        }}
       >
         <div className="absolute inset-0 bg-white bg-opacity-100"></div>
         <div className="container mx-auto flex flex-col items-center relative z-10">
@@ -67,10 +46,10 @@ const Header: React.FC = () => {
               // src="/images/BHAlogo.png"
               src="/images/BHAAltIcon.png"
               alt="Building Healthier America"
-              className={`transition-all duration-300 ${isScrolled ? 'h-20 md:h-24' : 'h-32 md:h-40'}`}
+              className={`transition-all duration-300 ${isScrolled ? 'h-20 md:h-24' : 'h-32 md:h-40 lg:h-40'}`}
             />
           </a>
-          <ul className={`hidden lg:flex space-x-6 font-semibold text-primary transition-all duration-300 ${isScrolled ? 'text-base' : 'text-lg'}`}>
+          <ul className={`flex space-x-6 font-semibold text-primary transition-all duration-300 ${isScrolled ? 'text-base' : 'text-lg'}`}>
             <li></li>
             <li>
               <a href="/about-us/" className="hover:underline">
@@ -110,11 +89,30 @@ const Header: React.FC = () => {
               </a>
             </li>
           </ul>
-          <button onClick={handleMenuToggle} className="text-black lg:hidden z-50" >
+        </div>
+      </nav>
+
+      {/* Mobile Menu */}
+      <nav
+        className={`lg:hidden relative bg-cover bg-center text-white transition-all duration-300 ${
+          isScrolled ? 'py-4' : 'py-8'
+        }`}
+      >
+        <div className="absolute inset-0 bg-white bg-opacity-100"></div>
+        <div className="container mx-auto flex justify-between items-center relative z-10">
+          <a href="/" className="mb-0">
+            <img
+              src="/images/BHAAltIcon.png"
+              alt="Building Healthier America"
+              className={`transition-all duration-300 ${isScrolled ? 'h-20 md:h-24' : 'h-32 md:h-40 lg:h-40'}`}
+            />
+          </a>
+          <button onClick={handleMenuToggle} className="text-black z-50">
             {isMenuOpen ? <TbLetterX className="text-5xl" /> : <IoIosMenu className="text-5xl" />}
           </button>
         </div>
       </nav>
+
       {isMenuOpen && <Menu closeModal={handleMenuToggle} />}
     </header>
   );
