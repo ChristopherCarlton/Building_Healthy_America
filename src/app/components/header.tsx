@@ -110,7 +110,7 @@ const Header: React.FC = () => {
         <div className="container mx-auto flex justify-between items-center relative z-10">
           <a href="/" className="mb-0">
             <img
-              src="/images/BHALogo.png"
+              src="/images/BHAlogo.png"
               alt="Building Healthier America"
               className={`transition-all duration-300 ${isScrolled ? 'h-20 md:h-24' : 'h-32 md:h-40 lg:h-40'}`}
             />
