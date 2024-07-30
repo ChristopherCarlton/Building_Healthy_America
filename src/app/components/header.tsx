@@ -46,8 +46,8 @@ const Header: React.FC = () => {
         <div className="container mx-auto flex flex-col items-center relative z-10">
           <a href="/" className="mb-10">
             <img
-              // src="/images/BHAlogo.png"
-              src="/images/BHAAltIcon.png"
+              src="/images/BHAlogo.png"
+              // src="/images/BHAAltIcon.png"
               alt="Building Healthier America"
               className={`transition-all duration-300 ${isScrolled ? 'h-20 md:h-24' : 'h-32 md:h-40 lg:h-40'}`}
             />
@@ -62,6 +62,11 @@ const Header: React.FC = () => {
             <li>
               <a href="/get-involved/" className="hover:underline">
                 Get Involved
+              </a>
+            </li>
+            <li>
+              <a href="/events/" className="hover:underline">
+                Events
               </a>
             </li>
             <li>
@@ -100,15 +105,12 @@ const Header: React.FC = () => {
         className={`lg:hidden relative bg-cover bg-center text-white transition-all duration-300 ${
           isScrolled ? 'py-4' : 'py-8'
         } px-4`}
-        style={{
-          // backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/brick-header-mix-1600x1071.jpg)',
-        }}
       >
         <div className="absolute inset-0 bg-white bg-opacity-100"></div>
         <div className="container mx-auto flex justify-between items-center relative z-10">
           <a href="/" className="mb-0">
             <img
-              src="/images/BHAAltIcon.png"
+              src="/images/BHALogo.png"
               alt="Building Healthier America"
               className={`transition-all duration-300 ${isScrolled ? 'h-20 md:h-24' : 'h-32 md:h-40 lg:h-40'}`}
             />

@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 const carouselData = [
   {
-    title: "More Than a Diagnosis.",
+    title: "We are more than a diagnosis.",
     content: (
       <>
         <p className="mt-8">
@@ -17,13 +17,13 @@ const carouselData = [
     content: (
       <>
         <p className="mt-8">
-          We will continue to be driven and shaped by the families who make up our community, and our nimble framework will allow us to meet them where they are and get them where they need to be.
+          We will continue to be driven and shaped by the families who make up our community; our nimble framework will allow us to meet them where they are and get them where they need to be.
         </p>
       </>
     )
   },
   {
-    title: "Families need to be better served.",
+    title: "Families must be better served.",
     content: (
       <>
         <p className="mt-8">
@@ -82,12 +82,12 @@ const BeliefSlide = () => {
             className="object-cover rounded-md w-full md:w-[60%] h-64 md:h-[75vh] max-w-[1200px]"
           />
 
-          <div className="bg-primary text-white p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 rounded-md shadow-lg z-10 w-full max-w-screen-lg h-auto mt-4 md:mt-0 md:-ml-24 flex flex-col justify-center items-center relative overflow-hidden">
+          <div className="bg-primary text-white p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 rounded-md shadow-lg z-10 w-full md:w-[70%] h-auto mt-4 md:mt-0 md:-ml-24 flex flex-col justify-center items-center relative overflow-hidden">
             <div className={`transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}>
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 text-center md:text-left">
                 {carouselData[currentIndex].title}
               </h2>
-              <div className="text-lg sm:text-2xl md:text-3xl mb-8">
+              <div className="text-lg sm:text-2xl md:text-3xl mb-8 text-left">
                 {carouselData[currentIndex].content}
               </div>
             </div>
@@ -123,12 +123,16 @@ export default BeliefSlide;
 
 
 
+
+
+
+
 // "use client";
 // import { useState, useEffect } from 'react';
 
 // const carouselData = [
 //   {
-//     title: "More Than a Diagnosis.",
+//     title: "We are more than a diagnosis.",
 //     content: (
 //       <>
 //         <p className="mt-8">
@@ -148,7 +152,7 @@ export default BeliefSlide;
 //     )
 //   },
 //   {
-//     title: "Families need to be better served.",
+//     title: "Families must be better served.",
 //     content: (
 //       <>
 //         <p className="mt-8">
@@ -173,13 +177,25 @@ export default BeliefSlide;
 //   const [currentIndex, setCurrentIndex] = useState(0);
 //   const [isFading, setIsFading] = useState(false);
 
+//   const handleClick = (index: number) => {
+//     setIsFading(true);
+//     setTimeout(() => {
+//       setCurrentIndex(index);
+//       setIsFading(false);
+//     }, 500); // Duration of the fade animation
+//   };
+
+//   const handlePrevClick = () => {
+//     handleClick((currentIndex - 1 + carouselData.length) % carouselData.length);
+//   };
+
+//   const handleNextClick = () => {
+//     handleClick((currentIndex + 1) % carouselData.length);
+//   };
+
 //   useEffect(() => {
 //     const interval = setInterval(() => {
-//       setIsFading(true);
-//       setTimeout(() => {
-//         setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselData.length);
-//         setIsFading(false);
-//       }, 500); // Duration of the fade animation
+//       handleNextClick();
 //     }, 10000); // Interval for rotating slides (10 seconds)
 
 //     return () => clearInterval(interval);
@@ -196,25 +212,25 @@ export default BeliefSlide;
 //           />
 
 //           <div className="bg-primary text-white p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 rounded-md shadow-lg z-10 w-full max-w-screen-lg h-auto mt-4 md:mt-0 md:-ml-24 flex flex-col justify-center items-center relative overflow-hidden">
-//               <div className="card w-full">
-//                   <div className="card-body">
-//                       <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 text-center md:text-left">{carouselData[currentIndex].title}</h2>
-//                       <div className="text-lg sm:text-2xl md:text-3xl mb-8">
-//                           {carouselData[currentIndex].content}
-//                       </div>
-//                   </div>
+//             <div className={`transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}>
+//               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 text-center md:text-left">
+//                 {carouselData[currentIndex].title}
+//               </h2>
+//               <div className="text-lg sm:text-2xl md:text-3xl mb-8">
+//                 {carouselData[currentIndex].content}
 //               </div>
-//               <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-//                   <div className="flex justify-center space-x-2">
-//                       {carouselData.map((_, index) => (
-//                           <button
-//                               key={index}
-//                               className={`h-3 w-3 rounded-full ${currentIndex === index ? 'bg-gray-800' : 'bg-gray-300'}`}
-//                               onClick={() => setCurrentIndex(index)}
-//                           />
-//                       ))}
-//                   </div>
+//             </div>
+//             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+//               <div className="flex justify-center space-x-2">
+//                 {carouselData.map((_, index) => (
+//                   <button
+//                     key={index}
+//                     className={`h-3 w-3 rounded-full ${currentIndex === index ? 'bg-gray-800' : 'bg-gray-300'}`}
+//                     onClick={() => handleClick(index)}
+//                   />
+//                 ))}
 //               </div>
+//             </div>
 //           </div>
 
 //         </div>

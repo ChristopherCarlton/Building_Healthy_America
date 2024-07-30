@@ -13,8 +13,7 @@ const Footer = () => {
         <div className="text-center">
           <a href="/">
             <img
-              // src="/images/BHAlogo.png"
-              src='/images/BHAAltIcon.png'
+              src="/images/BHAlogo.png"
               alt="Building Healthier America"
               className="h-48 w-48 mb-4 mx-auto"
             />
@@ -22,10 +21,9 @@ const Footer = () => {
           {/* <p>Hudson, WI, 54016</p> */}
         </div>
         <div className="text-center">
-          {/* <h2 className="text-xl mb-4">Links</h2> */}
           <ul className="space-y-2">
             <li>
-              <a href="/#donate" className="text-primary hover:underline">
+              <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="text-primary hover:underline">
                 Donate
               </a>
             </li>
@@ -47,13 +45,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="text-center">
-          {/* <h2 className="text-xl mb-4">Connect</h2> */}
           <ul className="space-y-2">
-            {/* <li>
-              <a href="mailto:dhofstedt@bha4families.org" className="text-primary hover:underline">
-                <MdEmail className="inline mr-2" /> dhofstedt@bha4families.org
-              </a>
-            </li> */}
             <li className="flex justify-center space-x-4 mt-4">
               <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary">
                 <FaFacebook size={24} />

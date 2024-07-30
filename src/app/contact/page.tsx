@@ -79,12 +79,13 @@ const ContactPage = () => {
       <div className='py-24'></div>
       <div className="container mx-auto px-4 py-8 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
         {/* <h3 className="text-secondary text-2xl mb-2">We Want to Hear from You!</h3> */}
-        <h1 className="text-primary text-5xl font-semibold mb-4">CONNECT</h1>
-        <p className="text-gray-700 mb-8">
-          Interested in learning more about Building Healthier America? Are you a member of a family managing a child with chronic illness or disability? Do you have ideas you’d like to share, or simply want to be involved? Send us a note!
+        <h1 className="text-primary text-5xl font-semibold mb-8">CONTACT BHA</h1>
+        <p className="text-gray-500 text-lg sm:text-2xl md:text-3xl mb-8   max-w-4xl mx-auto mt-4 px-4 sm:px-8 md:px-10">
+          Interested in learning more about Building Healthier America? Navigating a chronic illness or disability diagnosis? Have ideas you’d like to share, or simply want to be involved? Send us a note!
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="bg-white p-8 rounded-md shadow-md">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8 mb-8">
+          {/* old form */}
+          {/* <div className="bg-white p-8 rounded-md shadow-md">
             <form className="max-w-2xl mx-auto" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div>
@@ -148,8 +149,8 @@ const ContactPage = () => {
               {submitSuccess && <p className="text-green-500 mt-4">Thank you! Your message has been submitted.</p>}
               {error && <p className="text-secondary mt-4">{error}</p>}
             </form>
-          </div>
-          <div className="bg-primary text-white p-8 rounded-md shadow-md space-y-4 flex justify-center items-center text-center h-full">
+          </div> */}
+          <div className="bg-primary text-white p-8 rounded-md shadow-md space-y-4 flex justify-center items-center text-center h-full col-span-2">
             <div className="space-y-8">
               <div>
                 <h3 className="text-3xl font-bold">Contact Info</h3>
@@ -171,11 +172,11 @@ const ContactPage = () => {
         style={{ backgroundImage: 'url(/images/BHAcontact.jpg)' }}></div>
       </div> */}
 
-<div className="w-full h-[27rem] relative overflow-hidden">
-  <div className="absolute inset-0 bg-fixed md:bg-center bg-center sm:bg-[50%] md:bg-cover" 
-       style={{ backgroundImage: 'url(/images/BHAcontact.jpg)' }}></div>
-  <div className="absolute inset-0 bg-primary bg-opacity-70"></div>
-</div>
+      <div className="w-full h-[27rem] relative overflow-hidden">
+        <div className="absolute inset-0 bg-fixed md:bg-center bg-center sm:bg-[50%] md:bg-cover" 
+            style={{ backgroundImage: 'url(/images/BHAcontact.jpg)' }}></div>
+        <div className="absolute inset-0 bg-primary bg-opacity-70"></div>
+      </div>
 
 
       <div className="w-full bg-primary text-white py-8">

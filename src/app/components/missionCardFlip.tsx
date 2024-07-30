@@ -18,7 +18,7 @@ const MissionFlip = () => {
           <div className="absolute w-full h-full bg-accent text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
             <h3 className="text-2xl font-semibold mb-4">Build Local Networks</h3>
             <p className="mb-4">
-              Building Healthier America connects families who are navigating chronic illness or disability of a child -- to services and to each other.
+              Building Healthier America connects families that are navigating chronic illness or disability of a child -- to services and to each other.
             </p>
             <p>
               We provide a centralized and searchable database of resources and a growing network of families who are walking a similar path, all at no cost to our members.
@@ -67,7 +67,7 @@ const MissionFlip = () => {
           <div className="absolute w-full h-full bg-primary text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
             <h3 className="text-2xl font-semibold mb-4">Secure Connection</h3>
             <p className="mb-4">
-              We partner with Handzin, a secure community platform, to create a hub of connection for our families.
+            We are powered by with Handzin, a secure community platform, to create a hub of connection for our families.
             </p>
             <p>
               In the cases of our local chapters, we have a community navigator who aggregates resources and serves as a bridge between the various social service organizations.

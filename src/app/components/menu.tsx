@@ -22,6 +22,10 @@ const Menu: React.FC<{ closeModal: () => void }> = ({ closeModal }) => {
         <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
         Get Involved
       </a>
+      <a href="/events/" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left">
+        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
+        Events
+      </a>
       <a href="/contact/" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left">
         <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
         Contact
@@ -33,6 +37,10 @@ const Menu: React.FC<{ closeModal: () => void }> = ({ closeModal }) => {
       <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" target="_blank" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left border border-white">
         <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
         Join Community
+      </a>
+      <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" target="_blank" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left border border-white">
+        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
+        Donate
       </a>
     </div>
   );

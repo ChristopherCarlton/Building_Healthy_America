@@ -100,7 +100,7 @@ const Home: React.FC = () => {
             <Partners/>
 
             <div className="mt-8">
-              <a href="/contact/" className="bg-secondary text-white px-6 py-3 rounded-md font-semibold hover:bg-primary hover:text-white transition-colors duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl">
+              <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="bg-secondary text-white px-6 py-3 rounded-md font-semibold hover:bg-primary hover:text-white transition-colors duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl">
                 LET'S WORK TOGETHER
               </a>
             </div>
