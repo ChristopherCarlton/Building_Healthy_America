@@ -23,9 +23,7 @@ const Events = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-blue-100 py-32">
-      <div className='py-12'></div>
-
+    <div className="flex flex-col items-center min-h-screen bg-blue-100 pt-8">
       <div className="w-full text-center fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mb-8">
         <div className="max-w-7xl mx-auto px-4">
           <div className="mb-8">
