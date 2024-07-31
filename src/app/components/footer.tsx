@@ -47,16 +47,16 @@ const Footer = () => {
         <div className="text-center">
           <ul className="space-y-2">
             <li className="flex justify-center space-x-4 mt-4">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary" aria-label="Visit our Facebook page">
                 <FaFacebook size={24} />
               </a>
-              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-primary">
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-primary" aria-label="Visit our Twitter profile">
                 <FaTwitter size={24} />
               </a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-primary">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-primary" aria-label="Visit our LinkedIn profile">
                 <FaLinkedin size={24} />
               </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-primary">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-primary" aria-label="Visit our Instagram profile">
                 <FaInstagram size={24} />
               </a>
             </li>

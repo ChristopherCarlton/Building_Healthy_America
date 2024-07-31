@@ -106,7 +106,7 @@ const Home: React.FC = () => {
             </div>
 
             <div className="fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mt-8 mx-auto max-w-2xl p-8 bg-accent text-white rounded-lg flex flex-col items-center justify-center mb-20">
-              <h4 className="text-4xl font-bold mt-2 mb-6">JOIN OUR PILOT SITE </h4>
+              <h2 className="text-4xl font-bold mt-2 mb-6">JOIN OUR PILOT SITE </h2>
               <p className="mb-8 text-lg sm:text-xl md:text-2xl lg:text-2xl">
                 We are launching our first pilot site in Hudson, Wisconsin and are actively seeking families managing children of any age with chronic illness or disability in these communities to help us develop and build our network of services.
               </p>

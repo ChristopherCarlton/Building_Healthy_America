@@ -92,12 +92,13 @@ const BeliefSlide = () => {
               </div>
             </div>
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-              <div className="flex justify-center space-x-2">
+              <div className="flex justify-center space-x-4">
                 {carouselData.map((_, index) => (
                   <button
                     key={index}
                     className={`h-3 w-3 rounded-full ${currentIndex === index ? 'bg-gray-800' : 'bg-gray-300'}`}
                     onClick={() => handleClick(index)}
+                    aria-label={`Go to slide ${index + 1}`}
                   />
                 ))}
               </div>

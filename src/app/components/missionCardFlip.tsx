@@ -16,7 +16,7 @@ const MissionFlip = () => {
           </div>
           {/* Back Side */}
           <div className="absolute w-full h-full bg-accent text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
-            <h3 className="text-2xl font-semibold mb-4">Build Local Networks</h3>
+            <h2 className="text-2xl font-semibold mb-4">Build Local Networks</h2>
             <p className="mb-4">
               Building Healthier America connects families that are navigating chronic illness or disability of a child -- to services and to each other.
             </p>
@@ -41,7 +41,7 @@ const MissionFlip = () => {
           </div>
           {/* Back Side */}
           <div className="absolute w-full h-full bg-secondary text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
-            <h3 className="text-2xl font-semibold mb-4">Inclusivity, Not Exclusivity</h3>
+            <h2 className="text-2xl font-semibold mb-4">Inclusivity, Not Exclusivity</h2>
             <p className="mb-4">
               Our community-centric framework allows us to serve as many families as possible; our vision is that no family is ever turned away.
             </p>
@@ -65,7 +65,7 @@ const MissionFlip = () => {
           </div>
           {/* Back Side */}
           <div className="absolute w-full h-full bg-primary text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
-            <h3 className="text-2xl font-semibold mb-4">Secure Connection</h3>
+            <h2 className="text-2xl font-semibold mb-4">Secure Connection</h2>
             <p className="mb-4">
             We are powered by with Handzin, a secure community platform, to create a hub of connection for our families.
             </p>

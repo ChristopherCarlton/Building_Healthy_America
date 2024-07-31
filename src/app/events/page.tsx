@@ -14,6 +14,7 @@ const Events = () => {
           allowFullScreen
           aria-hidden="false"
           tabIndex={0} // Ensure tabIndex is a number
+          aria-label={`Events for BHA community`}
         ></iframe>
       </div>
     </div>

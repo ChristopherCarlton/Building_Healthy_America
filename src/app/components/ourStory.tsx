@@ -72,6 +72,7 @@ const OurStory = () => {
           <button
             className="h-8 w-8 bg-gray-800 text-white rounded-full flex items-center justify-center"
             onClick={handlePrevClick}
+            aria-label={`Go to previous slide`}
           >
             &#9664;
           </button>
@@ -81,12 +82,14 @@ const OurStory = () => {
                 key={index}
                 className={`h-3 w-3 rounded-full ${currentIndex === index ? 'bg-gray-800' : 'bg-gray-300'}`}
                 onClick={() => handleClick(index)}
+                aria-label={`Go to slide ${index + 1}`}
               />
             ))}
           </div>
           <button
             className="h-8 w-8 bg-gray-800 text-white rounded-full flex items-center justify-center"
             onClick={handleNextClick}
+            aria-label={`Go to next slide`}
           >
             &#9654;
           </button>

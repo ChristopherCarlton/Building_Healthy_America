@@ -115,7 +115,7 @@ const Header: React.FC = () => {
               className={`transition-all duration-300 ${isScrolled ? 'h-20 md:h-24' : 'h-32 md:h-40 lg:h-40'}`}
             />
           </a>
-          <button onClick={handleMenuToggle} className="text-black z-50">
+          <button onClick={handleMenuToggle} className="text-black z-50" aria-label="Toggle Menu">
             {isMenuOpen ? <TbLetterX className="text-5xl" /> : <IoIosMenu className="text-5xl" />}
           </button>
         </div>
