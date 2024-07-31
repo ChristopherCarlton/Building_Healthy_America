@@ -75,7 +75,7 @@ const Header: React.FC = () => {
                 target="_blank"
                 className="hover:underline border border-primary px-3 py-2 rounded"
               >
-                Member Entry
+                Member Area
               </a>
             </li>
             <li>
@@ -116,7 +116,7 @@ const Header: React.FC = () => {
             />
           </a>
           <button onClick={handleMenuToggle} className="text-black z-50" aria-label="Toggle Menu">
-            {isMenuOpen ? <TbLetterX className="text-5xl" /> : <IoIosMenu className="text-5xl" />}
+            {isMenuOpen ? <TbLetterX className="text-5xl text-primary" /> : <IoIosMenu className="text-5xl text-primary" />}
           </button>
         </div>
       </nav>

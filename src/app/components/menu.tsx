@@ -32,7 +32,7 @@ const Menu: React.FC<{ closeModal: () => void }> = ({ closeModal }) => {
       </a>
       <a href="https://app.handzin.com/login" target="_blank" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left border border-white">
         <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
-        Member Entry
+        Member Area
       </a>
       <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" target="_blank" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left border border-white">
         <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
