@@ -1,9 +1,20 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 
 const Enews = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // Add functionality to send data when ready
+    // e.g., send form data to an API endpoint
+    // const formData = new FormData(e.target);
+    setIsSubmitted(true);
+  };
+
   return (
     <div
-      className="w-full h-auto sm:h-auto md:h-[40rem] lg:h-[45rem] relative bg-cover bg-center bg-fixed"
+      className="w-full h-auto relative bg-cover bg-center bg-fixed"
       style={{ backgroundImage: 'url(/images/BHAtogether.jpg)' }}
     >
       <div className="absolute inset-0 bg-primary bg-opacity-70"></div>
@@ -16,20 +27,29 @@ const Enews = () => {
             </p>
           </div>
           <div className="flex flex-col items-start space-y-4">
-            <form className="flex flex-col space-y-4 w-full bg-secondary p-4 sm:p-8 rounded-md">
+            <form onSubmit={handleSubmit} className="flex flex-col space-y-4 w-full bg-secondary p-4 sm:p-8 rounded-md">
               <input 
                 type="text" 
+                id="name"
+                name="name"
                 placeholder="Name"
+                autoComplete="name"
                 className="mt-1 p-2 sm:p-3 w-full text-base sm:text-lg bg-transparent text-white placeholder-gray-300 border-b-2 border-white focus:outline-none" 
               />
               <input 
                 type="text" 
+                id="zipCode"
+                name="zipCode"
                 placeholder="Zip Code"
+                autoComplete="postal-code"
                 className="mt-1 p-2 sm:p-3 w-full text-base sm:text-lg bg-transparent text-white placeholder-gray-300 border-b-2 border-white focus:outline-none" 
               />
               <input 
                 type="email" 
+                id="email"
+                name="email"
                 placeholder="Email"
+                autoComplete="email"
                 className="mt-1 p-2 sm:p-3 w-full text-base sm:text-lg bg-transparent text-white placeholder-gray-300 border-b-2 border-white focus:outline-none" 
               />
               <p className="text-white text-sm sm:text-base">By entering your email address, you are confirming that you are 13+.</p>
@@ -40,6 +60,11 @@ const Enews = () => {
                 SIGN UP
               </button>
             </form>
+            {isSubmitted && (
+              <div className="w-full bg-green-500 text-white p-4 rounded-md mt-4 text-center">
+                Subscribed to newsletter
+              </div>
+            )}
           </div>
         </div>
       </div>
