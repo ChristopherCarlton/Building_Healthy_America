@@ -13,7 +13,7 @@ const Partners = () => {
       <div className="flex flex-wrap justify-center space-x-4 md:space-x-8">
         {logos.map((logo, index) => (
           <a key={index} href={logo.link} className="flex justify-center items-center p-2">
-            <img src={logo.src} alt={logo.alt} className="h-20 md:h-32" width="128" height="128" />
+            <img src={logo.src} alt={logo.alt} className="h-20 md:h-32" />
           </a>
         ))}
       </div>
