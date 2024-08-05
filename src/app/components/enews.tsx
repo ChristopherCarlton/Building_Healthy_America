@@ -55,13 +55,13 @@ const Enews = () => {
               <p className="text-white text-sm sm:text-base">By entering your email address, you are confirming that you are 13+.</p>
               <button 
                 type="submit" 
-                className="w-full bg-white text-secondary py-3 sm:py-4 px-8 sm:px-14 rounded-md mt-4 hover:bg-primary hover:text-white transition-colors duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold"
+                className="w-full bg-white text-secondary py-3 sm:py-4 px-8 sm:px-14 rounded-md mt-4 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300"
               >
                 SIGN UP
               </button>
             </form>
             {isSubmitted && (
-              <div className="w-full bg-green-500 text-white p-4 rounded-md mt-4 text-center">
+              <div className="w-full bg-accent text-white p-4 rounded-md mt-4 text-center">
                 Subscribed to newsletter
               </div>
             )}

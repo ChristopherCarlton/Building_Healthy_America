@@ -100,17 +100,17 @@ const Home: React.FC = () => {
             <Partners/>
 
             <div className="mt-8">
-              <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="bg-secondary text-white px-6 py-3 rounded-md font-semibold hover:bg-primary hover:text-white transition-colors duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl">
+              <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="bg-secondary text-white px-6 py-3 rounded-md font-semibold hover:bg-primary hover:text-white transition-colors duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl" target="_blank" rel="noopener noreferrer">
                 LET'S WORK TOGETHER
               </a>
             </div>
 
-            <div className="fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mt-8 mx-auto max-w-2xl p-8 bg-accent text-white rounded-lg flex flex-col items-center justify-center mb-20">
+            <div className="fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mt-8 mx-auto max-w-2xl p-8 bg-blue-100 text-gray-700 rounded-lg flex flex-col items-center justify-center mb-20">
               <h2 className="text-4xl font-bold mt-2 mb-6">JOIN OUR PILOT SITE </h2>
               <p className="mb-8 text-lg sm:text-xl md:text-2xl lg:text-2xl">
                 We are launching our first pilot site in Hudson, Wisconsin and are actively seeking families managing children of any age with chronic illness or disability in these communities to help us develop and build our network of services.
               </p>
-              <a href="/get-involved/" className="bg-white text-secondary px-6 py-3 rounded-md font-semibold hover:bg-secondary hover:text-white transition-colors duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl">
+              <a href="/get-involved/" className="bg-white text-secondary px-6 py-3 rounded-md font-semibold shadow-lg transform hover:scale-105 transition duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl">
                 GET INVOLVED
               </a>
             </div>
@@ -136,3 +136,10 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+
+
+
+
+
+
+// commit message: Updated the project to use Lato font globally within application text. Updated the header to have correct terminology and links to typeform go to a new tab rather than replacing the current one. Updated the buttons globally throughout application to have hover:scale-105 so elements pop up at you. Changed the pilot section bg to bg-blue-100 text-gray-700 from bg-accent and text-black.

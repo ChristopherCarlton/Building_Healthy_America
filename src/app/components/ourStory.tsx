@@ -69,13 +69,13 @@ const OurStory = () => {
           </div>
         </div>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex items-center justify-center space-x-4">
-          <button
+          {/* <button
             className="h-8 w-8 bg-gray-800 text-white rounded-full flex items-center justify-center"
             onClick={handlePrevClick}
             aria-label={`Go to previous slide`}
           >
             &#9664;
-          </button>
+          </button> */}
           <div className="flex justify-center space-x-2">
             {carouselData.map((_, index) => (
               <button
@@ -86,21 +86,21 @@ const OurStory = () => {
               />
             ))}
           </div>
-          <button
+          {/* <button
             className="h-8 w-8 bg-gray-800 text-white rounded-full flex items-center justify-center"
             onClick={handleNextClick}
             aria-label={`Go to next slide`}
           >
             &#9654;
-          </button>
+          </button> */}
         </div>
       </div>
       <div className="relative w-full min-h-[25rem]">
         <div 
           className="bg-fixed bg-center bg-cover w-full h-full" 
-          style={{ backgroundImage: 'url(/images/books.png)' }}
+          style={{ backgroundImage: 'url(/images/hands.jpg)' }}
         ></div>
-        <div className="absolute inset-0 bg-primary bg-opacity-70"></div>
+        <div className="absolute inset-0 bg-accent bg-opacity-70"></div>
       </div>
     </section>
   );

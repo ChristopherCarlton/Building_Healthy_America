@@ -60,7 +60,7 @@ const Header: React.FC = () => {
       <nav
         className={`hidden lg:flex flex-col relative bg-cover bg-center text-white transition-all duration-500 ${
           isScrolled ? 'py-4' : 'py-8'
-        } ${isGetInvolvedHovered || isSubmenuVisible ? 'pb-48' : ''}`}  // Adjust height when hovered
+        } ${isGetInvolvedHovered || isSubmenuVisible ? ' pb-48': ''}`}  // Adjust height when hovered
         style={{
           // backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/brick-header-mix-1600x1071.jpg)',
         }}
@@ -92,7 +92,7 @@ const Header: React.FC = () => {
               </a>
               {(isGetInvolvedHovered || isSubmenuVisible) && (
                 <div
-                  className={`absolute left-0 top-full mt-2 w-40 bg-white text-primary z-50 transition-opacity duration-500 ${
+                  className={`absolute left-0 top-full mt-2 w-44 bg-white text-primary z-50 transition-opacity duration-500 ${
                     isSubmenuVisible ? 'opacity-100' : 'opacity-0'
                   }`}
                   onMouseEnter={() => {
@@ -107,21 +107,21 @@ const Header: React.FC = () => {
                     <ul className={`flex flex-col space-y-2 transition-opacity duration-500 ${isSubmenuVisible ? 'opacity-100' : 'opacity-0'}`}>
                       <li>
                         <a href="/get-involved" className="hover:underline block">
-                          Attend Events
+                          Attend an Event
                         </a>
                       </li>
                       <li>
-                        <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="hover:underline block">
-                          Join Community
+                        <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="hover:underline block" target="_blank" rel="noopener noreferrer">
+                          Join the Community
                         </a>
                       </li>
-                      <li>
-                        <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="hover:underline block">
+                      {/* <li>
+                        <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="hover:underline block" target="_blank" rel="noopener noreferrer">
                           Find a Chapter
                         </a>
-                      </li>
+                      </li> */}
                       <li>
-                        <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="hover:underline block">
+                        <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="hover:underline block" target="_blank" rel="noopener noreferrer">
                           Become a Partner
                         </a>
                       </li>
@@ -144,8 +144,9 @@ const Header: React.FC = () => {
                 href="https://ttboev5xtyu.typeform.com/to/cPYeoeri"
                 target="_blank"
                 className="hover:underline border border-primary px-3 py-2 rounded"
+                rel="noopener noreferrer"
               >
-                Join Community
+                Join the Community
               </a>
             </li>
             <li>
@@ -153,6 +154,7 @@ const Header: React.FC = () => {
                 href="https://buy.stripe.com/cN216geI46bI0M0eUU"
                 target="_blank"
                 className="hover:underline border border-primary px-3 py-2 rounded"
+                rel="noopener noreferrer"
               >
                 Donate
               </a>

@@ -3,6 +3,7 @@ import Events from '../events/page';
 
 export default function GetInvolved() {
   return (
+    <>
     <div className="w-screen mx-auto px-4 py-12 font-crimson-text bg-blue-100">
       {/* bg-gradient-to-br from-blue-100 to-green-100"> */}
       <div className='py-32'></div>
@@ -30,12 +31,13 @@ export default function GetInvolved() {
       </div>
 
       
-      <div className="mt-12 text-center">
+      <div className="mt-12 mb-20 text-center">
         <button className="bg-secondary hover:bg-secondary-dark text-white px-8 py-3 rounded-full text-xl font-bold transition duration-300 shadow-lg transform hover:scale-105">
-          Subscribe
+          SUBSCRIBE TO NEWSLETTER
         </button>
       </div>
-      <Events/>
     </div>
+    <Events/>
+    </>
   );
 }
