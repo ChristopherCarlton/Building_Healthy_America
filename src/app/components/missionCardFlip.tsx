@@ -11,17 +11,15 @@ const MissionFlip = () => {
             className="absolute w-full h-full flex items-center justify-center [backface-visibility:hidden] overflow-hidden bg-cover bg-center front"
             style={{ backgroundImage: "url('/images/b1.png')" }}
           >
-            {/* <div className="absolute w-full h-full bg-accent opacity-80"></div>
-            <h2 className="text-4xl font-bold text-white z-20">WHAT WE DO</h2> */}
           </div>
           {/* Back Side */}
           <div className="absolute w-full h-full bg-accent text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
             <h2 className="text-2xl font-semibold mb-4">Build Local Networks</h2>
             <p className="mb-4">
-              Building Healthier America connects families that are navigating chronic illness or disability of a child -- to services and to each other.
+              Building Healthier America connects families that are navigating chronic illness or disability of a child - to services and to each other. 
             </p>
             <p>
-              We provide a centralized and searchable database of resources and a growing network of families who are walking a similar path, all at no cost to our members.
+              We provide a centralized and searchable information base of resources and a growing network of families who are walking a similar path, all at no cost to our members.
             </p>
           </div>
         </div>
@@ -34,19 +32,16 @@ const MissionFlip = () => {
           <div
             className="absolute w-full h-full flex items-center justify-center [backface-visibility:hidden] overflow-hidden bg-cover bg-center front"
             style={{ backgroundImage: "url('/images/b2.png')" }}
-            // style={{ backgroundImage: "url('https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/hero-slider-2-1600x1067.jpg')" }}
           >
-            {/* <div className="absolute w-full h-full bg-secondary opacity-80"></div>
-            <h2 className="text-4xl font-bold text-white z-20">WHO WE SERVE</h2> */}
           </div>
           {/* Back Side */}
           <div className="absolute w-full h-full bg-secondary text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
-            <h2 className="text-2xl font-semibold mb-4">Inclusivity, Not Exclusivity</h2>
+            <h2 className="text-2xl font-semibold mb-4">Inclusive, Not Exclusive</h2>
             <p className="mb-4">
               Our community-centric framework allows us to serve as many families as possible; our vision is that no family is ever turned away.
             </p>
             <p>
-              While we provide localized resources based on funding, our digital-first approach provides families a way to connect regardless of their geographic location.
+              While we provide localized resources based on funding, our digital-first approach ensures that families all over the country are able to find connection, if they desire.
             </p>
           </div>
         </div>
@@ -60,17 +55,15 @@ const MissionFlip = () => {
             className="absolute w-full h-full flex items-center justify-center [backface-visibility:hidden] overflow-hidden bg-cover bg-center front"
             style={{ backgroundImage: "url('/images/b3.png')" }}
           >
-            {/* <div className="absolute w-full h-full bg-primary opacity-80"></div>
-            <h2 className="text-4xl font-bold text-white z-20">HOW WE DO IT</h2> */}
           </div>
           {/* Back Side */}
           <div className="absolute w-full h-full bg-primary text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
             <h2 className="text-2xl font-semibold mb-4">Secure Connection</h2>
             <p className="mb-4">
-            We are powered by with Handzin, a secure community platform, to create a hub of connection for our families.
+              We partner with Handzin, a secure community platform, to create a hub of connection for our families.
             </p>
             <p>
-              In the cases of our local chapters, we have a community navigator who aggregates resources and serves as a bridge between the various social service organizations.
+              In the cases of our local chapters, we have a community navigator who aggregates resources and serves as a bridge between the various social service, education, and health organizations.
             </p>
           </div>
         </div>

@@ -59,7 +59,7 @@ const Home: React.FC = () => {
               <div className="container mx-auto flex justify-center items-center text-center h-full relative z-20 px-4">
                 <div className="block-lede text-white">
                   <div className="block-description">
-                    <p className="text-3xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold">WE'RE BUILDING A FIRST-OF-ITS-KIND NETWORK OF SUPPORT FOR FAMILIES OF CHILDREN WITH CHRONIC ILLNESS OR DISABILITY.</p>
+                    <p className="text-3xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold">WE'RE BUILDING A FIRST-OF-ITS-KIND SUPPORT NETWORK WITH AND FOR FAMILIES OF CHILDREN THAT HAVE CHRONIC ILLNESS OR DISABILITY.</p>
                   </div>
                 </div>
               </div>
@@ -78,7 +78,7 @@ const Home: React.FC = () => {
               <h1 className="text-primary text-5xl font-semibold mt-2">OUR MISSION</h1>
             </div>
             <p className="text-gray-500 text-lg sm:text-2xl md:text-3xl max-w-4xl mx-auto mt-4 px-4 sm:px-8 md:px-10">
-              Our mission is to serve as a centralized resource and point of connection for families of children with chronic illness or disability as they navigate medical, human services, educational, and local agencies.
+              Our mission is to serve as a centralized resource and point of connection for families with children that have chronic illness or disability as they navigate medical, human services, educational, and local agencies.
             </p>
           </div>
         </div>
@@ -90,6 +90,9 @@ const Home: React.FC = () => {
             <div className="mb-8">
               <h1 className="text-primary text-5xl font-semibold mt-2">OUR PARTNERS</h1>
               <div className="mt-4 text-gray-500 text-lg sm:text-xl md:text-2xl lg:text-2xl max-w-2xl mx-auto">
+                <p className='mb-4'>
+                  Our community is <span className="font-bold text-black">people-powered</span> first and foremost. We consider our families to be our number one partners in the work; they help co-build the platform with each use and will continue to be at the center of and drive the work.
+                </p>
                 <p>
                   Our success depends largely on working closely with partners who are aligned with our mission. 
                   <br /> 
@@ -136,10 +139,3 @@ const Home: React.FC = () => {
 };
 
 export default Home;
-
-
-
-
-
-
-// commit message: Updated the project to use Lato font globally within application text. Updated the header to have correct terminology and links to typeform go to a new tab rather than replacing the current one. Updated the buttons globally throughout application to have hover:scale-105 so elements pop up at you. Changed the pilot section bg to bg-blue-100 text-gray-700 from bg-accent and text-black.

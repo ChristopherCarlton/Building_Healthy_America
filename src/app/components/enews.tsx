@@ -23,7 +23,7 @@ const Enews = () => {
           <div className="text-white text-left">
             <p className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold">SUBSCRIBE TO NEWSLETTER</p>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-2xl mt-4 sm:mt-8">
-              Our bi-monthly newsletter is a collection of Building Healthier America news, localized resources, and a digest of what has recently happened inside the Handzin community.
+              Our bi-monthly newsletter is a collection of relevant news, localized resources, and a digest of conversations that have happened inside the Building Healthier America community.
             </p>
           </div>
           <div className="flex flex-col items-start space-y-4">

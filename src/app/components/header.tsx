@@ -112,7 +112,8 @@ const Header: React.FC = () => {
                       </li>
                       <li>
                         <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="hover:underline block" target="_blank" rel="noopener noreferrer">
-                          Join the Community
+                          {/* Join the Community */}
+                          Join Our Free Community
                         </a>
                       </li>
                       {/* <li>
