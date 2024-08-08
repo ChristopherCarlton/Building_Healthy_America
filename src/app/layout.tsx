@@ -3,7 +3,6 @@ import { Inter, Lato } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import Script from 'next/script';
 
 const inter = Inter({ subsets: ["latin"] });
 const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
@@ -22,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="theme-color" content="#1D568B" />
-        {/* Google Analytics */}
+        {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-VW1MY3XV29"></script>
         <script
           dangerouslySetInnerHTML={{

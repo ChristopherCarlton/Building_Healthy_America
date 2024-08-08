@@ -89,9 +89,9 @@ const Home: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4">
             <div className="mb-8">
               <h1 className="text-primary text-5xl font-semibold mt-2">OUR PARTNERS</h1>
-              <div className="mt-4 text-gray-500 text-lg sm:text-xl md:text-2xl lg:text-2xl max-w-2xl mx-auto">
+              <div className="mt-4 text-gray-500 text-lg sm:text-xl md:text-2xl lg:text-2xl max-w-4xl mx-auto">
                 <p className='mb-4'>
-                  Our community is <span className="font-bold text-black">people-powered</span> first and foremost. We consider our families to be our number one partners in the work; they help co-build the platform with each use and will continue to be at the center of and drive the work.
+                  Our community is people-powered first and foremost. We consider our families to be our number one partners in the work; they help co-build the platform with each use and will continue to be at the center of and drive the work.
                 </p>
                 <p>
                   Our success depends largely on working closely with partners who are aligned with our mission. 

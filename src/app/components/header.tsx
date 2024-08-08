@@ -60,7 +60,7 @@ const Header: React.FC = () => {
       <nav
         className={`hidden lg:flex flex-col relative bg-cover bg-center text-white transition-all duration-500 ${
           isScrolled ? 'py-4' : 'py-8'
-        } ${isGetInvolvedHovered || isSubmenuVisible ? ' pb-48': ''}`}  // Adjust height when hovered
+        } ${isGetInvolvedHovered || isSubmenuVisible ? ' pb-40': ''}`}  // Adjust height when hovered
         style={{
           // backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/brick-header-mix-1600x1071.jpg)',
         }}
@@ -112,8 +112,7 @@ const Header: React.FC = () => {
                       </li>
                       <li>
                         <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="hover:underline block" target="_blank" rel="noopener noreferrer">
-                          {/* Join the Community */}
-                          Join Our Free Community
+                          Join the Community
                         </a>
                       </li>
                       {/* <li>

@@ -28,8 +28,10 @@ const carouselData = [
   {
     content: (
       <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl">
-        So Andy and Tom rolled up their sleeves and got back to work, convening a Community Task Force of families, community members, service providers, and other stakeholders. <span className='font-bold'>The resulting work plans helped pave the path for the sustainable design of Building Healthier America as we know it today.</span> The ongoing engagement of these families has been used to help design, implement, govern, evaluate, and improve BHA, and are evidence of our  continued commitment to the families that make up our community.
-      </p>
+  So Andy and Tom rolled up their sleeves and got back to work, convening a Community Task Force of families, community members, service providers, and other stakeholders. <span className='font-bold'>The resulting work plans helped pave the path for the sustainable design of Building Healthier America as we know it today.</span> <br className="mt-4" /> The ongoing engagement of these families has been used to help design, implement, govern, evaluate, and improve BHA, and are evidence of our continued commitment to the families that make up our community.
+</p>
+
+
     )
   },
   {
