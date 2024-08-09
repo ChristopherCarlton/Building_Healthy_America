@@ -10,7 +10,7 @@ export default function GetInvolved() {
     if (eventsRef.current) {
       eventsRef.current.scrollIntoView({ behavior: 'smooth' });
       setTimeout(() => {
-        window.scrollBy(0,100);
+        window.scrollBy(0,200);
       }, 500);
     }
   }, []);
