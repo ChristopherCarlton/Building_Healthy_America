@@ -8,13 +8,10 @@ export default function GetInvolved() {
 
   useEffect(() => {
     if (eventsRef.current) {
-      // Perform the initial smooth scroll
       eventsRef.current.scrollIntoView({ behavior: 'smooth' });
-
-      // Adjust the scroll position slightly after the initial smooth scroll completes
-      // setTimeout(() => {
-      //   window.scrollBy(0, 65); // Adjust the value as needed
-      // }, 500); // Adjust the timeout delay if needed
+      setTimeout(() => {
+        window.scrollBy(0, 50);
+      }, 500);
     }
   }, []);
 
