@@ -27,10 +27,10 @@ const Events = () => {
       <div className="w-full text-center fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mb-8">
         <div className="max-w-7xl mx-auto px-4">
           <div className="mb-8">
-            <h1 className="text-primary text-5xl font-semibold mt-2">ATTEND AN EVENT</h1>
+            <h1 className="text-white text-5xl font-semibold mt-2">ATTEND AN EVENT</h1>
           </div>
-          <p className="text-white text-lg sm:text-2xl md:text-3xl max-w-4xl mx-auto mt-4 px-4 sm:px-8 md:px-10">
-          Join us at one of our several events! The majority of our events are free and open to the public, and are a great way to get involved in the BHA community!
+          <p className="text-white text-lg sm:text-2xl md:text-3xl max-w-4xl mx-auto mt-8 px-4 sm:px-8 md:px-10">
+            The majority of our events are free and open to the public, and are a great way to get involved in the BHA community!
           </p>
         </div>
       </div>

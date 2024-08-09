@@ -179,16 +179,20 @@ const ContactPage = () => {
       </div>
 
 
-      <div className="w-full bg-primary text-white py-8">
-        <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
-          <h2 className="text-xl lg:text-2xl font-bold mb-4 lg:mb-2 text-center lg:text-left">
-            Consider Making a Tax Deductible Donation. Any Amount Helps!
-          </h2>
-          <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-primary px-4 py-2 rounded font-semibold mt-4 lg:mt-0">
-            DONATE
-          </a>
+
+
+
+      <div className="w-full bg-primary text-white py-14">
+          <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center">
+            <h2 className="text-2xl lg:text-4xl mb-4 lg:mb-2 text-center lg:text-left pr-20 font-semibold">
+              {/* Your support keeps us going. */}
+              Consider Making a Tax Deductible Donation. Any Amount Helps!
+            </h2>
+            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-primary px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300" target="_blank" rel="noopener noreferrer">
+              DONATE NOW
+            </a>
+          </div>
         </div>
-      </div>
     </main>
   );
 }; 
