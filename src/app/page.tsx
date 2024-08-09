@@ -85,27 +85,30 @@ const Home: React.FC = () => {
 
         <MissionFlip/>
 
+
         <div id="donate" className="w-full py-16 bg-white text-center fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
           <div className="max-w-7xl mx-auto px-4">
             <div className="mb-8">
               <h1 className="text-primary text-5xl font-semibold mt-2">OUR PARTNERS</h1>
               <div className="mt-4 text-gray-500 text-lg sm:text-xl md:text-2xl lg:text-2xl max-w-4xl mx-auto">
                 <p className='mb-4'>
-                  Our community is people-powered first and foremost. We consider our families to be our number one partners in the work; they help co-build the platform with each use and will continue to be at the center of and drive the work.
+                  The Building Healthier America community is people-powered. We consider our families to be our number one partners in the work; they help co-build the platform with each use and will continue to be at the center of and drive the work.
+                </p>
+                <p className='mb-4'>
+                  Our success depends largely on working closely with partners who are aligned with our mission.            
                 </p>
                 <p>
-                  Our success depends largely on working closely with partners who are aligned with our mission. 
-                  <br /> 
                   Our 2024 partners include:
                 </p>
               </div>
             </div>
             <Partners/>
 
-            <div className="mt-8">
-              <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="bg-secondary text-white px-6 py-3 rounded-md font-semibold hover:bg-primary hover:text-white transition-colors duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl" target="_blank" rel="noopener noreferrer">
+            <div className="fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mt-8 mx-auto max-w-2xl  text-gray-700 rounded-lg flex flex-col items-center justify-center mb-10">
+              <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="bg-secondary text-white px-6 py-3 rounded-md font-semibold duration-300 transform hover:scale-105 text-lg sm:text-xl md:text-2xl lg:text-2xl" target="_blank" rel="noopener noreferrer">
                 LET'S WORK TOGETHER
               </a>
+
             </div>
 
             <div className="fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mt-8 mx-auto max-w-2xl p-8 bg-blue-100 text-gray-700 rounded-lg flex flex-col items-center justify-center mb-20">
@@ -113,7 +116,7 @@ const Home: React.FC = () => {
               <p className="mb-8 text-lg sm:text-xl md:text-2xl lg:text-2xl">
                 We are launching our first pilot site in Hudson, Wisconsin and are actively seeking families managing children of any age with chronic illness or disability in these communities to help us develop and build our network of services.
               </p>
-              <a href="/get-involved/" className="bg-white text-secondary px-6 py-3 rounded-md font-semibold shadow-lg transform hover:scale-105 transition duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl">
+              <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="bg-white text-secondary px-6 py-3 rounded-md font-semibold shadow-lg transform hover:scale-105 transition duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl" target="_blank" rel="noopener noreferrer">
                 GET INVOLVED
               </a>
             </div>
@@ -128,7 +131,7 @@ const Home: React.FC = () => {
               {/* Your support keeps us going. */}
               YOUR SUPPORT KEEPS US GOING.
             </h2>
-            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-primary px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300">
+            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-primary px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300" target="_blank" rel="noopener noreferrer">
               DONATE NOW
             </a>
           </div>

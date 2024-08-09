@@ -27,18 +27,26 @@ const carouselData = [
   },
   {
     content: (
-      <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl">
-  So Andy and Tom rolled up their sleeves and got back to work, convening a Community Task Force of families, community members, service providers, and other stakeholders. <span className='font-bold'>The resulting work plans helped pave the path for the sustainable design of Building Healthier America as we know it today.</span> <br className="mt-4" /> The ongoing engagement of these families has been used to help design, implement, govern, evaluate, and improve BHA, and are evidence of our continued commitment to the families that make up our community.
-</p>
+      <>
+        <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl mb-4">
+          So Andy and Tom rolled up their sleeves and got back to work, convening a Community Task Force of families, community members, service providers, and other stakeholders. <span className='font-bold'>The resulting work plans helped pave the path for the sustainable design of Building Healthier America as we know it today.</span>
+        </p>
+        <p className="px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl mb-4">
+          The ongoing engagement of these families has been used to help design, implement, govern, evaluate, and improve BHA, and are evidence of our continued commitment to the families that make up our community.
+        </p>
+      </>
 
 
     )
   },
   {
     content: (
-      <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl mb-6">
-        <span className="font-bold">Our vision is to provide a free, sustainable support community — built for and with our members — that connects families to both local resources and to other families that are on a similar journey.</span>
-      </p>
+      <>
+        <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl mb-12">
+          <span className="font-bold">Our vision is to provide a free, sustainable support community — built for and with our members — that connects families to both local resources and to other families that are on a similar journey.</span>
+        </p>
+        <a href='https://files.eric.ed.gov/fulltext/ED407820.pdf' className='underline' target="_blank" rel="noopener noreferrer">Rinehart, P. (1997). Brave New Partnerships: Children with Disabilities, Families & Managed Care. Robert Wood Johnson Foundation</a>
+      </>
     )
   }
 ];
@@ -55,14 +63,6 @@ const OurStory = () => {
     }, 500); // Duration of the fade animation
   };
 
-  const handlePrevClick = () => {
-    handleClick((currentIndex - 1 + carouselData.length) % carouselData.length);
-  };
-
-  const handleNextClick = () => {
-    handleClick((currentIndex + 1) % carouselData.length);
-  };
-
   return (
     <section className="grid grid-cols-1 lg:grid-cols-3 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
       <div className="relative bg-accent text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-20 flex flex-col text-center lg:col-span-2 story-container" style={{ minHeight: '32rem' }}>
@@ -73,13 +73,6 @@ const OurStory = () => {
           </div>
         </div>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex items-center justify-center space-x-4">
-          {/* <button
-            className="h-8 w-8 bg-gray-800 text-white rounded-full flex items-center justify-center"
-            onClick={handlePrevClick}
-            aria-label={`Go to previous slide`}
-          >
-            &#9664;
-          </button> */}
           <div className="flex justify-center space-x-2">
             {carouselData.map((_, index) => (
               <button
@@ -90,13 +83,6 @@ const OurStory = () => {
               />
             ))}
           </div>
-          {/* <button
-            className="h-8 w-8 bg-gray-800 text-white rounded-full flex items-center justify-center"
-            onClick={handleNextClick}
-            aria-label={`Go to next slide`}
-          >
-            &#9654;
-          </button> */}
         </div>
       </div>
       <div className="relative w-full min-h-[25rem]">

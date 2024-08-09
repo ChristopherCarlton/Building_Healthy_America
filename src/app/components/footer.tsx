@@ -6,7 +6,6 @@ const Footer = () => {
   return (
     <footer
       className="relative bg-white text-black py-32"
-      // style={{ backgroundImage: 'url(https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2020/09/footer-rev4-1600x800.jpg)', backgroundPosition: 'center' }}
     >
       <div className="absolute inset-0 bg-white opacity-60"></div>
       <div className="relative container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 justify-between items-center">
@@ -18,12 +17,11 @@ const Footer = () => {
               className="h-48 w-48 mb-4 mx-auto"
             />
           </a>
-          {/* <p>Hudson, WI, 54016</p> */}
         </div>
         <div className="text-center">
           <ul className="space-y-2">
             <li>
-              <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="text-primary hover:underline">
+              <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">
                 Donate
               </a>
             </li>
@@ -33,12 +31,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2022/01/BHA-Privacy-Policy.pdf" className="text-primary hover:underline">
+              <a href="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2022/01/BHA-Privacy-Policy.pdf" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2022/01/BHA-Terms-and-Conditions.pdf" className="text-primary hover:underline">
+              <a href="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2022/01/BHA-Terms-and-Conditions.pdf" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">
                 Terms and Conditions
               </a>
             </li>

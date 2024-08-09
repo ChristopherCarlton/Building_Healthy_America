@@ -23,7 +23,7 @@ const carouselData = [
     )
   },
   {
-    title: "Families need respect and privacy",
+    title: "Families need respect and privacy.",
     content: (
       <>
         <p className="mt-8">

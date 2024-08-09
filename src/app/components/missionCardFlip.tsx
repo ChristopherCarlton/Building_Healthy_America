@@ -16,7 +16,7 @@ const MissionFlip = () => {
           <div className="absolute w-full h-full bg-accent text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] back [transform:rotateY(180deg)]">
             <h2 className="text-2xl font-semibold mb-4">Build Local Networks</h2>
             <p className="mb-4">
-              Building Healthier America connects families that are navigating chronic illness or disability of a child - to services and to each other. 
+              Building Healthier America connects families that are navigating chronic illness or disability of a child — to services and to each other. 
             </p>
             <p>
               We provide a centralized and searchable information base of resources and a growing network of families who are walking a similar path, all at no cost to our members.
@@ -41,7 +41,7 @@ const MissionFlip = () => {
               Our community-centric framework allows us to serve as many families as possible; our vision is that no family is ever turned away.
             </p>
             <p>
-              While we provide localized resources based on funding, our digital-first approach ensures that families all over the country are able to find connection, if they desire.
+              While we provide localized resources based on funding, our digital-first approach ensures that families all over the country are able to find connection.
             </p>
           </div>
         </div>
