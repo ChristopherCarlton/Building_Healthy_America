@@ -32,7 +32,7 @@ const BoardFlip = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
               <a href={`mailto:${member.email}`} className="bg-secondary hover:bg-white hover:text-secondary text-white font-bold py-2 px-4 rounded inline-flex items-center transition-colors duration-300 mt-8">
-                <MdEmail className="mr-2" /> Email
+                <MdEmail />  <p className='ml-2'>Email</p>
               </a>
             </div>
           </div>
