@@ -3,7 +3,7 @@ import Stripe from "stripe";
 import { buffer } from "micro";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
-  apiVersion: "2024-06-20", // Update to the expected API version
+  apiVersion: "2024-06-20",
 });
 
 export const config = {
@@ -40,14 +40,30 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
     }
 
     // Handle the event types you're interested in
-    if (event.type === "checkout.session.completed" ||
-        event.type === "checkout.session.async_payment_succeeded") {
-      const session = event.data.object as Stripe.Checkout.Session;
-      // Trigger the fulfillment function
-      await fulfillCheckout(session.id);
-    }
+    switch (event.type) {
+      case "checkout.session.completed":
+      case "checkout.session.async_payment_succeeded":
+        const session = event.data.object as Stripe.Checkout.Session;
+        // Trigger the fulfillment function
+        await fulfillCheckout(session.id);
+        break;
 
-    // Handle other event types as needed
+      case "capability.updated":
+        const capability = event.data.object as Stripe.Capability;
+        console.log(`Capability ${capability.id} was updated`);
+        // Implement your logic for handling capability updates
+        break;
+
+      // Handle additional event types as needed
+      // case "another.event.type":
+      //   const object = event.data.object;
+      //   // Handle the event
+      //   break;
+
+      default:
+        console.log(`Unhandled event type ${event.type}`);
+        break;
+    }
 
     // Respond with a 200 status to acknowledge receipt of the event
     res.status(200).json({ received: true });
