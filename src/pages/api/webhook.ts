@@ -24,12 +24,19 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
   let event: Stripe.Event;
 
   try {
-    // Capture the raw body to ensure that it's passed correctly
+    // Capture the raw body
     const buf = await buffer(req);
     const sig = req.headers["stripe-signature"] as string;
 
+    // Debugging: Log the raw body and signature
+    console.log("Received Stripe event:", buf.toString());
+    console.log("Received Stripe signature:", sig);
+
     // Verify the event by constructing it with the raw body
     event = stripe.webhooks.constructEvent(buf.toString(), sig, webhookSecret);
+
+    // Debugging: Log the event after construction
+    console.log("Constructed Stripe event:", event);
   } catch (err) {
     console.error("Webhook signature verification failed:", err);
     return res.status(400).send(`Webhook Error: ${err instanceof Error ? err.message : "Unknown error"}`);
