@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import Stripe from "stripe";
 import { buffer } from "micro";
-import fulfillCheckout from "./fullfill-checkout"; // Import the fulfillCheckout function
+import fulfillCheckout from "./fulfill-Checkout";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
   apiVersion: "2024-06-20",
@@ -16,48 +16,50 @@ export const config = {
 const webhookSecret: string = process.env.STRIPE_WEBHOOK_SECRET as string;
 
 const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method === "POST") {
-    let event: Stripe.Event;
-
-    try {
-      const buf = await buffer(req);
-      const sig = req.headers["stripe-signature"] as string;
-
-      event = stripe.webhooks.constructEvent(buf.toString(), sig, webhookSecret);
-    } catch (err) {
-      console.error("Webhook signature verification failed.", err);
-      return res.status(400).send(`Webhook Error: ${err instanceof Error ? err.message : "Unknown error"}`);
-    }
-
-    // Handle different event types
-    try {
-      switch (event.type) {
-        case "checkout.session.completed":
-        case "checkout.session.async_payment_succeeded": {
-          const session = event.data.object as Stripe.Checkout.Session;
-          req.body = { session_id: session.id };
-          await fulfillCheckout(req, res);
-          break;
-        }
-        case "capability.updated": {
-          const capability = event.data.object as Stripe.Capability;
-          console.log(`Capability ${capability.id} was updated`);
-          res.status(200).json({ received: true });
-          break;
-        }
-        default: {
-          console.log(`Unhandled event type ${event.type}`);
-          res.status(200).json({ received: true });
-          break;
-        }
-      }
-    } catch (err) {
-      console.error("Error handling webhook event.", err);
-      res.status(500).send("Internal Server Error");
-    }
-  } else {
+  if (req.method !== "POST") {
     res.setHeader("Allow", "POST");
-    res.status(405).end("Method Not Allowed");
+    return res.status(405).end("Method Not Allowed");
+  }
+
+  let event: Stripe.Event;
+
+  try {
+    // Capture the raw body to ensure that it's passed correctly
+    const buf = await buffer(req);
+    const sig = req.headers["stripe-signature"] as string;
+
+    // Verify the event by constructing it with the raw body
+    event = stripe.webhooks.constructEvent(buf.toString(), sig, webhookSecret);
+  } catch (err) {
+    console.error("Webhook signature verification failed:", err);
+    return res.status(400).send(`Webhook Error: ${err instanceof Error ? err.message : "Unknown error"}`);
+  }
+
+  // Handle different event types
+  try {
+    switch (event.type) {
+      case "checkout.session.completed":
+      case "checkout.session.async_payment_succeeded": {
+        const session = event.data.object as Stripe.Checkout.Session;
+        req.body = { session_id: session.id };
+        await fulfillCheckout(req, res);
+        break;
+      }
+      case "capability.updated": {
+        const capability = event.data.object as Stripe.Capability;
+        console.log(`Capability ${capability.id} was updated`);
+        res.status(200).json({ received: true });
+        break;
+      }
+      default: {
+        console.log(`Unhandled event type ${event.type}`);
+        res.status(200).json({ received: true });
+        break;
+      }
+    }
+  } catch (err) {
+    console.error("Error handling webhook event:", err);
+    return res.status(500).send("Internal Server Error");
   }
 };
 
