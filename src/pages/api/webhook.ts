@@ -1,6 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import Stripe from "stripe";
 import { buffer } from "micro";
+import fulfillCheckout from "./fullfill-checkout"; // Import the fulfillCheckout function
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
   apiVersion: "2024-06-20",
@@ -13,12 +14,6 @@ export const config = {
 };
 
 const webhookSecret: string = process.env.STRIPE_WEBHOOK_SECRET as string;
-
-const fulfillCheckout = async (session_id: string) => {
-  // Implement the fulfillment logic here
-  console.log(`Fulfilling Checkout Session ${session_id}`);
-  // TODO: Retrieve the session and perform fulfillment (e.g., send order, update database)
-};
 
 const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === "POST") {
@@ -39,34 +34,28 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
       }
     }
 
-    // Handle the event types you're interested in
+    // Handle different event types
     switch (event.type) {
       case "checkout.session.completed":
       case "checkout.session.async_payment_succeeded":
         const session = event.data.object as Stripe.Checkout.Session;
-        // Trigger the fulfillment function
-        await fulfillCheckout(session.id);
+        // Pass the session_id to the fulfillCheckout function
+        req.body = { session_id: session.id };
+        await fulfillCheckout(req, res);
         break;
 
       case "capability.updated":
         const capability = event.data.object as Stripe.Capability;
         console.log(`Capability ${capability.id} was updated`);
         // Implement your logic for handling capability updates
+        res.status(200).json({ received: true });
         break;
-
-      // Handle additional event types as needed
-      // case "another.event.type":
-      //   const object = event.data.object;
-      //   // Handle the event
-      //   break;
 
       default:
         console.log(`Unhandled event type ${event.type}`);
+        res.status(200).json({ received: true });
         break;
     }
-
-    // Respond with a 200 status to acknowledge receipt of the event
-    res.status(200).json({ received: true });
   } else {
     res.setHeader("Allow", "POST");
     res.status(405).end("Method Not Allowed");
