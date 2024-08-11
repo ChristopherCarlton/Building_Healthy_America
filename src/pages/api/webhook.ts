@@ -1,7 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import Stripe from "stripe";
 import { buffer } from "micro";
-import fulfillCheckout from "./fulfill-Checkout"; // Ensure this path is correct
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
   apiVersion: "2024-06-20",
@@ -9,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
 
 export const config = {
   api: {
-    bodyParser: false, // This is crucial for raw body access
+    bodyParser: false, // This ensures that the body remains in raw form
   },
 };
 
@@ -22,61 +21,46 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   let event: Stripe.Event;
-  
+
   try {
-    // Capture the raw body for signature verification
+    // Capture the raw body to ensure it remains unaltered
     const buf = await buffer(req);
     const sig = req.headers["stripe-signature"] as string;
-
-    // Log the raw body and signature for debugging
-    console.log("Received raw body:", buf.toString());
-    console.log("Received Stripe signature:", sig);
 
     // Verify the event by constructing it with the raw body
     event = stripe.webhooks.constructEvent(buf.toString(), sig, webhookSecret);
 
-    // Log the constructed event for debugging
-    console.log("Constructed Stripe event:", event);
+    // Return a quick 200 response before proceeding to complex logic
+    res.status(200).json({ received: true });
   } catch (err) {
-    // Handle signature verification errors
-    if (err instanceof Stripe.errors.StripeSignatureVerificationError) {
-      console.error("Webhook signature verification failed:", err.message);
-      return res.status(400).send(`Webhook Error: ${err.message}`);
-    } else {
-      console.error("Webhook error:", err);
-      return res.status(400).send("Webhook Error: Invalid payload");
-    }
+    console.error("Webhook signature verification failed:", err);
+    return res.status(400).send(`Webhook Error: ${err instanceof Error ? err.message : "Unknown error"}`);
   }
 
-  // Handle the event types
-  try {
-    switch (event.type) {
-      case "checkout.session.completed":
-      case "checkout.session.async_payment_succeeded": {
-        const session = event.data.object as Stripe.Checkout.Session;
-        req.body = { session_id: session.id };
-        await fulfillCheckout(req, res);
-        break;
-      }
-      case "capability.updated": {
-        const capability = event.data.object as Stripe.Capability;
-        console.log(`Capability ${capability.id} was updated`);
-        res.status(200).json({ received: true });
-        break;
-      }
-      default: {
-        console.log(`Unhandled event type ${event.type}`);
-        res.status(200).json({ received: true });
-        break;
-      }
+  // Handle different event types
+  switch (event.type) {
+    case "checkout.session.completed":
+    case "checkout.session.async_payment_succeeded": {
+      const session = event.data.object as Stripe.Checkout.Session;
+      // Implement your fulfillment logic here
+      console.log(`Session ID: ${session.id} - ${event.type}`);
+      break;
     }
-  } catch (err) {
-    console.error("Error handling webhook event:", err);
-    return res.status(500).send("Internal Server Error");
+    case "capability.updated": {
+      const capability = event.data.object as Stripe.Capability;
+      console.log(`Capability ${capability.id} was updated`);
+      break;
+    }
+    default: {
+      console.log(`Unhandled event type ${event.type}`);
+      break;
+    }
   }
 };
 
 export default webhookHandler;
+
+
 
 
 
