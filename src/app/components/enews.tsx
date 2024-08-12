@@ -1,15 +1,51 @@
 "use client"
 import React, { useState } from 'react';
+import { supabase } from '@/pages/api/supabaseClient';
 
 const Enews = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Add functionality to send data when ready
-    // e.g., send form data to an API endpoint
-    // const formData = new FormData(e.target);
-    setIsSubmitted(true);
+
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get('name') as string;
+    const zipCode = formData.get('zipCode') as string;
+    const email = formData.get('email') as string;
+
+    try {
+      // Check if the email already exists
+      const { data: existingEmails, error: fetchError } = await supabase
+        .from('Newsletter')
+        .select('email')
+        .eq('email', email);
+
+      if (fetchError) {
+        throw fetchError;
+      }
+
+      if (existingEmails && existingEmails.length > 0) {
+        // Email already exists, so just show the subscribed message
+        setIsSubmitted(true);
+        setErrorMessage(null); // Clear any previous error messages
+      } else {
+        // Email doesn't exist, proceed to insert the new entry
+        const { error } = await supabase
+          .from('Newsletter')
+          .insert([{ name, zipCode, email }]);
+
+        if (error) {
+          throw error;
+        }
+
+        setIsSubmitted(true);
+        setErrorMessage(null); // Clear any previous error messages
+      }
+    } catch (error) {
+      setErrorMessage('There was an issue subscribing. Please try again later.');
+      console.error('Error inserting data:', error);
+    }
   };
 
   return (
@@ -63,6 +99,11 @@ const Enews = () => {
             {isSubmitted && (
               <div className="w-full bg-accent text-white p-4 rounded-md mt-4 text-center">
                 Subscribed to newsletter
+              </div>
+            )}
+            {errorMessage && (
+              <div className="w-full bg-red-500 text-white p-4 rounded-md mt-4 text-center">
+                {errorMessage}
               </div>
             )}
           </div>
