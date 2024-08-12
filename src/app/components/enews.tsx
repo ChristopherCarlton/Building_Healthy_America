@@ -13,7 +13,7 @@ const Enews = () => {
     const name = formData.get('name') as string;
     const zipCode = formData.get('zipCode') as string;
     const email = formData.get('email') as string;
-
+ 
     try {
       // Check if the email already exists
       const { data: existingEmails, error: fetchError } = await supabase
