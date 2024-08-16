@@ -9,7 +9,7 @@ const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "Building Healthy America",
-  description: "WE'RE BUILDING A FIRST-OF-ITS-KIND NETWORK OF SUPPORT FOR FAMILIES OF CHILDREN WITH CHRONIC ILLNESS OR DISABILITY.",
+  description: "We're building a first-of-its-kind network of support for families of children with chronic illness or disability",
 };
 
 export default function RootLayout({
