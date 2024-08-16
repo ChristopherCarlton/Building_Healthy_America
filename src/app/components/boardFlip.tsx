@@ -64,7 +64,7 @@ const boardMembers = [
     image: '/images/AmySchneider.jpg',
     email: 'aschneider@stcroixtherapy.org',
     affiliation: 'St. Croix Therapy',
-    bio: 'Amy Schneider is an accomplished professional with nearly two decades of experience in the non-profit sector. She holds degrees in Education and Non-Profit Management from Seattle Pacific University. As Executive Director at St. Croix Therapy, Amy oversees pediatric outpatient therapy programs for children of all abilities. Her expertise lies in leadership development, project management, program development, fundraising management, and the successful execution of capital and annual fundraising initiatives. She lives in Hudson, WI with her family and loves to spend time outdoors in every season.',
+    bio: 'Amy Schneider is the Executive Director at St Croix Therapy, a non-profit outpatient pediatric clinic dedicated to serving youth in the St. Croix Valley with varying abilities and needs. With a BA in Education from Seattle Pacific University, Amy has 20 years of extensive experience in non-profit, mission-driven work. Her expertise spans program development, facility management, volunteer board development, and the oversight of both capital and annual fundraising efforts. Amy has held significant roles in the community, including serving on the St. Croix Valley Foundation as president, past president of the Hudson Daybreak Rotary club, and currently serving as a member of the St. Croix County Council on Aging and Disabilities. Her leadership and dedication have been instrumental in advancing the missions of the organizations she has served. Amy, along with her husband, Nick, and their twin boys, has been a resident of the St Croix Valley since 2009, where they remain actively involved in the community.',
   },
   {
     name: 'Andy Nelson',
@@ -83,7 +83,7 @@ const boardMembers = [
     bio: 'Chris Kost is a graduate of the University of Minnesota with a double major in Exercise Physiology and Public Health Education. He began his YMCA tenure in 2008, overseeing everything from Aquatics to Member Services, and has been Executive Director of the Hudson YMCA since 2015. Chris is deeply passionate about the communities he serves and is active in the Hudson Chamber of Commerce Board and the Hudson Daybreak Rotary Club. He also teaches a variety of courses for the community, including mental health first aid. Chris and his family reside in Hudson, WI, and he spends his free time golfing and cheering on his favorite Minnesota sports teams.',
   },
   {
-    name: 'Thomas Brinsko',
+    name: 'Tom Brinsko',
     title: 'Retired Executive',
     image: '/images/TomBrinsko.jpg',
     email: 'bha4families@gmail.com',

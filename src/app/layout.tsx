@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
-  title: "Building Healthy America",
+  title: "Building Healthier America",
   description: "We're building a first-of-its-kind network of support for families of children with chronic illness or disability",
 };
 

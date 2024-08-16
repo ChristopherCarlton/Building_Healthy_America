@@ -78,7 +78,7 @@ const Home: React.FC = () => {
               <h1 className="text-primary text-5xl font-semibold mt-2">OUR MISSION</h1>
             </div>
             <p className="text-gray-500 text-lg sm:text-2xl md:text-3xl max-w-4xl mx-auto mt-4 px-4 sm:px-8 md:px-10">
-              Our mission is to serve as a centralized resource and point of connection for families with children that have chronic illness or disability as they navigate medical, human services, educational, and local agencies.
+              Our mission is to serve as a central community resource for families as they navigate the medical, human service, educational and local agencies that serve children with chronic illness or disability.
             </p>
           </div>
         </div>
