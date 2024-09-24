@@ -1,12 +1,9 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaPhoneAlt } from 'react-icons/fa';
-import { MdEmail } from 'react-icons/md';
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer
-      className="relative bg-white text-black py-32"
-    >
+    <footer className="relative bg-white text-black py-32">
       <div className="absolute inset-0 bg-white opacity-60"></div>
       <div className="relative container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 justify-between items-center">
         <div className="text-center">
@@ -31,12 +28,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2022/01/BHA-Privacy-Policy.pdf" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">
+              <a href="/pdfs/BHA-Privacy-Policy.pdf" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="https://buildinghealthieramerica.org/wp-content/uploads/sites/4/2022/01/BHA-Terms-and-Conditions.pdf" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">
+              <a href="/pdfs/BHA-Terms-and-Conditions.pdf" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">
                 Terms and Conditions
               </a>
             </li>
