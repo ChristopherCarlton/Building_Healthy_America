@@ -10,7 +10,7 @@ const BoardFlip = () => {
 
         return (
           <div key={index} className="group w-full max-w-full mx-auto my-8 [perspective:1000px]">
-            <div className="relative w-full h-[450px] text-center transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+            <div className="relative w-full h-[500px] text-center transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
               {/* Front Side */}
               <div className="absolute w-full h-full flex flex-col items-center justify-center [backface-visibility:hidden] overflow-hidden bg-cover bg-center">
                 <div className="card bg-white p-6 rounded-lg shadow-md h-full">
@@ -26,6 +26,14 @@ const BoardFlip = () => {
                     <h4 className="text-gray-500">{member.title}</h4>
                     <ul className="mt-0 flex flex-col items-center px-4">
                       <li className="text-secondary">{member.affiliation}</li>
+                      {(member.name === 'Tom Brinsko' || member.name === 'Andy Nelson') && (
+                        <li className="text-gray-700 flex items-center">
+                          <MdEmail className="mr-2" />
+                          <a href={`mailto:${member.email}`} className="text-gray-700 underline">
+                            {member.email}
+                          </a>
+                        </li>
+                      )}
                     </ul>
                   </div>
                 </div>
@@ -50,14 +58,6 @@ const BoardFlip = () => {
 };
 
 const boardMembers = [
-  // {
-  //   name: 'Amy Schneider',
-  //   title: 'Community Navigator',
-  //   image: '/images/AmySchneider.jpg',
-  //   email: 'aschneider@stcroixtherapy.org',
-  //   affiliation: 'Building Healthier America',
-  //   bio: 'Amy Schneider is an accomplished professional with nearly two decades of experience in the non-profit sector. She holds degrees in Education and Non-Profit Management from Seattle Pacific University. As Executive Director at St. Croix Therapy, Amy oversees pediatric outpatient therapy programs for children of all abilities. Her expertise lies in leadership development, project management, program development, fundraising management, and the successful execution of capital and annual fundraising initiatives. She lives in Hudson, WI with her family and loves to spend time outdoors in every season.',
-  // },
   {
     name: 'Amy Schneider',
     title: 'Executive Director',
@@ -93,3 +93,14 @@ const boardMembers = [
 ];
 
 export default BoardFlip;
+
+
+
+  // {
+  //   name: 'Amy Schneider',
+  //   title: 'Community Navigator',
+  //   image: '/images/AmySchneider.jpg',
+  //   email: 'aschneider@stcroixtherapy.org',
+  //   affiliation: 'Building Healthier America',
+  //   bio: 'Amy Schneider is an accomplished professional with nearly two decades of experience in the non-profit sector. She holds degrees in Education and Non-Profit Management from Seattle Pacific University. As Executive Director at St. Croix Therapy, Amy oversees pediatric outpatient therapy programs for children of all abilities. Her expertise lies in leadership development, project management, program development, fundraising management, and the successful execution of capital and annual fundraising initiatives. She lives in Hudson, WI with her family and loves to spend time outdoors in every season.',
+  // },

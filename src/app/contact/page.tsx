@@ -155,7 +155,7 @@ const ContactPage = () => {
               <div>
                 <h3 className="text-3xl font-bold">Contact Info</h3>
                 <p className="text-3xl">(612) 750-6538<br />
-                  <a href="mailto:bha4families@gmail.com" className="text-secondary text-3xl">bha4families@gmail.com</a>
+                  <a href="mailto:bha4families@gmail.com" className="text-secondary text-3xl">info@buildinghealthieramerica.org</a>
                 </p>
               </div>
               <div>
