@@ -58,7 +58,7 @@ const Home: React.FC = () => {
               <div className="container mx-auto flex justify-center items-center text-center h-full relative z-20 px-4">
                 <div className="block-lede text-white">
                   <div className="block-description">
-                    <p className="text-3xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold">WE'RE BUILDING A FIRST-OF-ITS-KIND SUPPORT NETWORK WITH AND FOR FAMILIES OF CHILDREN THAT HAVE CHRONIC ILLNESS OR DISABILITY.</p>
+                    <p className="text-3xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold">COME JOIN A FIRST-OF-ITS-KIND SUPPORT NETWORK WITH AND FOR FAMILIES OF CHILDREN THAT HAVE CHRONIC ILLNESS OR DISABILITY.</p>
                   </div>
                 </div>
               </div>
@@ -91,13 +91,13 @@ const Home: React.FC = () => {
               <h1 className="text-primary text-5xl font-semibold mt-2">OUR PARTNERS</h1>
               <div className="mt-4 text-gray-500 text-lg sm:text-xl md:text-2xl lg:text-2xl max-w-4xl mx-auto">
                 <p className='mb-4'>
-                  The Building Healthier America community is people-powered. We consider our families to be our number one partners in the work; they help co-build the platform with each use and will continue to be at the center of and drive the work.
+                  Building Healthier Community is people-powered. We consider our families to be our number one partners in the work; they help co-build the platform with each use and will continue to be at the center of and drive the work.
                 </p>
                 <p className='mb-4'>
                   Our success depends largely on working closely with partners who are aligned with our mission.            
                 </p>
                 <p>
-                  Our 2024 partners include:
+                  Our 2025 partners include:
                 </p>
               </div>
             </div>

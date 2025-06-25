@@ -3,7 +3,6 @@ import React from 'react';
 const Partners = () => {
   const logos = [
     { src: '/images/logo1.png', alt: 'Logo 1', link: 'https://www.ymcanorth.org/locations/hudson_ymca' },
-    { src: '/images/HandzinLogo.png', alt: 'Logo 2', link: 'https://app.handzin.com/' },
     { src: '/images/logo3.png', alt: 'Logo 3', link: 'https://bridgecl.org/' },
     { src: '/images/logo4.png', alt: 'Logo 4', link: 'https://stcroixtherapy.org/' },
     { src: '/images/logo5.png', alt: 'Logo 5', link: 'https://hudsonraiders.org/' }

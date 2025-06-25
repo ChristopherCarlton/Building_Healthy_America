@@ -27,7 +27,7 @@ const carouselData = [
     content: (
       <>
         <p className="mt-8">
-          The Building Healthier America community is powered by Handzin — a trusted, secure, and private platform. We have engaged group moderators who are committed to upholding our community guidelines.
+          Building Healthier Community is hosted on Heartbeat — a trusted, secure, and private platform. Our engaged group moderators are committed to upholding our community guidelines and keeping the space safe and valuable.
         </p>
       </>
     )
