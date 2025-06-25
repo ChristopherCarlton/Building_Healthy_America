@@ -103,14 +103,14 @@ const Home: React.FC = () => {
             </div>
             <Partners/>
 
-            <div className="fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mt-8 mx-auto max-w-2xl  text-gray-700 rounded-lg flex flex-col items-center justify-center mb-10">
+            {/* <div className="fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mt-8 mx-auto max-w-2xl  text-gray-700 rounded-lg flex flex-col items-center justify-center mb-10">
               <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="bg-secondary text-white px-6 py-3 rounded-md font-semibold duration-300 transform hover:scale-105 text-lg sm:text-xl md:text-2xl lg:text-2xl" target="_blank" rel="noopener noreferrer">
                 LET'S WORK TOGETHER
               </a>
 
-            </div>
+            </div> */}
 
-            <div className="fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mt-8 mx-auto max-w-2xl p-8 bg-blue-100 text-gray-700 rounded-lg flex flex-col items-center justify-center mb-20">
+            {/* <div className="fade-in transition-opacity duration-1000 opacity-0 translate-y-4 mt-8 mx-auto max-w-2xl p-8 bg-blue-100 text-gray-700 rounded-lg flex flex-col items-center justify-center mb-20">
               <h2 className="text-4xl font-bold mt-2 mb-6">JOIN OUR PILOT SITE </h2>
               <p className="mb-8 text-lg sm:text-xl md:text-2xl lg:text-2xl">
                 We are launching our first pilot site in Hudson, Wisconsin and are actively seeking families managing children of any age with chronic illness or disability in these communities to help us develop and build our network of services.
@@ -118,7 +118,7 @@ const Home: React.FC = () => {
               <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="bg-white text-secondary px-6 py-3 rounded-md font-semibold shadow-lg transform hover:scale-105 transition duration-300 text-lg sm:text-xl md:text-2xl lg:text-2xl" target="_blank" rel="noopener noreferrer">
                 GET INVOLVED
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
