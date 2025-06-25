@@ -34,14 +34,13 @@ const Home: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Building Healthier America</title>
+        <title>Building Healthier Community</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-        <link rel="apple-touch-icon" href="https://buildinghealthieramerica.org/wp-content/themes/buildinghealthieramerica/apple-touch-icon.png" />
-        <link rel="icon" href="https://buildinghealthieramerica.org/wp-content/themes/buildinghealthieramerica/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" href="/images/BHC-icon.png" />
+        <link rel="icon" href="/images/BHC-icon.png" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
-        <link rel="pingback" href="https://buildinghealthieramerica.org/xmlrpc.php" />
-        <link rel="shortcut icon" type="image/x-icon" href="https://buildinghealthieramerica.org/wp-content/themes/buildinghealthieramerica/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="/images/BHC-icon.png" />
       </Head>
       
       <main id="top" className="bg-white">

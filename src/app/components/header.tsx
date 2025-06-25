@@ -65,11 +65,11 @@ const Header: React.FC = () => {
       >
         <div className="absolute inset-0 bg-white bg-opacity-100"></div>
         <div className="container mx-auto flex flex-col items-center relative z-10">
-          <a href="/" className="mb-10">
+          <a href="/" className="">
             <img
-              src="/images/BHAlogo.png"
-              alt="Building Healthier America"
-              className={`transition-all duration-500 ${isScrolled ? 'h-20 md:h-24' : 'h-32 md:h-40 lg:h-40'}`}
+              src="/images/BHC-logo-full.png"
+              alt="Building Healthier Community"
+              className={`transition-all duration-500 ${isScrolled ? 'h-28 md:h-32' : 'h-48 md:h-56 lg:h-60'}`}
             />
           </a>
           <ul className={`flex space-x-6 font-semibold text-primary transition-all duration-500 ${isScrolled ? 'text-base' : 'text-lg'}`}>
@@ -165,9 +165,9 @@ const Header: React.FC = () => {
         <div className="container mx-auto flex justify-between items-center relative z-10">
           <a href="/" className="mb-0">
             <img
-              src="/images/BHAlogo.png"
-              alt="Building Healthier America"
-              className={`transition-all duration-500 ${isScrolled ? 'h-20 md:h-24' : 'h-32 md:h-40 lg:h-40'}`}
+              src="/images/BHC-logo-full.png"
+              alt="Building Healthier Community"
+              className={`transition-all duration-500 ${isScrolled ? 'h-28 md:h-32' : 'h-48 md:h-56 lg:h-60'}`}
             />
           </a>
           <button onClick={handleMenuToggle} className="text-black z-50" aria-label="Toggle Menu">
