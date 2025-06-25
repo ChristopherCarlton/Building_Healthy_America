@@ -79,7 +79,7 @@ const Header: React.FC = () => {
                 About Us
               </a>
             </li>
-            <li
+            {/* <li
               className="relative"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
@@ -121,10 +121,10 @@ const Header: React.FC = () => {
                   </div>
                 </div>
               )}
-            </li>
+            </li> */}
             <li>
               <a
-                href="https://app.handzin.com/login"
+                href="https://app.heartbeat.chat/bha/invitation?code=98B88C#landing-page"
                 target="_blank"
                 className="hover:underline border border-primary px-3 py-2 rounded"
               >
@@ -133,7 +133,7 @@ const Header: React.FC = () => {
             </li>
             <li>
               <a
-                href="https://ttboev5xtyu.typeform.com/to/cPYeoeri"
+                href="https://app.heartbeat.chat/login/bha?redirectTo=%2Fbha"
                 target="_blank"
                 className="hover:underline border border-primary px-3 py-2 rounded"
                 rel="noopener noreferrer"
@@ -143,7 +143,7 @@ const Header: React.FC = () => {
             </li>
             <li>
               <a
-                href="https://buy.stripe.com/cN216geI46bI0M0eUU"
+                href="https://givebutter.com/dMaREx"
                 target="_blank"
                 className="hover:underline border border-primary px-3 py-2 rounded"
                 rel="noopener noreferrer"
