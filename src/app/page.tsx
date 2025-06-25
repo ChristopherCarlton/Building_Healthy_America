@@ -135,6 +135,27 @@ const Home: React.FC = () => {
             </a>
           </div>
         </div>
+
+        <div className="w-full bg-blue-100 py-16">
+          <div className="container mx-auto px-4">
+            <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+            <iframe 
+              src="https://subscribe-forms.beehiiv.com/2a8d4111-132c-4945-b513-66f6451ae83d" 
+              className="beehiiv-embed w-full" 
+              data-test-id="beehiiv-embed" 
+              frameBorder="0" 
+              scrolling="no" 
+              style={{
+                width: '100%', 
+                height: 'auto', 
+                margin: 0, 
+                borderRadius: '0px 0px 0px 0px', 
+                backgroundColor: 'transparent', 
+                boxShadow: '0 0 #0000'
+              }}
+            ></iframe>
+          </div>
+        </div>
       </main>
     </>
   );

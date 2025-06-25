@@ -9,8 +9,8 @@ const Footer = () => {
         <div className="text-center">
           <a href="/">
             <img
-              src="/images/BHAlogo.png"
-              alt="Building Healthier America"
+              src="/images/BHC-icon.png"
+              alt="Building Healthier Community"
               className="h-48 w-48 mb-4 mx-auto"
             />
           </a>
@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="text-center">
           <ul className="space-y-2">
             <li>
-              <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">
+              <a href="https://givebutter.com/dMaREx" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">
                 Donate
               </a>
             </li>
