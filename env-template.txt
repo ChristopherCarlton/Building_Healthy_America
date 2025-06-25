@@ -1,0 +1,34 @@
+# Building Healthy America - Environment Variables Template
+# Copy this file to .env.local and fill in your actual values
+
+# ================================
+# STRIPE CONFIGURATION
+# ================================
+# Your Stripe secret key (starts with sk_test_ or sk_live_)
+STRIPE_SECRET_KEY=sk_test_your_stripe_secret_key_here
+
+# Your Stripe webhook secret (starts with whsec_)
+STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret_here
+
+# ================================
+# SUPABASE CONFIGURATION
+# ================================
+# Your Supabase project URL
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url_here
+
+# Your Supabase anon/public key
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key_here
+
+# ================================
+# NEXT.JS CONFIGURATION
+# ================================
+# Set to 'production' for production deployment
+NODE_ENV=development
+
+# ================================
+# ADDITIONAL CONFIGURATION
+# ================================
+# Add any other environment variables your project needs below
+# DATABASE_URL=your_database_url_here
+# EMAIL_SERVICE_API_KEY=your_email_service_api_key_here
+# GOOGLE_ANALYTICS_ID=your_google_analytics_id_here 
