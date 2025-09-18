@@ -33,7 +33,7 @@ const carouselData = [
     content: (
       <>
         <p className="mb-4">
-          We partner with Handzin, a secure community platform, to create a hub of connection for our families.
+          We partner with Heartbeat, a trusted and secure community platform, to create a hub of connection for our families.
         </p>
         <p>
           In the cases of our local chapters, we have a community navigator who aggregates resources and serves as a bridge between the various social service organizations.

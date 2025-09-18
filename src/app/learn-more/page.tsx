@@ -29,7 +29,7 @@ const LearnMore = () => {
           <div className="absolute inset-0 bg-primary bg-opacity-70"></div>
           <div className="container mx-auto flex justify-center items-center h-full relative z-20 px-4">
             <h1 className="text-white text-5xl font-bold text-center">
-              Learn More About Building Healthier America
+              Learn More About Building Healthier Community
             </h1>
           </div>
         </div>
@@ -115,10 +115,10 @@ const LearnMore = () => {
           <h2 className="text-4xl font-bold text-primary mb-8">How We Are Approaching the Challenge</h2>
           <div className="bg-secondary bg-opacity-10 rounded-lg shadow-lg p-8">
             <p className="text-lg text-gray-700 mb-6">
-              Building Healthier America is partnering with families in the St. Croix Valley of Wisconsin and Minnesota and organizations such as the YMCA, St. Croix Therapy, and Bridge for Community Life, to launch our pilot community -- an online hub for families to connect with others who are walking a similiar path.
+              Building Healthier Community is partnering with families in the St. Croix Valley of Wisconsin and Minnesota and organizations such as the YMCA, St. Croix Therapy, and Bridge for Community Life, to launch our pilot community -- an online hub for families to connect with others who are walking a similiar path.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              The BHA community is hosted on Handzin, a trusted and secure online platform. The dedicated Family / Community Navigator is located and employed by a local community agency, St. Croix Therapy. The Navigator will partner with community agencies, use collaborative communication technology and our website assets to assist families with their needs.
+              We partner with Heartbeat, a trusted and secure community platform, to create our hub of connection for our families. The dedicated Family / Community Navigator is located and employed by a local community agency, St. Croix Therapy. The Navigator will partner with community agencies, use collaborative communication technology and our website assets to assist families with their needs.
             </p>
             <p className="text-lg text-gray-700">
               Focus is on building family strengths to navigate this journey. Evaluating these initial community sites and establishing a culture of learning will generate a locally adaptive program model, attractive and flexible to other communities through our partnership with the national YMCA and other national multisite community critical hub organizations.
@@ -131,7 +131,7 @@ const LearnMore = () => {
             <h2 className="text-2xl lg:text-4xl mb-4 lg:mb-2 text-center lg:text-left pr-20 font-semibold">
               Support Our Mission Today
             </h2>
-            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-primary px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300" target="_blank" rel="noopener noreferrer">
+            <a href="https://givebutter.com/dMaREx" className="bg-white text-primary px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300" target="_blank" rel="noopener noreferrer">
               DONATE NOW
             </a>
           </div>

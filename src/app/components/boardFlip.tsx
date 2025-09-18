@@ -26,14 +26,6 @@ const BoardFlip = () => {
                     <h4 className="text-gray-500">{member.title}</h4>
                     <ul className="mt-0 flex flex-col items-center px-4">
                       <li className="text-secondary">{member.affiliation}</li>
-                      {(member.name === 'Tom Brinsko' || member.name === 'Andy Nelson') && (
-                        <li className="text-gray-700 flex items-center">
-                          <MdEmail className="mr-2" />
-                          <a href={`mailto:${member.email}`} className="text-gray-700 underline">
-                            {member.email}
-                          </a>
-                        </li>
-                      )}
                     </ul>
                   </div>
                 </div>
@@ -45,9 +37,6 @@ const BoardFlip = () => {
                     <span className="font-bold">{member.name}</span> {bioWithoutName}
                   </p>
                 </div>
-                <a href={`mailto:${member.email}`} className="bg-secondary hover:bg-white hover:text-secondary text-white font-bold py-2 px-4 rounded inline-flex items-center transition-colors duration-300 mt-8">
-                  <MdEmail />  <p className='ml-2'>Email</p>
-                </a>
               </div>
             </div>
           </div>
@@ -58,6 +47,13 @@ const BoardFlip = () => {
 };
 
 const boardMembers = [
+  {
+    name: 'Amy Nasers',
+    title: 'Community Navigator',
+    image: '/images/AmyNasers.png',
+    affiliation: 'St. Croix Therapy',
+    bio: "In addition to being the Customer Care Team Coordinator at Building Healthier Community's partner, St. Croix Therapy, Amy Nasers is also the Community Navigator inside the BHC community! She brings years of experience as a patient advocate, special educator, and caregiver to the table as she helps members connect to resources they need.",
+  },
   {
     name: 'Amy Schneider',
     title: 'Executive Director',

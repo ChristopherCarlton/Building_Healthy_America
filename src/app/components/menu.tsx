@@ -30,15 +30,15 @@ const Menu: React.FC<{ closeModal: () => void }> = ({ closeModal }) => {
         <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
         Contact
       </a>
-      <a href="https://app.handzin.com/login" target="_blank" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left border border-white">
+      <a href="https://app.heartbeat.chat/login/bha?redirectTo=%2Fbha" target="_blank" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left border border-white">
         <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
         Log In
       </a>
-      <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" target="_blank" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left border border-white">
+      <a href="https://app.heartbeat.chat/bha/invitation?code=98B88C#landing-page" target="_blank" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left border border-white">
         <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
         Sign Up
       </a>
-      <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" target="_blank" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left border border-white">
+      <a href="https://givebutter.com/dMaREx" target="_blank" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left border border-white">
         <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
         Donate
       </a>

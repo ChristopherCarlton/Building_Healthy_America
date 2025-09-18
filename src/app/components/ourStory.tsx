@@ -5,7 +5,7 @@ const carouselData = [
   {
     content: (
       <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl">
-        <span className="font-bold">The seeds for Building Healthier America were planted in 1997</span>, when the Robert Wood Johnson Foundation funded the HealthPartners Institute and what is now known as the Center for Children with Special Health Care Needs at the University of Minnesota for a study¹ that identified some of the hurdles that families face when navigating a disability or chronic illness diagnosis.
+        <span className="font-bold">The seeds for Building Healthier Community were planted in 1997</span>, when the Robert Wood Johnson Foundation funded the HealthPartners Institute and what is now known as the Center for Children with Special Health Care Needs at the University of Minnesota for a study¹ that identified some of the hurdles that families face when navigating a disability or chronic illness diagnosis.
       </p>
     )
   },
@@ -21,7 +21,7 @@ const carouselData = [
   {
     content: (
       <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl">
-        Andy Nelson and Tom Brinsko — both involved in the 1997 study and both on the Building Healthier America founding board of directors — agreed upon retiring from their respective careers that <span className='font-bold'> there was still a long way to go to ensuring that families feel supported</span> throughout their initial diagnoses and the long journey that follows. 
+        Andy Nelson and Tom Brinsko — both involved in the 1997 study and both on the Building Healthier Community founding board of directors — agreed upon retiring from their respective careers that <span className='font-bold'> there was still a long way to go to ensuring that families feel supported</span> throughout their initial diagnoses and the long journey that follows. 
       </p>
     )
   },
@@ -29,10 +29,10 @@ const carouselData = [
     content: (
       <>
         <p className="mt-4 px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl mb-4">
-          So Andy and Tom rolled up their sleeves and got back to work, convening a Community Task Force of families, community members, service providers, and other stakeholders. <span className='font-bold'>The resulting work plans helped pave the path for the sustainable design of Building Healthier America as we know it today.</span>
+          So Andy and Tom rolled up their sleeves and got back to work, convening a Community Task Force of families, community members, service providers, and other stakeholders. <span className='font-bold'>The resulting work plans helped pave the path for the sustainable design of Building Healthier Community as we know it today.</span>
         </p>
         <p className="px-2 sm:px-4 text-lg sm:text-xl md:text-2xl lg:text-2xl mb-4">
-          The ongoing engagement of these families has been used to help design, implement, govern, evaluate, and improve BHA, and are evidence of our continued commitment to the families that make up our community.
+          The ongoing engagement of these families has been used to help design, implement, govern, evaluate, and improve BHC, and are evidence of our continued commitment to the families that make up our community.
         </p>
       </>
 

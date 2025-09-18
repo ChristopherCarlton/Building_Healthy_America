@@ -24,10 +24,10 @@ export default function Wisconsin() {
         </div>
 
         <div className="flex justify-center items-center mt-16 space-x-4">
-          <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="bg-primary text-white px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300">
+          <a href="https://app.heartbeat.chat/bha/invitation?code=98B88C#landing-page" className="bg-primary text-white px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300">
             JOIN OUR PILOT SITE
           </a>
-          <a href="https://ttboev5xtyu.typeform.com/to/cPYeoeri" className="bg-primary text-white px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300">
+          <a href="https://app.heartbeat.chat/bha/invitation?code=98B88C#landing-page" className="bg-primary text-white px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300">
             SIGN UP
           </a>
         </div>

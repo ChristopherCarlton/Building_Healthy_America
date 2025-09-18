@@ -21,7 +21,7 @@ export default function GetInvolved() {
         <div className="py-32"></div>
         <h1 className="text-5xl font-bold text-center mb-8 text-[#2c3e50] tracking-wide">GET INVOLVED</h1>
         <p className="text-lg sm:text-2xl md:text-3xl text-center mb-12 text-[#34495e]">
-          There are many ways to get involved with Building Healthier America!
+          There are many ways to get involved with Building Healthier Community!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center">
@@ -32,7 +32,7 @@ export default function GetInvolved() {
               insights from families who are a few steps ahead of you.
             </p>
             <a
-              href="https://ttboev5xtyu.typeform.com/to/cPYeoeri"
+              href="https://app.heartbeat.chat/bha/invitation?code=98B88C#landing-page"
               className="inline-block text-primary hover:text-primary-dark font-semibold transition duration-300"
               target="_blank"
               rel="noopener noreferrer"
@@ -48,7 +48,7 @@ export default function GetInvolved() {
               no family ever has to walk alone.
             </p>
             <a
-              href="https://buy.stripe.com/cN216geI46bI0M0eUU"
+              href="https://givebutter.com/dMaREx"
               className="inline-block text-secondary hover:text-secondary-dark font-semibold transition duration-300"
               target="_blank"
               rel="noopener noreferrer"
@@ -64,7 +64,7 @@ export default function GetInvolved() {
               resource provider or funder in this space, join us!
             </p>
             <a
-              href="https://ttboev5xtyu.typeform.com/to/cPYeoeri"
+              href="https://app.heartbeat.chat/bha/invitation?code=98B88C#landing-page"
               className="inline-block text-accent hover:text-accent-dark font-semibold transition duration-300"
               target="_blank"
               rel="noopener noreferrer"

@@ -138,22 +138,39 @@ const Home: React.FC = () => {
 
         <div className="w-full bg-blue-100 py-16">
           <div className="container mx-auto px-4">
-            <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
-            <iframe 
-              src="https://subscribe-forms.beehiiv.com/2a8d4111-132c-4945-b513-66f6451ae83d" 
-              className="beehiiv-embed w-full" 
-              data-test-id="beehiiv-embed" 
-              frameBorder="0" 
-              scrolling="no" 
-              style={{
-                width: '100%', 
-                height: 'auto', 
-                margin: 0, 
-                borderRadius: '0px 0px 0px 0px', 
-                backgroundColor: 'transparent', 
-                boxShadow: '0 0 #0000'
-              }}
-            ></iframe>
+            {/* Mobile fallback: open subscribe form on its own page for best UX */}
+            <div className="block md:hidden text-center">
+              <h3 className="text-2xl font-semibold text-primary mb-4">Subscribe to the Building Healthier Community Digest</h3>
+              <a
+                href="https://subscribe-forms.beehiiv.com/2a8d4111-132c-4945-b513-66f6451ae83d"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-primary text-white px-6 py-3 rounded-md font-semibold shadow-md"
+              >
+                Subscribe
+              </a>
+            </div>
+
+            {/* Desktop/tablet: embedded form */}
+            <div className="hidden md:block w-full max-w-full overflow-x-hidden">
+              <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+              <iframe 
+                src="https://subscribe-forms.beehiiv.com/2a8d4111-132c-4945-b513-66f6451ae83d" 
+                className="beehiiv-embed w-full" 
+                data-test-id="beehiiv-embed" 
+                frameBorder="0" 
+                scrolling="no" 
+                style={{
+                  width: '100%',
+                  maxWidth: '100%',
+                  height: 'auto', 
+                  margin: 0, 
+                  borderRadius: '0px 0px 0px 0px', 
+                  backgroundColor: 'transparent', 
+                  boxShadow: '0 0 #0000'
+                }}
+              ></iframe>
+            </div>
           </div>
         </div>
       </main>

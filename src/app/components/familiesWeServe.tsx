@@ -16,7 +16,7 @@ const FamiliesWeServe = () => {
               Our platform and services are not limited to a single diagnosis, but some of the most common diagnoses our families navigate are ADHD, autism, bipolar disorder, cerebral palsy, congenital heart defects, Down syndrome, dyslexia, emotional disturbance, epilepsy, fetal alcohol syndrome, hearing impairment including deafness, intellectual disabilities, orthopedic impairment, Prader-Willi syndrome, spina bifida, traumatic brain injury, vision impairment including blindness, and Williams syndrome.
             </p>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-2xl mt-4 sm:mt-8">
-              Families benefit from being part of the Building Healthier America community regardless of geographic location. Our funding does determine the amount of localized resources we are able to provide, but much of the value simply comes from families that are willing to help other families.
+              Families benefit from being part of the Building Healthier Community regardless of geographic location. Our funding does determine the amount of localized resources we are able to provide, but much of the value simply comes from families that are willing to help other families.
             </p>
             <div className="mt-12 flex justify-center">
               <Link 

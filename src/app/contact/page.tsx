@@ -79,9 +79,9 @@ const ContactPage = () => {
       <div className='py-24'></div>
       <div className="container mx-auto px-4 py-8 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
         {/* <h3 className="text-secondary text-2xl mb-2">We Want to Hear from You!</h3> */}
-        <h1 className="text-primary text-5xl font-semibold mb-8">CONTACT BHA</h1>
+        <h1 className="text-primary text-5xl font-semibold mb-8">CONTACT BHC</h1>
         <p className="text-gray-500 text-lg sm:text-2xl md:text-3xl mb-8   max-w-4xl mx-auto mt-4 px-4 sm:px-8 md:px-10">
-          Interested in learning more about Building Healthier America? Navigating a chronic illness or disability diagnosis? Have ideas you’d like to share, or simply want to be involved? Send us a note!
+          Interested in learning more about Building Healthier Community? Navigating a chronic illness or disability diagnosis? Have ideas you’d like to share, or simply want to be involved? Send us a note!
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8 mb-8">
           {/* old form */}
@@ -155,7 +155,7 @@ const ContactPage = () => {
               <div>
                 <h3 className="text-3xl font-bold">Contact Info</h3>
                 <p className="text-3xl">(612) 750-6538<br />
-                  <a href="mailto:bha4families@gmail.com" className="text-secondary text-3xl">info@buildinghealthieramerica.org</a>
+                  <a href="mailto:info@buildinghealthiercommunity.org" className="text-secondary text-3xl">info@buildinghealthiercommunity.org</a>
                 </p>
               </div>
               <div>
@@ -188,7 +188,7 @@ const ContactPage = () => {
               {/* Your support keeps us going. */}
               Consider Making a Tax Deductible Donation. Any Amount Helps!
             </h2>
-            <a href="https://buy.stripe.com/cN216geI46bI0M0eUU" className="bg-white text-primary px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300" target="_blank" rel="noopener noreferrer">
+            <a href="https://givebutter.com/dMaREx" className="bg-white text-primary px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300" target="_blank" rel="noopener noreferrer">
               DONATE NOW
             </a>
           </div>
