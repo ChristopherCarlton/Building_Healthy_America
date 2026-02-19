@@ -18,18 +18,6 @@ const Menu: React.FC<{ closeModal: () => void }> = ({ closeModal }) => {
         <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
         About Us
       </a>
-      <a href="/get-involved/" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left">
-        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
-        Get Involved
-      </a>
-      <a href="/events/" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left">
-        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
-        Events
-      </a>
-      <a href="/contact/" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left">
-        <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
-        Contact
-      </a>
       <a href="https://app.heartbeat.chat/login/bha?redirectTo=%2Fbha" target="_blank" className="relative text-xl w-64 px-14 py-4 rounded-md hover:bg-secondary text-left border border-white">
         <span className="absolute left-1 top-0 bottom-0 w-1 rounded-md bg-secondary"></span>
         Log In

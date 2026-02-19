@@ -124,7 +124,7 @@ const Header: React.FC = () => {
             </li> */}
             <li>
               <a
-                href="https://app.heartbeat.chat/bha/invitation?code=98B88C#landing-page"
+                href="https://app.heartbeat.chat/login/bha?redirectTo=%2Fbha"
                 target="_blank"
                 className="hover:underline border border-primary px-3 py-2 rounded"
               >
@@ -133,7 +133,7 @@ const Header: React.FC = () => {
             </li>
             <li>
               <a
-                href="https://app.heartbeat.chat/login/bha?redirectTo=%2Fbha"
+                href="https://app.heartbeat.chat/bha/invitation?code=98B88C#landing-page"
                 target="_blank"
                 className="hover:underline border border-primary px-3 py-2 rounded"
                 rel="noopener noreferrer"

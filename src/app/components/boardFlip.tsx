@@ -48,11 +48,11 @@ const BoardFlip = () => {
 
 const boardMembers = [
   {
-    name: 'Amy Nasers',
-    title: 'Community Navigator',
-    image: '/images/AmyNasers.png',
+    name: 'Kiki Dickinson',
+    title: 'BHC Community Manager and Navigator',
+    image: '/images/KikiDickinson.png',
     affiliation: 'St. Croix Therapy',
-    bio: "In addition to being the Customer Care Team Coordinator at Building Healthier Community's partner, St. Croix Therapy, Amy Nasers is also the Community Navigator inside the BHC community! She brings years of experience as a patient advocate, special educator, and caregiver to the table as she helps members connect to resources they need.",
+    bio: 'Kiki Dickinson is the Operations Manager and Physical Therapist at St Croix Therapy, a non-profit outpatient pediatric clinic dedicated to serving youth in the St. Croix Valley with varying abilities and needs where she has worked for 30+ years. Kiki has strong relationships within the St. Croix Valley community. Kiki founded North Star Aquatic Therapy to offer aquatic therapy courses for both the pediatric and adult populations and teaches primarily for Aquatic Therapy University (ATU). Kiki teaches custom aquatic therapy classes nationally and internationally for ATU with a focus on the neuro pediatric population. Kiki has helped develop course manuals for several pediatric courses for Aquatic Therapy University (ATU) and has developed several of her own individual classes that she has presented at national and state conferences. Kiki is also one of the instructors for the APTA Academy of Aquatic Physical Therapy Clinical Competency Certificate. Kiki has been an adjunct professor at St. Catherine\'s University for over 25 years teaching Pediatric Coursework for their Physical Therapy Assistant Program.',
   },
   {
     name: 'Amy Schneider',
@@ -85,6 +85,13 @@ const boardMembers = [
     email: 'bha4families@gmail.com',
     affiliation: 'YMCA of the Greater Twin Cities',
     bio: 'Tom Brinsko is a co-founder of BHA and a retired non-profit executive, most recently as the President and CEO of the YMCA of Greater Twin Cities. At the YMCA, he oversaw a broad range of work including strategic planning, finance, operations, marketing, governance, and program development. Tom has dedicated himself to serving families and the community and has served on various nonprofit boards. Tom and his family live in Hudson, WI, and, as a lifelong marathoner and triathlete, he enjoys all manner of outdoor activities.',
+  },
+  {
+    name: 'Margi Miller',
+    title: 'Board Member',
+    image: '/images/MargiMiller.jpg',
+    affiliation: 'Building Healthier Communities',
+    bio: 'Margi Miller has lived in the St. Croix Valley for nearly 40 years. She is a parent advocate, with personal experience navigating services for her special needs child, and working toward inclusivity and positive changes. Margi is the retired Chief Operating Officer of the St. Croix Valley Foundation, where she worked with the staff team to provide high standards in integrity and customer service. Margi provided donor development and fund management services to many donors that had family funds with the foundation. She assisted 10 affiliate foundations throughout the valley in their development and best practices. Margi was a founding board member of Bridge for Community Life in Hudson, Wisconsin. Her duties included creating sustainable summer day camps, and recreational activities for Bridge participants. Margi is passionate about helping families connect with each other and the appropriate resources. Margi believes in the mission of Building Healthy Communities because she has lived a life of advocacy for those who have disabilities and knows that families are the key to support.',
   },
 ];
 
