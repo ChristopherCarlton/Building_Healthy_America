@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Partners = () => {
   const logos = [
@@ -13,7 +14,15 @@ const Partners = () => {
       <div className="flex flex-wrap justify-center space-x-4 md:space-x-8">
         {logos.map((logo, index) => (
           <a key={index} href={logo.link} className="flex justify-center items-center p-2">
-            <img src={logo.src} alt={logo.alt} className="h-20 md:h-32" />
+            <div className="relative h-20 md:h-32 w-32 md:w-44">
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                fill
+                sizes="(max-width: 768px) 8rem, 11rem"
+                className="object-contain"
+              />
+            </div>
           </a>
         ))}
       </div>

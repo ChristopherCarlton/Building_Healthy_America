@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const carouselData = [
   {
@@ -86,11 +87,15 @@ const BeliefSlide = () => {
     <div className="p-4 md:p-16">
       <div className="relative flex flex-col md:flex-row items-center justify-center bg-white">
         <div className="relative flex flex-col md:flex-row items-center justify-end w-full md:w-auto pr-4 md:pr-12">
-          <img
-            src='/images/BHAbeliefs2.jpg'
-            alt="Background"
-            className="object-cover rounded-md w-full md:w-[60%] h-64 md:h-[75vh] max-w-[1200px]"
-          />
+          <div className="relative w-full md:w-[60%] h-64 md:h-[75vh] max-w-[1200px]">
+            <Image
+              src='/images/BHAbeliefs2.jpg'
+              alt=""
+              fill
+              sizes="(max-width: 768px) 100vw, 60vw"
+              className="object-cover rounded-md"
+            />
+          </div>
 
           <div className="bg-primary text-white p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 rounded-md shadow-lg z-10 w-full md:w-[70%] h-auto mt-4 md:mt-0 md:-ml-24 flex flex-col justify-center items-center relative overflow-hidden">
             <div className={`transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}>
