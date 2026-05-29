@@ -55,14 +55,8 @@ const boardMembers = [
     affiliation: 'HealthPartners, Inc.',
     bio: 'Andy Nelson is a co-founder of BHA who brings a wealth of experience and knowledge, particularly in the area of healthcare research. From 1990 until 2017, Andy led the HealthPartners Institute, a nonprofit research organization based out of the Twin Cities. He continues to serve in the leadership, governance and steering committee roles on local, national and internationally based health and research networks, including as Senior Research Fellow at the HealthPartners Institute.',
   },
-  {
-    name: 'Tom Brinsko',
-    title: 'Retired Executive',
-    image: '/images/TomBrinsko.jpg',
-    email: 'bha4families@gmail.com',
-    affiliation: 'YMCA of the Greater Twin Cities',
-    bio: 'Tom Brinsko is a co-founder of BHA and a retired non-profit executive, most recently as the President and CEO of the YMCA of Greater Twin Cities. At the YMCA, he oversaw a broad range of work including strategic planning, finance, operations, marketing, governance, and program development. Tom has dedicated himself to serving families and the community and has served on various nonprofit boards. Tom and his family live in Hudson, WI, and, as a lifelong marathoner and triathlete, he enjoys all manner of outdoor activities.',
-  },
+  // Tom Brinsko has been moved into the dedicated "In Memoriam" section at the top
+  // of the About Us page (see components/memorial.tsx).
   {
     name: 'Amy Schneider',
     title: 'Executive Director',

@@ -6,6 +6,7 @@ import Collapse from '../components/weBelieveCollapse';
 import FamiliesWeServe from '../components/familiesWeServe';
 import BoardFlip from '../components/boardFlip';
 import OurStory from '../components/ourStory';
+import Memorial from '../components/memorial';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -30,6 +31,7 @@ const AboutUs = () => {
     <div className="bg-white w-full">
       <main className="w-full">
         <div className='py-16'></div>
+        <Memorial/>
         <section className="text-center mb-20 w-full">
           <FamiliesWeServe/>
         </section>
