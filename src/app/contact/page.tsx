@@ -76,8 +76,7 @@ const ContactPage = () => {
 
   return (
     <main className="text-center bg-white">
-      <div className='py-24'></div>
-      <div className="container mx-auto px-4 py-8 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+      <div className="container mx-auto px-4 py-12 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
         {/* <h3 className="text-secondary text-2xl mb-2">We Want to Hear from You!</h3> */}
         <h1 className="text-primary text-5xl font-semibold mb-8">CONTACT BHC</h1>
         <p className="text-gray-500 text-lg sm:text-2xl md:text-3xl mb-8   max-w-4xl mx-auto mt-4 px-4 sm:px-8 md:px-10">

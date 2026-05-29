@@ -3,9 +3,7 @@ import Partners from "../components/partners";
 export default function Wisconsin() {
   return (
     <div className="w-screen mx-auto font-sans bg-white px-8">
-      <div className="py-32"></div>
-
-      <main className="mt-8">
+      <main className="mt-12">
         <h2 className="text-4xl font-bold text-center text-primary">WISCONSIN</h2>
 
         <div className="flex flex-col md:flex-row mt-16 items-center">

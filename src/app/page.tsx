@@ -48,8 +48,6 @@ const Home: React.FC = () => {
           <span className="screen-reader-text">Skip Navigation or Skip to Content</span>
         </a>
 
-        <div className='py-16'></div>
-
         <div className="w-screen h-[45rem] sm:h-[30rem] md:h-[40rem] lg:h-[45rem] relative fade-in transition-opacity duration-1000 opacity-0 translate-y-4 pb-20">
           <div id="hero-slider" className="h-full">
             <div className="h-full bg-cover bg-center relative lg:bg-fixed" 

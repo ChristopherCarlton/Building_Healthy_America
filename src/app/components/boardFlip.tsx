@@ -1,72 +1,102 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const BoardFlip = () => {
-  // Track which card is flipped so touch users (no hover) can read bios by tapping.
-  const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
+  // Which member's bio is open in the modal (null = closed).
+  const [selected, setSelected] = useState<number | null>(null);
+  const activeMember = selected !== null ? boardMembers[selected] : null;
+
+  // Close on Escape and lock background scroll while the modal is open.
+  useEffect(() => {
+    if (selected === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setSelected(null);
+    };
+    document.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.body.style.overflow = '';
+    };
+  }, [selected]);
 
   return (
-    <section className="flex flex-wrap justify-center gap-8 mb-24 max-w-6xl mx-auto px-4 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-      {boardMembers.map((member, index) => {
-        // Extract the name and the rest of the bio
-        const bioWithoutName = member.bio.replace(member.name, '').trim();
-        const isFlipped = flippedIndex === index;
-
-        const toggle = () => setFlippedIndex(isFlipped ? null : index);
-
-        return (
-          <div
+    <>
+      <section className="flex flex-wrap justify-center gap-8 mb-24 max-w-6xl mx-auto px-4 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+        {boardMembers.map((member, index) => (
+          <button
             key={index}
-            role="button"
-            tabIndex={0}
+            type="button"
+            onClick={() => setSelected(index)}
             aria-label={`Read bio for ${member.name}`}
-            onClick={toggle}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                toggle();
-              }
-            }}
-            className="group w-full sm:w-[330px] my-4 [perspective:1000px] cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-lg"
+            aria-haspopup="dialog"
+            className="group w-full sm:w-[330px] bg-white rounded-lg shadow-md overflow-hidden text-left flex flex-col transition duration-300 hover:shadow-xl hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
           >
-            <div
-              className={`relative w-full h-[500px] text-center transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] ${
-                isFlipped ? '[transform:rotateY(180deg)]' : ''
-              }`}
+            <div className="relative w-full h-72">
+              <Image
+                src={member.image}
+                alt={member.name}
+                fill
+                sizes="(max-width: 640px) 100vw, 330px"
+                className="object-cover object-top"
+              />
+            </div>
+            <div className="p-6 flex flex-col flex-grow text-center">
+              <h3 className="text-xl font-bold text-primary">{member.name}</h3>
+              <h4 className="text-gray-500">{member.title}</h4>
+              <p className="text-secondary mt-1">{member.affiliation}</p>
+              <span className="mt-auto pt-4 text-primary font-semibold inline-flex items-center justify-center gap-1 group-hover:gap-2 transition-all">
+                Read bio <span aria-hidden="true">&rarr;</span>
+              </span>
+            </div>
+          </button>
+        ))}
+      </section>
+
+      {activeMember && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60"
+          onClick={() => setSelected(null)}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="member-modal-name"
+        >
+          <div
+            className="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setSelected(null)}
+              aria-label="Close"
+              className="absolute top-3 right-4 text-gray-400 hover:text-gray-700 text-3xl leading-none focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
             >
-              {/* Front Side */}
-              <div className="absolute w-full h-full flex flex-col items-center justify-center [backface-visibility:hidden] overflow-hidden bg-cover bg-center">
-                <div className="card bg-white p-6 rounded-lg shadow-md h-full w-full">
-                  <div>
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="h-80 w-full object-cover rounded-t-lg"
-                    />
-                  </div>
-                  <div className="pt-4 text-center">
-                    <h3 className="text-xl font-bold text-primary">{member.name}</h3>
-                    <h4 className="text-gray-500">{member.title}</h4>
-                    <ul className="mt-0 flex flex-col items-center px-4">
-                      <li className="text-secondary">{member.affiliation}</li>
-                    </ul>
-                    <p className="text-xs text-gray-400 mt-3 lg:hidden">Tap to read bio</p>
-                  </div>
+              &times;
+            </button>
+            <div className="p-6 sm:p-10">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                <Image
+                  src={activeMember.image}
+                  alt={activeMember.name}
+                  width={128}
+                  height={128}
+                  className="w-32 h-32 rounded-full object-cover object-top shrink-0 shadow"
+                />
+                <div className="text-center sm:text-left">
+                  <h3 id="member-modal-name" className="text-2xl font-bold text-primary">
+                    {activeMember.name}
+                  </h3>
+                  <h4 className="text-gray-500 text-lg">{activeMember.title}</h4>
+                  <p className="text-secondary">{activeMember.affiliation}</p>
                 </div>
               </div>
-              {/* Back Side */}
-              <div className="absolute w-full h-full bg-primary text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-lg">
-                <div className="w-full h-full overflow-y-auto">
-                  <p className="mb-4">
-                    <span className="font-bold">{member.name}</span> {bioWithoutName}
-                  </p>
-                </div>
-              </div>
+              <p className="mt-6 text-gray-600 text-lg leading-relaxed">{activeMember.bio}</p>
             </div>
           </div>
-        );
-      })}
-    </section>
+        </div>
+      )}
+    </>
   );
 };
 

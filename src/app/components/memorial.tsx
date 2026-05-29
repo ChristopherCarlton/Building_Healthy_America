@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 // In Memoriam — Thomas Rudolph Brinsko, co-founder of Building Healthier America.
 // Details below are drawn from Tom's obituary. The donation link is the same
@@ -16,7 +17,7 @@ const Memorial = () => {
   return (
     <section
       aria-label="In memoriam of Thomas Rudolph Brinsko"
-      className="w-full bg-gradient-to-b from-blue-50 to-white py-16 sm:py-20 border-t-4 border-accent fade-in transition-opacity duration-1000 opacity-0 translate-y-4"
+      className="w-full bg-gradient-to-b from-blue-50 to-white py-16 sm:py-20 fade-in transition-opacity duration-1000 opacity-0 translate-y-4"
     >
       <div className="container mx-auto px-4 max-w-6xl">
         <p className="text-center text-secondary tracking-[0.3em] text-sm sm:text-base font-semibold uppercase mb-10">
@@ -26,11 +27,16 @@ const Memorial = () => {
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-16">
           {/* Photo — place of honor */}
           <div className="shrink-0">
-            <img
-              src={tom.image}
-              alt={tom.name}
-              className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 object-cover rounded-full shadow-xl ring-4 ring-white border border-gray-200 mx-auto"
-            />
+            <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full shadow-xl ring-4 ring-white border border-gray-200 overflow-hidden mx-auto">
+              <Image
+                src={tom.image}
+                alt={tom.name}
+                fill
+                sizes="(max-width: 640px) 16rem, (max-width: 1024px) 18rem, 20rem"
+                className="object-cover"
+                priority
+              />
+            </div>
           </div>
 
           {/* Tribute */}

@@ -30,7 +30,6 @@ const AboutUs = () => {
   return (
     <div className="bg-white w-full">
       <main className="w-full">
-        <div className='py-16'></div>
         <Memorial/>
         <section className="text-center mb-20 w-full">
           <FamiliesWeServe/>

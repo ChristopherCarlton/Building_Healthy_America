@@ -9,16 +9,12 @@ export default function GetInvolved() {
   useEffect(() => {
     if (eventsRef.current) {
       eventsRef.current.scrollIntoView({ behavior: 'smooth' });
-      setTimeout(() => {
-        window.scrollBy(0,200);
-      }, 500);
     }
   }, []);
 
   return (
     <>
       <div className="w-screen mx-auto px-4 py-12 font-crimson-text bg-blue-100">
-        <div className="py-32"></div>
         <h1 className="text-5xl font-bold text-center mb-8 text-[#2c3e50] tracking-wide">GET INVOLVED</h1>
         <p className="text-lg sm:text-2xl md:text-3xl text-center mb-12 text-[#34495e]">
           There are many ways to get involved with Building Healthier Community!

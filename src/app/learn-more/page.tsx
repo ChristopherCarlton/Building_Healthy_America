@@ -21,8 +21,6 @@ const LearnMore = () => {
 
   return (
     <div className="bg-white w-full">
-      <div className="py-24"></div>
-      
       <div className="w-screen h-[45rem] relative fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
         <div className="h-full bg-cover bg-center relative lg:bg-fixed" 
           style={{ backgroundImage: 'url(/images/BHAfamiliesWeServe.jpg)' }}>

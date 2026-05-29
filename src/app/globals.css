@@ -17,6 +17,39 @@ body {
   }
 }
 
+/* Respect users who prefer reduced motion: disable animations/transitions
+   and make sure scroll-reveal content is always visible. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .fade-in {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+@keyframes menuFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-animate {
+  animation: menuFadeIn 200ms ease-out;
+}
+
 .perspective {
   perspective: 1000px;
 }
