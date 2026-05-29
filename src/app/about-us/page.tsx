@@ -35,9 +35,9 @@ const AboutUs = () => {
         <section className="text-center mb-20 w-full">
           <FamiliesWeServe/>
         </section>
-        <section className="text-center mb-14 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
-          <h2 className="text-5xl text-primary font-semibold">OUR LEADERSHIP AND BOARD</h2>
-          <p className="text-gray-500 text-lg sm:text-xl md:text-2xl lg:text-2xl mt-4 sm:w-[50%] mx-auto px-4">
+        <section className="text-center mb-12 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl text-primary font-semibold">OUR LEADERSHIP AND BOARD</h2>
+          <p className="text-gray-500 text-lg sm:text-xl md:text-2xl lg:text-2xl mt-4 max-w-3xl mx-auto px-4">
             Our team is made up of people with a breadth of experience in healthcare and human services, all of whom are passionate about improving the lives of those we serve.
           </p>
         </section>

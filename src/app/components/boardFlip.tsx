@@ -1,19 +1,42 @@
-import React from 'react';
-import { MdEmail } from 'react-icons/md';
+'use client';
+import React, { useState } from 'react';
 
 const BoardFlip = () => {
+  // Track which card is flipped so touch users (no hover) can read bios by tapping.
+  const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
+
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-24 w-3/4 mx-auto fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
+    <section className="flex flex-wrap justify-center gap-8 mb-24 max-w-6xl mx-auto px-4 fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
       {boardMembers.map((member, index) => {
         // Extract the name and the rest of the bio
         const bioWithoutName = member.bio.replace(member.name, '').trim();
+        const isFlipped = flippedIndex === index;
+
+        const toggle = () => setFlippedIndex(isFlipped ? null : index);
 
         return (
-          <div key={index} className="group w-full max-w-full mx-auto my-8 [perspective:1000px]">
-            <div className="relative w-full h-[500px] text-center transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+          <div
+            key={index}
+            role="button"
+            tabIndex={0}
+            aria-label={`Read bio for ${member.name}`}
+            onClick={toggle}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggle();
+              }
+            }}
+            className="group w-full sm:w-[330px] my-4 [perspective:1000px] cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-lg"
+          >
+            <div
+              className={`relative w-full h-[500px] text-center transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] ${
+                isFlipped ? '[transform:rotateY(180deg)]' : ''
+              }`}
+            >
               {/* Front Side */}
               <div className="absolute w-full h-full flex flex-col items-center justify-center [backface-visibility:hidden] overflow-hidden bg-cover bg-center">
-                <div className="card bg-white p-6 rounded-lg shadow-md h-full">
+                <div className="card bg-white p-6 rounded-lg shadow-md h-full w-full">
                   <div>
                     <img
                       src={member.image}
@@ -27,11 +50,12 @@ const BoardFlip = () => {
                     <ul className="mt-0 flex flex-col items-center px-4">
                       <li className="text-secondary">{member.affiliation}</li>
                     </ul>
+                    <p className="text-xs text-gray-400 mt-3 lg:hidden">Tap to read bio</p>
                   </div>
                 </div>
               </div>
               {/* Back Side */}
-              <div className="absolute w-full h-full bg-primary text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+              <div className="absolute w-full h-full bg-primary text-white p-8 flex flex-col items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-lg">
                 <div className="w-full h-full overflow-y-auto">
                   <p className="mb-4">
                     <span className="font-bold">{member.name}</span> {bioWithoutName}

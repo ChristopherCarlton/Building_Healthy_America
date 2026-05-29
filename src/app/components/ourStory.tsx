@@ -66,8 +66,8 @@ const OurStory = () => {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-3 w-full fade-in transition-opacity duration-1000 opacity-0 translate-y-4">
       <div className="relative bg-accent text-white px-4 py-6 sm:px-8 sm:py-12 lg:px-24 lg:py-20 flex flex-col text-center lg:col-span-2 story-container" style={{ minHeight: '32rem' }}>
-        <h1 className="text-5xl font-semibold text-white mb-10">OUR STORY AND VISION</h1>
-        <div className="flex flex-col justify-start flex-grow">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white mb-10">OUR STORY AND VISION</h1>
+        <div className="flex flex-col justify-start flex-grow pb-16">
           <div className={`transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}>
             {carouselData[currentIndex].content}
           </div>
