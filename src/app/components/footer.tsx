@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { DONATE_URL } from '../constants/links';
 
 const Footer = () => {
   return (
@@ -18,8 +19,13 @@ const Footer = () => {
         <div className="text-center">
           <ul className="space-y-2">
             <li>
-              <a href="https://givebutter.com/dMaREx" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">
+              <a href={DONATE_URL} className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">
                 Donate
+              </a>
+            </li>
+            <li>
+              <a href="/events/" className="text-primary hover:underline">
+                Events
               </a>
             </li>
             <li>

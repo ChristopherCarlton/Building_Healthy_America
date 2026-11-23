@@ -7,6 +7,7 @@ import FamiliesWeServe from '../components/familiesWeServe';
 import BoardFlip from '../components/boardFlip';
 import OurStory from '../components/ourStory';
 import Memorial from '../components/memorial';
+import { DONATE_URL } from '../constants/links';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -30,7 +31,6 @@ const AboutUs = () => {
   return (
     <div className="bg-white w-full">
       <main className="w-full">
-        <Memorial/>
         <section className="text-center mb-20 w-full">
           <FamiliesWeServe/>
         </section>
@@ -41,13 +41,14 @@ const AboutUs = () => {
           </p>
         </section>
         <BoardFlip/>
+        <Memorial/>
         <OurStory/>
         <div className="w-full bg-primary text-white py-14">
           <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center">
             <h2 className="text-2xl lg:text-4xl mb-4 lg:mb-2 text-center lg:text-left pr-20 font-semibold">
                SUPPORT OUR WORK WITH A FINANCIAL CONTRIBUTION.
             </h2>
-            <a href="https://givebutter.com/dMaREx" className="bg-white text-primary px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300" target="_blank" rel="noopener noreferrer">
+            <a href={DONATE_URL} className="bg-white text-primary px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300" target="_blank" rel="noopener noreferrer">
               DONATE NOW
             </a>
           </div>

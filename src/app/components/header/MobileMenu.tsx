@@ -1,13 +1,14 @@
 'use client';
 import React, { useEffect, useRef } from 'react';
 import type { IconType } from 'react-icons';
-import { MdHome, MdInfoOutline, MdLogin, MdPersonAddAlt, MdFavorite, MdClose } from 'react-icons/md';
+import { MdHome, MdInfoOutline, MdEvent, MdLogin, MdPersonAddAlt, MdFavorite, MdClose } from 'react-icons/md';
 import { FiExternalLink } from 'react-icons/fi';
 import { navLinks, externalProps, NavLink } from './navLinks';
 
 const ICONS: Record<string, IconType> = {
   Home: MdHome,
   'About Us': MdInfoOutline,
+  Events: MdEvent,
   'Log In': MdLogin,
   'Sign Up': MdPersonAddAlt,
 };

@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FaPhoneVolume, FaMapMarkerAlt, FaRegClock, FaThumbsUp, FaFacebookF, FaGoogle, FaYelp, FaInstagram, FaPinterest, FaYoutube } from 'react-icons/fa';
+import { DONATE_URL } from '../constants/links';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -187,7 +188,7 @@ const ContactPage = () => {
               {/* Your support keeps us going. */}
               Consider Making a Tax Deductible Donation. Any Amount Helps!
             </h2>
-            <a href="https://givebutter.com/dMaREx" className="bg-white text-primary px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300" target="_blank" rel="noopener noreferrer">
+            <a href={DONATE_URL} className="bg-white text-primary px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300" target="_blank" rel="noopener noreferrer">
               DONATE NOW
             </a>
           </div>

@@ -1,3 +1,5 @@
+import { DONATE_URL } from '../../constants/links';
+
 // Single source of truth for header navigation.
 // Desktop and mobile both consume this list; `desktop`/`mobile` flags control
 // where a link appears, and `mobileLabel` allows the wording to differ on mobile.
@@ -13,6 +15,7 @@ export type NavLink = {
 export const navLinks: NavLink[] = [
   { label: 'Home', href: '/', desktop: false }, // mobile-only
   { label: 'About Us', href: '/about-us/' },
+  { label: 'Events', href: '/events/' },
   {
     label: 'Member Area',
     mobileLabel: 'Log In',
@@ -27,7 +30,7 @@ export const navLinks: NavLink[] = [
   },
   {
     label: 'Donate',
-    href: 'https://givebutter.com/dMaREx',
+    href: DONATE_URL,
     external: true,
   },
 ];

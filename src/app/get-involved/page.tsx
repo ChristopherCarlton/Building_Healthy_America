@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import Events from '../components/events';
 import Enews from '../components/enews';
+import { DONATE_URL } from '../constants/links';
 
 export default function GetInvolved() {
   const eventsRef = useRef<HTMLDivElement>(null);
@@ -44,7 +45,7 @@ export default function GetInvolved() {
               no family ever has to walk alone.
             </p>
             <a
-              href="https://givebutter.com/dMaREx"
+              href={DONATE_URL}
               className="inline-block text-secondary hover:text-secondary-dark font-semibold transition duration-300"
               target="_blank"
               rel="noopener noreferrer"

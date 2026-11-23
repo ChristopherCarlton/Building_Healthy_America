@@ -1,5 +1,6 @@
 "use client"
 import React, { useEffect } from 'react';
+import { DONATE_URL } from '../constants/links';
 
 const LearnMore = () => {
   useEffect(() => {
@@ -129,7 +130,7 @@ const LearnMore = () => {
             <h2 className="text-2xl lg:text-4xl mb-4 lg:mb-2 text-center lg:text-left pr-20 font-semibold">
               Support Our Mission Today
             </h2>
-            <a href="https://givebutter.com/dMaREx" className="bg-white text-primary px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300" target="_blank" rel="noopener noreferrer">
+            <a href={DONATE_URL} className="bg-white text-primary px-10 py-4 rounded-md mt-4 lg:mt-0 text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold shadow-lg transform hover:scale-105 transition duration-300" target="_blank" rel="noopener noreferrer">
               DONATE NOW
             </a>
           </div>

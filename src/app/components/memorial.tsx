@@ -1,15 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
+import { DONATE_URL } from '../constants/links';
 
 // In Memoriam — Thomas Rudolph Brinsko, co-founder of Building Healthier America.
-// Details below are drawn from Tom's obituary. The donation link is the same
-// Givebutter link used elsewhere on the site.
+// Details below are drawn from Tom's obituary. The donation link is the site-wide
+// DONATE_URL.
 const tom = {
   name: 'Thomas Rudolph Brinsko',
   lifespan: 'September 21, 1951 — May 16, 2026',
   role: 'Co-Founder, Building Healthier America',
   image: '/images/TomBrinsko.jpg',
-  donateUrl: 'https://givebutter.com/dMaREx',
+  donateUrl: DONATE_URL,
   memoryUrl: 'https://www.oconnellfuneralhomes.com',
 };
 
