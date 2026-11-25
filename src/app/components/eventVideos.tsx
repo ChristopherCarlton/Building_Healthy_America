@@ -11,9 +11,9 @@ type EventVideo = { id: string; title: string; embedDisabled?: boolean };
 // Recorded events from the BHC YouTube channel, newest first.
 // To add one, copy the id from the video URL (youtube.com/watch?v=<id>).
 const EVENT_VIDEOS: EventVideo[] = [
-  { id: 'JAIRPR6jrzQ', embedDisabled: true, title: "Navigating Heartbeat: BHC's Online Community Platform" },
-  { id: 'zAYLkmwktws', embedDisabled: true, title: 'When the Diagnosis Touches Everyone in the Family: Diagnosis of Autism' },
-  { id: 'Unb5Gj6QtNc', embedDisabled: true, title: 'Speaking on Resilience as an Adult with Cerebral Palsy' },
+  { id: 'JAIRPR6jrzQ', title: "Navigating Heartbeat: BHC's Online Community Platform" },
+  { id: 'zAYLkmwktws', title: 'When the Diagnosis Touches Everyone in the Family: Diagnosis of Autism' },
+  { id: 'Unb5Gj6QtNc', title: 'Speaking on Resilience as an Adult with Cerebral Palsy' },
   { id: 'wkjgOPtUj4k', title: "A Family's Journey Raising Two Young Children with Disabilities" },
   { id: 'aDWUMFFC6nk', title: 'Bridge for Community Life' },
   { id: '8z96CF0V0Co', title: 'Helping Picky Eaters Become Food Explorers' },
